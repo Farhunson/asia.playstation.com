@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   
+  
 <style>
 * {
   box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
   margin: 0;
 }
  
-.navbar {
+.navbarsa {
   overflow: hidden;
   background-color: #1F1F1F;
   font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +28,7 @@ body {
   
 }
  
-.navbar a {
+.navbarsa a {
   float: left;
   font-size: 16px;
   color: white;
@@ -36,12 +37,12 @@ body {
   text-decoration: none;
 }
  
-.dropdown {
+.dropdownsa {
   float: left;
   overflow: hidden;
 }
  
-.dropdown .dropbtn {
+.dropdownsa .dropbtnsa {
   font-size: 14px;  
   border: none;
   outline: none;
@@ -55,13 +56,13 @@ body {
   font-weight: 400;
 }
  
-.navbar .dropdown:hover .dropbtn {
+.navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
   opacity :1;
   transform: translateY(0);
 }
  
-.dropdown-content {
+.dropdown-contentsa {
   display: none;
   position: absolute;
   width: 100%;
@@ -69,13 +70,13 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
  
-.dropdown-content .header {
+.dropdown-contentsa .header {
   padding: 16px;
   color: white;
   margin-top: 10px;
 }
  
-.dropdown:hover .dropdown-content {
+.dropdownsa:hover .dropdown-contentsa {
   display: block;
 }
 
@@ -110,6 +111,7 @@ body {
   background: linear-gradient(to bottom, transparent 100%, black 50%);
   background: rgb(55,127,170);
   background: radial-gradient(circle, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);
+  z-index : 2;
 }
  
 @media screen and (max-width: 600px) {
@@ -127,15 +129,14 @@ body {
     height: 36px;
     margin: 0;
     padding: 0 30px 0 10px;
-    color: #ffffff;
-    background-color: #303030;
+    color: #ad2929;
+    background-color: #333;
     border: 0;
     border-radius: 3px;
     outline: 0;
     font-size: 12px;
     font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     box-sizing: border-box;
-    opacity: 0.2;
 }
 
 #search_id {
@@ -148,7 +149,7 @@ body {
 <title>PS4 | Games | PlayStation</title>
 </head>
 <body>
-   <nav class="navbar navbar-expand-md" style="background-color: black; height: 40px;padding: 0;margin: 0" >
+   <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 40px;padding: 0;margin: 0" >
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto" style="float:right; padding-top:15px" >
                 <li class="nav-item">
@@ -157,80 +158,80 @@ body {
             </ul>
         </div>
     </nav>
-<div class="navbar" style="margin:0" >
+<div class="navbarsa" style="margin:0" >
   <a href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
-  <div class="dropdown">
-    <button class="dropbtn">PRODUCTS
+  <div class="dropdownsa">
+    <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header" >
         <h2>PRODUCTS</h2>
       </div>  
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">GAMES
+  <div class="dropdownsa">
+    <button class="dropbtnsa">GAMES
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>GAMES</h2>
       </div>  
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">PSN
+  <div class="dropdownsa">
+    <button class="dropbtnsa">PSN
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>PSN</h2>
       </div>  
     </div>
   </div>
-    <div class="dropdown">
-    <button class="dropbtn">NEWS
+    <div class="dropdownsa">
+    <button class="dropbtnsa">NEWS
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>PSN</h2>
       </div>  
     </div>
   </div>
-    <div class="dropdown">
-    <button class="dropbtn">SUPPORT
+    <div class="dropdownsa">
+    <button class="dropbtnsa">SUPPORT
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>PSN</h2>
       </div>  
     </div>
   </div>
-    <div class="dropdown">
-    <button class="dropbtn">BUY
+    <div class="dropdownsa">
+    <button class="dropbtnsa">BUY
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>PSN</h2>
       </div>  
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">SIGN IN
+  <div class="dropdownsa">
+    <button class="dropbtnsa">SIGN IN
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="grad1">
+    <div class="dropdown-contentsa" id="grad1">
       <div class="header">
         <h2>PSN</h2>
       </div>  
     </div>
   </div>
   <div>
-  	<input id="search" type="text" placeholder="Search.." style="float: right" src="img src = "<?php echo base_url('img/menu_navi-searchsvg'); ?>">
+  	<input id="search" type="text" placeholder="Search.." style="float: right" src="<?php echo base_url('img/menu_navi-search.svg'); ?>">
    	<img id="search_id" src="<?php echo base_url('img/menu_navi-search.svg'); ?>" onclick='image(this)'>
   </div>
 </div>
