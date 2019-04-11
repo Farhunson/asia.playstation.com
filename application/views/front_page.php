@@ -269,36 +269,106 @@ body {
     </a>
   </div>
 
-  <div class="parsys section">
-	<div class="box960">
-	<div class="row">  
-		<div class="layoutRowParsys parsys"><div class="baseComponent caption section">  
-			<h2 class="js-style lg-center xs-font28 "  data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" align="middle">
-             Garansi PlayStation 4 di Indonesia
-			</h2>
-		</div>
-    </div>
+  <div class="container">
+	<div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">Garansi PlayStation 4 di Indonesia</h1>
+		 </div>
 	</div>
-	<div class="row  all-pull-right  ">
-		<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-			<div class="layoutRowParsys parsys"><div class="img baseComponent section">
-				<img class="img-responsive js-img-src js-style" src="<?php echo base_url('img/indo.jpg'); ?>" style="width:100%;height:100%;">
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">  
-        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
-			<div  ><p>&nbsp;</p>
+	<div class="row">
+		<div class="col-sm-6">
+			<div style="font-size:1vw" ><p>&nbsp;</p>
 			<p>Dengan Sistem Garansi baru, para pengguna di Indonesia akan dapat menikmati manfaat berikut:</p>
 			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Produk <i>Authentic Official</i> (Asli Resmi) – Produk Resmi PlayStation akan memiliki stiker hologram yang menyatakan “Produk Resmi Indonesia”</p>
 			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lebih dari 50 Pusat Layanan di seluruh Indonesia – Pengguna dapat membawa Produk Resmi PlayStation mereka ke beragam pusat layanan di Indonesia.</p>
 			<p>&nbsp;</p>
-			<button type="button" class="btn btn-primary">LEARN MORE</button>
+			</div>
+			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+		</div>
+		<div class="col-sm-6">
+			<img src="<?php echo base_url('img/indo.jpg');?>" width=100% height=100%>
+		</div> 		
+	</div></br></br></br>
+	<div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">PlayStation 4</h1>
+		 </div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+				<div  >
+					<p>PS4 system is the home to games with rich, high-fidelity graphics and deeply immersive experiences that shatter expectations.</p>
+					<p>Simply hit the SHARE button on the controller to share your gameplay experience to the world, or communicate with your friends online.</p>
+					<p>PlayStation exclusives and most immersive games are waiting for you.</p>
+				</div></br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
 			</div>
 		</div>
+		<div class="col-sm-6">
+			<img src="<?php echo base_url('img/luol.png');?>" width=100% height=100%>
+		</div> 		
+	</div></br></br></br>
+	<div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">PlayStation VR</h1>	
+		 </div>
 	</div>
-   </div>
-  
+	<div class="row">
+		<div class="col-sm-6">
+			<img src="<?php echo base_url('img/vr.png');?>" width=100% height=100%>
+		</div> 		
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+				<div  >
+					<p>PlayStation VR (PS VR) uses a combination of 3D space and independent 3D audio technology to surround the player in a 360° world, giving an incredible level of immersion and a &quot;Sense of Presence&quot; so you will really feel like you are in the game.</p>
+					<p>There is also a huge variety of amazing non-game content to enjoy!</p>
+					<p>With a great new price, the immersive world of PS VR is now easier than ever to experience!</p>
+				</div>
+						</br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			</div>
+		</div>
+	</div></br></br></br>
+	<div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">PlayStation Classic</h1>	
+		 </div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+				<div  >
+					<p>PlayStation Classic, a miniature games console that mirrors the look of the original PlayStation and comes preloaded with 20 original games, has launched.</p>
+					<p>The design of the PlayStation Classic resembles PlayStation, including the button layout, as well as controllers and outer package, but in a miniature size, it is 45% smaller on the sides and 80% smaller in volume than the original console.</p>
+				</div>
+						</br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img src="<?php echo base_url('img/classic.png');?>" width=100% height=100%>
+		</div> 		
+	</div>
+	<div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">Find Your Perfect Game</h1>	
+		 </div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6" align='middle'>
+			<img src="<?php echo base_url('img/kindom2.png');?>" width=100% height=100%>
+			</br></br>
+			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+		</div>
+		<div class="col-sm-6" align='middle'>
+			<img src="<?php echo base_url('img/re2.png');?>" width=100% height=100%>
+			</br></br>
+			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+		</div> 		
+	</div>
+	
+  </div>
 
 
 </body>
