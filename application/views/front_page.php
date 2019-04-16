@@ -80,12 +80,10 @@ body {
 .dropdownsa:hover .dropdown-contentsa {
   display: block;
 }
-
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
 }
-
 .column {
   float: left;
   width: 33.33%;
@@ -106,18 +104,15 @@ body {
 .column a:hover {
   background-color: #ddd;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .buttonpshover {
   opacity: 1;
   transition: 0.3s;
 }
-
 .buttonpshover :hover {
   color : #00a2ff;
   opacity: 0.6;
@@ -127,7 +122,6 @@ body {
   background: linear-gradient(bottom, transparent 100%, black 50%);
   background: rgb(55,127,170);
   background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);
-
   z-index : 2;
 }
  
@@ -137,7 +131,6 @@ body {
     height: auto;
   }
 }
-
 #search {
     position: absolute;
     top: 50px;
@@ -155,24 +148,44 @@ body {
     font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     box-sizing: border-box;
 }
-
 #search_id {
     margin: 0;
     float: right;
     padding-right: 25px;
     padding-top: 20px;
 }
+
+#foter{
+  /* background-color : #0066cc; */
+
+  background: rgba(0, 55, 145, 1.0);
+}
+#footer{
+  text-align : left;
+  color : white;
+}
+
+#footer a{
+  color : white;
+}
+
+#gambarfooter{
+  min-height: 137px;
+  background-size: 100% 100%;
+
+  background: url('<?php echo base_url("img/footer2.png");?>') no-repeat; 
+}
 </style>
 <title>PS4 | Games | PlayStation</title>
 </head>
 <body>
-   <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px; padding: 0;margin: 0" >
+   <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px;padding: 0;margin: 0" >
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <div class="navbar-nav ml-auto" style="float:right; padding-top:13px; padding-right: 10px" >
-                <div class="nav-item">
-                    <img src = "<?php echo base_url('img/sony_logo.svg'); ?>" style="padding-bottom: 10px"/>
-                </div>
-            </div>
+            <ul class="navbar-nav ml-auto" style="float:right; padding-top:13px; padding-right: 10px" >
+                <li class="nav-item">
+                    <img src = "<?php echo base_url('img/sony_logo.svg'); ?>" style="padding-bottom: 10px" />
+                </li>
+            </ul>
         </div>
     </nav>
 <div class="navbarsa" style="margin:0" >
@@ -183,8 +196,7 @@ body {
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header" >
-        <!-- <h2>PRODUCTS</h2> -->
-        <table style="margin-left: 180px ">
+      <table style="margin-left: 180px ">
           <tr>
             <td class="buttonpshover">
               <a href="<?php echo base_url('www.facebook.com'); ?>">
@@ -305,7 +317,7 @@ body {
     </a>
   </div>
 
-  <div class="container">
+<div class="container">
 	<div class="row">
 		 <div class="col" align="middle" style="padding-top:10px">
 			<h1 style="font-size:2.5vw">Garansi PlayStation 4 di Indonesia</h1>
@@ -403,8 +415,166 @@ body {
 			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
 		</div> 		
 	</div>
-	
-  </div>
+  <div class="row">
+		<div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">PlayStation Network</h1>	
+		</div>
+	</div>
+	<div class="row">
+    <div class="col-sm-6">
+			<img src="<?php echo base_url('img/network.png');?>" width=100% height=100%>
+		</div> 
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+      <div  >
+        <p>With PlayStation Network, you can buy your games, listen to music, or play online multi-player games anytime. PS app for smart phone will enhance your PlayStation experience even more.</p>
+      </div>
+						</br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			</div>
+		</div>		
+	</div>
+  <div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">PlayStation Vita</h1>	
+		 </div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+      <span class="">Find out why PlayStation Vita is a totally original take on portable gaming. This slim and sleek device also features high-precision dual analog controls for a more immersive gaming experience away from your console and TV.</span>
+
+						</br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img src="<?php echo base_url('img/psvita.png');?>" width=100% height=100%>
+		</div> 		
+	</div>
+  <div class="row">
+		 <div class="col" align="middle" style="padding-top:10px">
+			<h1 style="font-size:2.5vw">About SIE Worldwide Studios</h1>	
+		 </div>
+	</div>
+	<div class="row">
+    <div class="col-sm-6">
+			<img src="<?php echo base_url('img/sie.jpg');?>" width=100% height=100%>
+		</div> 		
+		<div class="col-sm-6">
+			<div style="font-size:1vw" >
+      <div  >
+        <p>SIE Worldwide Studios is a global development hub, a diverse network of highly successful and passionate game development studios and, above all else, a home for outstanding creative talent.</p>
+        <p>We develop and publish a range of exciting new titles each year, created either by our fantastic in-house studios, or in collaboration with independent studios from the wider industry.</p>
+      </div>
+						</br></br></br>
+				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			</div>
+		</div>
+	</div>
+</div>
+</br></br></br>
+<footer class="page-footer font-small indigo " id='foter'>
+
+    <div class="container text-center text-md-left" id='footer'>
+
+      <div class="row">
+
+
+        <div class="col-md-3">
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Product</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">PlayStation®4</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®VR</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®Vita</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®Classic</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®3</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">PlayStation™Network</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation™Store</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation™Music</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®Plus</a>
+            </li>
+            <li>
+              <a href="#!">PlayStation®App</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Press Release</a>
+            </li>
+            <li>
+              <a href="#!">Latest News</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Support</a>
+            </li>
+            <li>
+              <a href="#!">Warranty Services</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div>
+      <div class='row'>
+        <div id='gambarfooter'  class='col'>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  
+ 
+  </footer>
+
 
 
 </body>
