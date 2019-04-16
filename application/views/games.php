@@ -17,7 +17,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 65px;
   padding-left: 10px;
-  
 }
  
 .navbar a {
