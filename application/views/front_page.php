@@ -23,7 +23,7 @@ body {
   background-color: #1F1F1F;
   font-family: Arial, Helvetica, sans-serif;
   height: 65px;
-  padding-left: 10px;
+  padding-left: 6px;
   border-radius: 0px;
   
 }
@@ -33,7 +33,7 @@ body {
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
 }
  
@@ -47,13 +47,14 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 13px;
   background-color: inherit;
   font: inherit;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 22px;
   font-family: 'ＭＳ Ｐゴシック';
   font-weight: 400;
+  cursor: pointer;
 }
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
@@ -71,13 +72,18 @@ body {
 }
  
 .dropdown-contentsa .header {
-  padding: 16px;
+  /*padding: 16px;*/
   color: white;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
  
 .dropdownsa:hover .dropdown-contentsa {
   display: block;
+}
+
+.fontdropdown {
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 400;
 }
 
 .column {
@@ -106,11 +112,22 @@ body {
   display: table;
   clear: both;
 }
+
+.buttonpshover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonpshover :hover {
+  color : #00a2ff;
+  opacity: 0.6;
+}
  
 #grad1 {
-  background: linear-gradient(to bottom, transparent 100%, black 50%);
+  background: linear-gradient(bottom, transparent 100%, black 50%);
   background: rgb(55,127,170);
-  background: radial-gradient(circle, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);
+  background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);
+
   z-index : 2;
 }
  
@@ -129,7 +146,7 @@ body {
     height: 36px;
     margin: 0;
     padding: 0 30px 0 10px;
-    color: #ad2929;
+    color: white;
     background-color: #333;
     border: 0;
     border-radius: 3px;
@@ -149,13 +166,13 @@ body {
 <title>PS4 | Games | PlayStation</title>
 </head>
 <body>
-   <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 40px;padding: 0;margin: 0" >
+   <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px; padding: 0;margin: 0" >
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto" style="float:right; padding-top:15px" >
-                <li class="nav-item">
-                    <img src = "<?php echo base_url('img/sony_logo.svg'); ?>"  />
-                </li>
-            </ul>
+            <div class="navbar-nav ml-auto" style="float:right; padding-top:13px; padding-right: 10px" >
+                <div class="nav-item">
+                    <img src = "<?php echo base_url('img/sony_logo.svg'); ?>" style="padding-bottom: 10px"/>
+                </div>
+            </div>
         </div>
     </nav>
 <div class="navbarsa" style="margin:0" >
@@ -166,7 +183,26 @@ body {
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header" >
-        <h2>PRODUCTS</h2>
+        <!-- <h2>PRODUCTS</h2> -->
+        <table style="margin-left: 180px ">
+          <tr>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="padding:15px; width: 150px " /> <br>
+              <h6 class="fontdropdown"style="text-align:center">PlayStation®4</h6></a>
+            </td>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationvr.png'); ?>" style="padding:15px; width: 150px " /> <br>
+              <h6 class="fontdropdown"style="text-align:center">PlayStation®VR</h6></a>
+            </td>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationvita.png'); ?>" style="padding:15px; width: 150px " /> <br>
+              <h6 class="fontdropdown"style="text-align:center">PlayStation®Vita</h6></a>
+            </td>
+          </tr>
+        </table>
       </div>  
     </div>
   </div>
