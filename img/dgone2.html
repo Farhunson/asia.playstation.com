@@ -1,0 +1,4972 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://asia.playstation.com/en-id/ -->
+<html lang="en-ID"><head class="at-element-marker"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<link href="./dgone2_files/ja-jp.css" rel="stylesheet" type="text/css">
+
+    
+
+
+    
+    
+    <title>PlayStation | PlayStation</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Last-Modified" content="Mon,01 Apr 2019 01:07 GMT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="sie, sony, sony interactive entertainment, playstation, ps">
+    <meta name="description" content="PlayStation Official Site">
+    
+    
+    
+    <meta property="og:title" content="PlayStation">
+    
+    
+    <meta property="og:url" content="https://asia.playstation.com/en-id/">
+    <meta property="og:image" content="https://asia.playstation.com/content/dam/pscom/regional-assets/regional-elements/region-icons/og-image/og.png">
+    
+    
+    
+    
+    <meta property="mixi:image" content="https://asia.playstation.com/content/dam/pscom/regional-assets/regional-elements/region-icons/og-image/og.png">
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="alternate" hreflang="en-VN" href="https://asia.playstation.com/en-vn/">
+
+    <link rel="alternate" hreflang="en-PH" href="https://asia.playstation.com/en-ph/">
+
+    <link rel="alternate" hreflang="zh-Hans-CN" href="https://asia.playstation.com.cn/chs-cn/">
+
+    <link rel="alternate" hreflang="ja-JP" href="https://www.jp.playstation.com/">
+
+    <link rel="alternate" hreflang="zh-Hant-TW" href="https://asia.playstation.com/cht-tw/">
+
+    <link rel="alternate" hreflang="en-SG" href="https://asia.playstation.com/en-sg/">
+
+    <link rel="alternate" hreflang="en-MY" href="https://asia.playstation.com/en-my/">
+
+    <link rel="alternate" hreflang="en-ID" href="https://asia.playstation.com/en-id/">
+
+    <link rel="alternate" hreflang="zh-Hant-HK" href="https://asia.playstation.com/cht-hk/">
+
+    <link rel="alternate" hreflang="zh-Hans-HK" href="https://asia.playstation.com/chs-hk/">
+
+    <link rel="alternate" hreflang="en-HK" href="https://asia.playstation.com/en-hk/">
+
+    <link rel="alternate" hreflang="ko-KR" href="https://asia.playstation.com/ko-kr/">
+
+    <link rel="alternate" hreflang="en-TH" href="https://asia.playstation.com/en-th/">
+
+    <link rel="alternate" hreflang="th-TH" href="https://asia.playstation.com/th-th/">
+
+
+    
+    <link rel="canonical" href="https://asia.playstation.com/en-id/">
+
+    
+
+<link rel="stylesheet" href="./dgone2_files/clientlibs_general.min.css" type="text/css">
+<link rel="stylesheet" href="./dgone2_files/clientlibs_components.min.css" type="text/css">
+
+    
+
+<script src="./dgone2_files/1930728400517800" async=""></script><script src="./dgone2_files/220601095020255" async=""></script><script async="" src="./dgone2_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./dgone2_files/analytics.js.download"></script><script type="text/javascript" async="" src="./dgone2_files/f.txt"></script><script async="" src="./dgone2_files/gtm.js.download"></script><script type="text/javascript" async="" src="./dgone2_files/bi.js.download"></script><script type="text/javascript" src="./dgone2_files/clientlibs_general.min.js.download"></script><script src="./dgone2_files/signin" type="text/javascript"></script>
+
+    
+    
+
+
+
+
+
+    <script type="text/javascript" src="./dgone2_files/mbox.js.download"></script><style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility:hidden;}
+</style>
+
+    <script type="text/javascript" src="./dgone2_files/carousel.js.download"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $("#header-load").load("/en-id/common/header/header-login-resp/  #megaDropDownParts", function(data) {
+                if(data == null) {
+                    $("#header-load").append("ヘッダの読込みに失敗しました"); 
+                } else {
+                    loadSpNvi();
+                    mainApp.mainHeader();
+                    $('#header-load .tracking-mdd a').click(function(){
+                        var ident = $(this).closest('.tracking-mdd').attr('id');
+                        var index = $('#'+ident+' a').index(this)+1;
+                        var s=s_gi(s_account);
+                        s.linkTrackVars='eVar30';
+                        s.eVar30=ident+'-'+index;
+                        s.tl(this,'o','area-click');
+                    });
+                    $('#header-load #tracking-mdd-menu a').click(function(){
+                        var ident = 'tracking-mdd-menu';
+                        var index = $('#tracking-mdd-menu a').index(this)+1;
+                        var s=s_gi(s_account);
+                        s.linkTrackVars='eVar30';
+                        s.eVar30=ident+'-'+index;
+                        s.tl(this,'o','area-click');
+                     });
+                    var platformApp = new PlatformApp();
+                    platformApp.main();
+                    main_psn_alert();
+                }
+                var script = document.createElement('script');
+                script.id = 'sb-main';
+                script.src = 'https://social.playstation.com/starblaster2/pdc/master/assets/bootstrap.js'
+                document.body.appendChild(script);
+            });
+
+            $("#footer-load").load("/en-id/common/footer/footer-resp/  #footerParts", function(data) {
+                if(data == null) {
+                    $("#footer-load").append("フッタの読込みに失敗しました"); 
+                } else {
+                    var backBtn = new ViewBackToTop();
+                    backBtn.init();
+                }
+            });
+
+        });
+        function loadSpNvi() {
+
+            $("#sp_navi_load").load("/en-id/common/header-sp/smartnavi-login/  #sp_navi", function(data) {
+                if(data == null) {
+                    $("#sp_navi_load").append("スマートフォンナビゲーションの読込みに失敗しました"); 
+                } else {
+                    mainApp.mainSPNavi();
+                    loadUserSPNavi();
+                }
+            });
+
+        }
+    </script>
+
+    <script>
+
+        addExternalCss("/content/dam/pscom/japan-asia/designs/carousel-banner/carousel.css");
+
+    </script><link rel="stylesheet" type="text/css" href="./dgone2_files/carousel.css">
+
+    
+    
+
+
+
+<script src="./dgone2_files/f(1).txt"></script><script src="./dgone2_files/sb-toolbar-critical-45b1798217db2d7b27fbc2b593f0ce33.js.download" crossorigin="use-credentials"></script><script src="./dgone2_files/sb-toolbar-1250cc43b6d160037a66c3e78d12a6eb.js.download" crossorigin="use-credentials"></script></head>
+
+
+    <body>
+<noscript>
+  <div style="background-color: rgba(238, 238, 238, 1.0); padding-left: 15px;padding-right: 15px; padding-top: 54px; padding-bottom: 54px;">
+    <div style="width: 100%; margin-left: auto; margin-right: auto; box-sizing: border-box; max-width: 930px;">
+      <div style="margin-right: -15px; margin-left: -15px;">
+        <div style="margin-top: 15px; margin-bottom: 15px; padding-left: 15px; padding-right: 15px;">
+          <div>
+            <p>Our Website utilizes JavaScript. If you have disabled the function with your browser, some contents may not display properly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</noscript>
+
+
+        <div id="header-load"><div id="megaDropDownParts" style="position: relative;">
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+    <!-- HEADER -->
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+    <div id="global-header" class="psc-section-header" style="display: block;">
+
+        <!-- Sony Logo -->
+        <div id="sony-area" class="psc-row-sony">
+            <a class="psc-link-sony" href="http://www.sony.co.id/" target="_blank">
+                <img src="./dgone2_files/sony_logo.svg" alt="Sony">
+            </a>
+        </div>
+
+        <!-- Browser Alert -->
+        <div id="browser-alert" class="psc-browser-alert">
+            <div>
+                <p class="psc-align-center psc-col-orange">
+                    Your browser is not supported for this page.<br>Please check  <a href="https://asia.playstation.com/en-id/#">About this Website</a>for the supported browsers.
+                </p>
+            </div>
+        </div>
+
+        <!-- グローバルナビゲーション -->
+        <!-- ★グローバルナビゲーション --><div id="tracking-mdd-menu" class="psc-global-container">
+    <ul id="psc-pc-global-nav" class="psc-row-global-nav">
+        <li id="nav-0" class="psc-cell-global-ps">
+            <a class="psc-link-global-ps" href="https://asia.playstation.com/en-id/">
+                <img src="./dgone2_files/icon_ps_pc.svg" alt="PlayStation">
+            </a>
+        </li>
+        <li id="nav-1" class="psc-cell-global" data-id="#mdd-products">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">PRODUCTS</span>
+            <span class="psc-sp-label-visible">PRODUCTS</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-2" class="psc-cell-global" data-id="#mdd-games">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">GAMES</span>
+            <span class="psc-sp-label-visible">GAMES</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-3" class="psc-cell-global" data-id="#mdd-psn">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">PSN</span>
+            <span class="psc-sp-label-visible">PSN</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-4" class="psc-cell-global" data-id="#mdd-news">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">NEWS</span>
+            <span class="psc-sp-label-visible">NEWS</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-5" class="psc-cell-global" data-id="#mdd-support">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">SUPPORT</span>
+            <span class="psc-sp-label-visible">SUPPORT</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-6" class="psc-cell-global" data-id="#mdd-store">                <a class="psc-link-global-support" href="javascript:void(0);" style="background: transparent;">            <span class="psc-pc-label-visible">BUY</span>
+            <span class="psc-sp-label-visible">BUY</span>
+                    <img src="./dgone2_files/icon_mdd.svg" alt="">                </a>            </li>        </ul>    <!-- SP用PSロゴ -->
+    <div id="psc-sp-global-nav">
+            <a class="psc-link-global-ps" href="https://asia.playstation.com/en-id/">
+                <img src="./dgone2_files/icon_ps_sp.svg" alt="PlayStation">
+        </a>
+    </div>
+        <div id="nav-search-sb" class="is-active">
+            <div id="sb-social-toolbar-root" class="ember-application"><div id="ember215" class="ember-view"><div id="sb" class="ember-view"><div class="sb-text-dir-container">
+      <a href="https://my.playstation.com/" style="text-transform: capitalize" class="sb-my-playstation-link">
+        My PlayStation
+      </a>
+      <div id="ember336" class="sb-signin-button-container ember-view"><button href="#" id="sb-signin-link" style="text-transform: capitalize" class="sb-signin-button" data-ember-action="" data-ember-action-337="337">
+  Sign In
+</button>
+</div>
+
+<div id="sb-modal-dialogs" class="ember-view">      <div id="ember352" class="sb-dialog-displayer ember-view"><!----></div>
+
+</div></div>
+</div>
+<!---->
+</div></div>
+            <div id="nav-search" class="psc-cell-global-search">
+                <div id="megadropParts-load-1">
+<form action="https://asia.playstation.com/en-id/search/" class="psc-global-search" id="site-search" method="get" target="_top">
+  <fieldset id="nav-global-search">
+    <input autocomplete="off" name="q" placeholder="Search" type="text">
+    <input onclick="execHeadSearch();" src="./dgone2_files/menu_navi-search.svg" type="image" alt="Search">
+  </fieldset>
+</form>
+                </div>
+            </div>
+        </div>
+    <!-- SP用ナビゲーション ハンバーガーメニュー -->
+    <a id="psc-sp-nav-toggle" class="nav-global-toggle" href="javascript:void(0);">
+        <img src="./dgone2_files/icon_menu.svg" alt="Menu">
+    </a>
+</div>
+
+
+    </div>
+
+    <!-- メガドロップダウン -->
+    <!-- ★メガドロップダウン --><div id="mdd" class="psc-mdd-container psc-bg-mdd" style="transform: translate3d(0px, 0px, 0px); transition: -webkit-transform 400ms cubic-bezier(0, 0, 0.25, 1) 0s; top: -489px; display: block;"><div class="psc-mdd-empty-area" style="display: block;"></div>    <div id="mdd-products" class="psc-mdd-inner" style="display: none;"><div id="_content_pscom_id_en_common_header_megadropdown_products_jcr_content_par_megadropdown" class="tracking-mdd"><ul class="psc-row-mdd">
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/ps4/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstation4.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®4</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psvr/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationvr.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®VR</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psvita/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationvita.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Vita</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psclassic/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_psclassic.png" alt="">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Classic</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+</ul></div>    </div>    <div id="mdd-games" class="psc-mdd-inner" style="display: none;"><div id="_content_pscom_id_en_common_header_megadropdown_games_jcr_content_par_megadropdown" class="tracking-mdd"><ul class="psc-row-mdd">
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/ps4/games/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_ps4games.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS4™ GAMES</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psvr/games/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_psvrgames.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS VR GAMES</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psvita/games/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_psvitagames.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS Vita GAMES</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+</ul></div>    </div>    <div id="mdd-psn" class="psc-mdd-inner" style="display: none;"><div id="_content_pscom_id_en_common_header_megadropdown_psn_jcr_content_par_megadropdown" class="tracking-mdd"><ul class="psc-row-mdd">
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psn/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_psn.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PSN</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psn/playstation-store/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationstore.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Store</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psn/playstation-plus/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationplus.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Plus</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psn/playstation-music/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationmusic.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Music</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/psn/playstation-app/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_playstationapp.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®App</h4>
+        </div>
+        </a>
+    </li>
+</ul></div>    </div>    <div id="mdd-news" class="psc-mdd-inner" style="display: none;"><div id="_content_pscom_id_en_common_header_megadropdown_news_jcr_content_par_megadropdown" class="tracking-mdd"><ul class="psc-row-mdd">
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/press-releases/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_pressrelease.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">Press Release</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/latest-news/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_latestnews.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">Latest News</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+</ul></div><div id="_content_pscom_id_en_common_header_megadropdown_news_jcr_content_par_headermenu_iconandte" class="tracking-mdd"><div class="psc-mdd-btn">
+    <ul class="psc-row-mdd-btn">
+        <li class="psc-cell-mdd psc-pd8">
+            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://www.facebook.com/PlayStationAsia" target="_blank">
+                <img id="" class="psc-w40 psc-va-mid" src="./dgone2_files/menu_facebook.png" alt=" ">
+                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Facebook</h4>
+            </a>
+        </li>
+        <li class="psc-cell-mdd psc-pd8">
+            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="http://www.youtube.com/PlayStationAsia" target="_blank">
+                <img id="" class="psc-w40 psc-va-mid" src="./dgone2_files/menu_youtube.png" alt=" ">
+                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">YouTube</h4>
+            </a>
+        </li>
+        <li class="psc-cell-mdd psc-pd8">
+            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://instagram.com/playstationasia/" target="_blank">
+                <img id="" class="psc-w40 psc-va-mid" src="./dgone2_files/menu_instagram.png" alt=" ">
+                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Instagram</h4>
+            </a>
+        </li>
+        <li class="psc-cell-mdd psc-pd8">
+            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://twitter.com/PlayStationAsia" target="_blank">
+                <img id="" class="psc-w40 psc-va-mid" src="./dgone2_files/menu_twitter.png" alt=" ">
+                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Twitter</h4>
+            </a>
+        </li>
+        <li class="psc-cell-mdd psc-pd8"></li>
+    </ul>
+</div>
+</div>    </div>    <div id="mdd-support" class="psc-mdd-inner" style="display: none;"><div id="_content_pscom_id_en_common_header_megadropdown_support_jcr_content_par_megadropdown" class="tracking-mdd"><ul class="psc-row-mdd">
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/support/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_support.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">Support</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://asia.playstation.com/en-id/support/warranty-services/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_warranty.png" alt=" ">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">Warranty Services</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://status.playstation.com/en-id/" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_psnstatus_large.png" alt="">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PSN Status</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd">
+        <a class="psc-link-mdd psc-hover-mdd" href="https://connection.support.playstation.com/en_ID" target="_self" onmouseover="megaDropDown_color(this, &#39;#00a2ff&#39;);" onmouseout="megaDropDown_color(this, &#39;#ffffff&#39;);">
+        <div>
+         <img class="psc-w64p" src="./dgone2_files/menu_fixandconnect_large.svg" alt="">
+        </div>
+        <div class="psc-mdd-nav-title">
+         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">Fix &amp; Connect</h4>
+        </div>
+        </a>
+    </li>
+    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
+</ul></div>    </div>    <div id="mdd-store" class="psc-mdd-inner" style="display: table;"><div id="_content_pscom_id_en_common_header_megadropdown_buy_jcr_content_par_headermenu_iconandli_0" class="tracking-mdd"><div class="psc-mdd-cell">
+    <a class="psc-mdd-category-link" href="https://store.playstation.com/en-id/home/games?smcid=id-en_ps:com_header" target="_blank">
+        <span><img src="./dgone2_files/menu_playstationstore.png" alt=" "></span>
+        <span>PlayStation™Store</span>
+    </a>
+    <ul class="psc-mdd-link-list">
+        <li><a href="https://store.playstation.com/en-id/grid/STORE-MSF86012-NEWESTRELEASE/1?smcid=id-en_ps:com_header" target="_blank">Newest Releases</a></li>
+        <li><a href="https://store.playstation.com/en-id/grid/STORE-MSF86012-BESTOMPG/1?smcid=id-en_ps:com_header" target="_blank">Best multiplayer games</a></li>
+        <li><a href="https://store.playstation.com/en-id/home/games/psplus?smcid=id-en_ps:com_header" target="_blank">PS Plus Subscription</a></li>
+    </ul>
+</div>
+<div class="psc-mdd-cell">
+    <a class="psc-mdd-category-link" href="https://asia.playstation.com/en-id/support/retail-store/" target="_self">
+        <span><img src="./dgone2_files/menu_retailstore.png" alt=" "></span>
+        <span>Retail Stores</span>
+    </a>
+</div>
+</div>    </div></div>
+
+</div></div>
+        <div id="sp_navi_load"><div id="sp_navi">
+            <div class="baseComponent headerMenu_sp spNavi">
+
+
+
+
+<div id="nav-global-sp" class="psc-sp-container" style="display: none; top: 101px;">
+    <nav id="nav-sp-main" class="psc-sp-nav-wrapper" style="left: 1583px;">
+        <ul class="psc-sp-nav-inner">
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/ps4/" target="_self">
+PlayStation®4</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/psvr/" target="_self">
+PlayStation®VR</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/psvita/" target="_self">
+PlayStation®Vita</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/psclassic/" target="_self">
+PlayStation®Classic</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/psn/" target="_self">
+PlayStation™Network</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/psn/playstation-plus/" target="_self">
+PlayStation®Plus</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/support/" target="_self">
+Support</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/latest-news/" target="_self">
+Latest News</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://asia.playstation.com/en-id/press-release/" target="_self">
+Press Releases</a>
+</li>
+<li>
+<a class="psc-sp-nav-list" href="https://status.playstation.com/en-id/" target="_blank">
+PSN Status</a>
+</li>
+<li id="id-sp-profile-signin-nav">
+    <a class="psc-sp-nav-list" href="https://my.playstation.com/profile/me/" target="_blank">
+        <img class="psc-va-mid psc-w40" src="./dgone2_files/menu_avatar.png" alt=" ">
+        <span class="psc-va-mid">My PlayStation</span>
+    </a>
+</li><li id="id-sp-profile-signined-nav" style="display: none;">
+    <a class="psc-sp-nav-list" href="https://my.playstation.com/profile/me/" target="_blank">
+        <img class="psc-va-mid psc-w40" src="https://asia.playstation.com/en-id/" alt=" ">
+        <span class="psc-va-mid"></span>
+    </a>
+</li><li>
+<a class="psc-sp-nav-list" href="https://pscom.jp/sen/manage-account" target="_blank">
+Manage Account</a>
+</li>
+        </ul>
+    </nav>
+</div>
+
+
+</div>
+
+        </div></div>
+        <div id="psc-tv-main" class="psc-tv-container ps4-contents clearfix">
+            
+
+
+
+  
+
+
+
+    
+
+            
+            <div class="par parsys"><div class="ghost section">
+
+</div>
+<div class="baseComponent directHtml section">
+<!--Carousel start-->
+<div class="mainVisual baseComponent section">
+  <div class="slide">
+    <div class="slide_inner mainImg slick-initialized slick-slider slick-dotted"><img src="./dgone2_files/icon_left.svg" id="mainCalPrev" class="slick-arrow" style="display: block;"> 
+      
+      <!-- Carousel Item.1 -->
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 14247px; transform: translate3d(-1583px, 0px, 0px);"><div aria-labelledby="tab4" class="slick-slide slideItem slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1583px;" tabindex="-1">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="Marvel&#39;s Spider-man" class="pc" src="./dgone2_files/marvels-spider-man-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="Marvel&#39;s Spider-man" class="sp" src="./dgone2_files/marvels-spider-man-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2018/marvels-spider-man/" tabindex="-1">
+            <div class="blue wBtn">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab1" class="slick-slide slideItem slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1583px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="PlayStation®" class="pc" src="./dgone2_files/playstation-mainvisual-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="PlayStation®" class="sp" src="./dgone2_files/playstation-mainvisual-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn rightSide">
+          <div class="button"> 
+            <!-- Button --> 
+       <!--
+            <a href=" ">
+-</div>
+            </a> 
+       -->
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab2" class="slick-slide slideItem" data-slick-index="1" aria-hidden="true" style="width: 1583px;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="KINGDOM HEARTS III" class="pc" src="./dgone2_files/kingdom-hearts-iii-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="KINGDOM HEARTS III" class="sp" src="./dgone2_files/kingdom-hearts-iii-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2019/kingdom-hearts-iii/en/" tabindex="-1">
+            <div class="blue">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab3" class="slick-slide slideItem" data-slick-index="2" aria-hidden="true" style="width: 1583px;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="Days Gone" class="pc" src="./dgone2_files/days-gone-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="Days Gone" class="sp" src="./dgone2_files/days-gone-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn rightSide">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2019/days-gone/" tabindex="-1">
+            <div class="blue">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab4" class="slick-slide slideItem" data-slick-index="3" aria-hidden="true" style="width: 1583px;" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="Marvel&#39;s Spider-man" class="pc" src="./dgone2_files/marvels-spider-man-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="Marvel&#39;s Spider-man" class="sp" src="./dgone2_files/marvels-spider-man-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2018/marvels-spider-man/" tabindex="-1">
+            <div class="blue wBtn">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab1" class="slick-slide slideItem slick-cloned" data-slick-index="4" aria-hidden="true" style="width: 1583px;" tabindex="-1">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="PlayStation®" class="pc" src="./dgone2_files/playstation-mainvisual-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="PlayStation®" class="sp" src="./dgone2_files/playstation-mainvisual-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn rightSide">
+          <div class="button"> 
+            <!-- Button --> 
+       <!--
+            <a href=" ">
+-</div>
+            </a> 
+       -->
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab2" class="slick-slide slideItem slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 1583px;" tabindex="-1">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="KINGDOM HEARTS III" class="pc" src="./dgone2_files/kingdom-hearts-iii-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="KINGDOM HEARTS III" class="sp" src="./dgone2_files/kingdom-hearts-iii-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2019/kingdom-hearts-iii/en/" tabindex="-1">
+            <div class="blue">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab3" class="slick-slide slideItem slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 1583px;" tabindex="-1">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="Days Gone" class="pc" src="./dgone2_files/days-gone-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="Days Gone" class="sp" src="./dgone2_files/days-gone-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn rightSide">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2019/days-gone/" tabindex="-1">
+            <div class="blue">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div><div aria-labelledby="tab4" class="slick-slide slideItem slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 1583px;" tabindex="-1">
+        <div class="image"> 
+          <!-- Image for PC --> 
+          <img alt="Marvel&#39;s Spider-man" class="pc" src="./dgone2_files/marvels-spider-man-pc.png">
+          <!-- //Image for PC --> 
+          <!-- Image for SP --> 
+          <img alt="Marvel&#39;s Spider-man" class="sp" src="./dgone2_files/marvels-spider-man-sp.png">
+          <!-- //Image for SP --> 
+        </div>
+        <div class="btn">
+          <div class="button"> 
+            <!-- Button --> 
+
+            <a href="https://asia.playstation.com/en-id/games/2018/marvels-spider-man/" tabindex="-1">
+            <div class="blue wBtn">LEARN MORE</div>
+            </a> 
+
+            <!-- //Button --> 
+          </div>
+        </div>
+      </div></div></div>
+
+      <!-- //Carousel Item.1 --> 
+      
+      <!-- Carousel Item.2 -->
+      
+      <!-- //Carousel Item.2 --> 
+      
+      <!-- Carousel Item.3 -->
+            
+<!-- //Carousel Item.3 -->
+
+      <!-- Carousel Item.4 -->
+
+      <!-- //Carousel Item.4 --> 
+
+      <!-- Carousel Item.5 -->
+      
+      <!-- //Carousel Item.5 --> 
+
+      
+    <img src="./dgone2_files/icon_right.svg" id="mainCalNext" class="slick-arrow" style="display: block;"><ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 4" tabindex="-1">4</button></li></ul></div>
+    <!-- Carousel Thumbnails -->
+    <div id="subNav" class="slider slider-navi thumb slick-initialized slick-slider">
+      <div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 2772px; transform: translate3d(-693px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/playstation-mainvisual-pc.png" alt="PlayStation®"> </div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/kingdom-hearts-iii-pc.png" alt="KINGDOM HEARTS III"> </div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/days-gone-pc.png" alt="Days Gone"> </div><div class="slick-slide slick-cloned slick-active" data-slick-index="-1" aria-hidden="false" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/marvels-spider-man-pc.png" alt="Marvel&#39;s Spider-man"> </div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style="width: 231px;" tabindex="0"> <img class="pc" src="./dgone2_files/playstation-mainvisual-pc.png" alt="PlayStation®"> </div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 231px;" tabindex="0"> <img class="pc" src="./dgone2_files/kingdom-hearts-iii-pc.png" alt="KINGDOM HEARTS III"> </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 231px;" tabindex="0"> <img class="pc" src="./dgone2_files/days-gone-pc.png" alt="Days Gone"> </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/marvels-spider-man-pc.png" alt="Marvel&#39;s Spider-man"> </div><div class="slick-slide slick-cloned slick-center" data-slick-index="4" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/playstation-mainvisual-pc.png" alt="PlayStation®"> </div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/kingdom-hearts-iii-pc.png" alt="KINGDOM HEARTS III"> </div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/days-gone-pc.png" alt="Days Gone"> </div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 231px;" tabindex="-1"> <img class="pc" src="./dgone2_files/marvels-spider-man-pc.png" alt="Marvel&#39;s Spider-man"> </div></div></div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+<!--Carousel End-->
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+             Garansi PlayStation 4 di Indonesia
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  all-pull-right  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/Indonesia Warranty Campaign.jpg" data-sm-src="/content/dam/pscom/sea/campaign/id-warranty/Indonesia Warranty Campaign.jpg" data-xs-src="/content/dam/pscom/sea/campaign/id-warranty/Indonesia Warranty Campaign.jpg" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>&nbsp;</p>
+<p>Dengan Sistem Garansi baru, para pengguna di Indonesia akan dapat menikmati manfaat berikut:</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Produk <i>Authentic Official</i> (Asli Resmi) – Produk Resmi PlayStation akan memiliki stiker hologram yang menyatakan “Produk Resmi Indonesia”</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lebih dari 50 Pusat Layanan di seluruh Indonesia – Pengguna dapat membawa Produk Resmi PlayStation mereka ke beragam pusat layanan di Indonesia.</p>
+<p>&nbsp;</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_5bce_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/campaign/id-warranty/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            PlayStation 4
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  all-pull-right  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/playstation-top-article01-20161222.png" data-sm-src="/content/dam/pscom/japan-asia/top/playstation-top-article01-20161222.png" data-xs-src="/content/dam/pscom/japan-asia/top/playstation-top-article01-20161222.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>PS4 system is the home to games with rich, high-fidelity graphics and deeply immersive experiences that shatter expectations.</p>
+<p>Simply hit the SHARE button on the controller to share your gameplay experience to the world, or communicate with your friends online.</p>
+<p>PlayStation exclusives and most immersive games are waiting for you.</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_a1a5_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/ps4/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            PlayStation VR
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/playstation-top-article02-20171002.png" data-sm-src="/content/dam/pscom/japan-asia/top/playstation-top-article02-20171002.png" data-xs-src="/content/dam/pscom/japan-asia/top/playstation-top-article02-20171002.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>PlayStation VR (PS VR) uses a combination of 3D space and independent 3D audio technology to surround the player in a 360° world, giving an incredible level of immersion and a "Sense of Presence" so you will really feel like you are in the game.</p>
+<p>There is also a huge variety of amazing non-game content to enjoy!</p>
+<p>With a great new price, the immersive world of PS VR is now easier than ever to experience!</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_a7c2_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/psvr/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            PlayStation Classic
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  all-pull-right  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/playstation-top-article03-20181212.png" data-sm-src="/content/dam/pscom/japan-asia/top/playstation-top-article03-20181212.png" data-xs-src="/content/dam/pscom/japan-asia/top/playstation-top-article03-20181212.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>PlayStation Classic, a miniature games console that mirrors the look of the original PlayStation and comes preloaded with 20 original games, has launched.</p>
+<p>The design of the PlayStation Classic resembles PlayStation, including the button layout, as well as controllers and outer package, but in a miniature size, it is 45% smaller on the sides and 80% smaller in volume than the original console.</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_bb87_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/psclassic/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            Find Your Perfect Game
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row js-align-height ">
+
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_58fc_sectionParsys_layout_col1_layoutRowParsys_link_container" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/games/2019/kingdom-hearts-iii/en/" target="_parent" class="hover ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row   split-2">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/kingdom-hearts-iii-keyart.png" data-sm-src="/content/dam/pscom/games/2019/kingdom-hearts-iii/kingdom-hearts-iii-keyart.png" data-xs-src="/content/dam/pscom/games/2019/kingdom-hearts-iii/kingdom-hearts-iii-keyart.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 23px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            KINGDOM HEARTS III
+        </h6>
+    
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-center / lg-center pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_58fc_sectionParsys_layout_col1_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/games/2019/kingdom-hearts-iii/en/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_58fc_sectionParsys_layout_col2_layoutRowParsys_link_container" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/games/2019/resident-evil-2/" target="_parent" class="hover hover-light ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row   split-2">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/resident-evil-2-keyart.png" data-sm-src="/content/dam/pscom/games/2019/resident-evil-2/resident-evil-2-keyart.png" data-xs-src="/content/dam/pscom/games/2019/resident-evil-2/resident-evil-2-keyart.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 23px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            RESIDENT EVIL 2
+        </h6>
+    
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-center / lg-center pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_58fc_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/games/2019/resident-evil-2/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style="  background-color: rgba(0, 0, 0, 1.0); background-image: url(&#39;/content/dam/pscom/games/2019/days-gone/days-gone-bg-pc-20190111.png&#39;) ; background-repeat: no-repeat; background-size: auto; background-position:left 20%;" data-xs-style="  background-color: rgba(0, 0, 0, 1.0); background-image: url(&#39;/content/dam/pscom/games/2019/days-gone/days-gone-bg-sp-20190111.png&#39;) ; background-repeat: no-repeat; background-size: 100%; background-position:right 8%;" data-style-origin=" " style="    background-color: rgba(0, 0, 0, 1.0); background-image: url(&#39;/content/dam/pscom/games/2019/days-gone/days-gone-bg-pc-20190111.png&#39;) ; background-repeat: no-repeat; background-size: auto; background-position:left 20%;">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row mrg2-top mrg2-bottom xs-mgr05-top xs-mgr05-bottom ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys">
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1 mrg2-top xs-mgr05-top js-style " data-sm-style="background-color:rgba(31, 31, 31, 0.8); " data-xs-style="background-color:rgba(31, 31, 31, 0.8); " data-style-origin=" " style="  background-color:rgba(31, 31, 31, 0.8); ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style xs-font14 " data-sm-style="color: rgba(255, 255, 255, 1.0); border-bottom-style: none;" data-xs-style="color: rgba(255, 255, 255, 1.0); border-bottom-style: none;" data-style-origin=" " style="  color: rgba(255, 255, 255, 1.0); border-bottom-style: none;">
+            Days Gone
+        </h6>
+    
+
+
+
+</div>
+<div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="color:rgba(255, 255, 255, 1.0);"><p>At its core, Days Gone is about survivors and what makes them human: desperation, loss, madness, betrayal, friendship, brotherhood, regret, love – and hope. It’s about how even when confronted with such enormous tragedy they find a reason to live. Hope never dies.</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_9cd2_sectionParsys_layout_col2_layoutRowParsys_style_container_1aa5_styleParsys_style_container_d1dc_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/games/2019/days-gone/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            PlayStation Network
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/playstation-top-article05-sm-20170302.png" data-sm-src="/content/dam/pscom/japan-asia/top/playstation-top-article05-sm-20170302.png" data-xs-src="/content/dam/pscom/japan-asia/top/playstation-top-article05-sm-20170302.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>With PlayStation Network, you can buy your games, listen to music, or play online multi-player games anytime. PS app for smart phone will enhance your PlayStation experience even more.</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_de23_sectionParsys_layout_col2_layoutRowParsys_style_container_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/psn/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            PlayStation Vita
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  all-pull-right js-align-height ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style center-block" src="./dgone2_files/consoles-psvita-model-2000-aquablue-640px-en.png" data-sm-src="/content/dam/pscom/regional-assets/consoles/psvita/model/2000/aqua-blue/640px/consoles-psvita-model-2000-aquablue-640px-en.png" data-xs-src="/content/dam/pscom/regional-assets/consoles/psvita/model/2000/aqua-blue/640px/consoles-psvita-model-2000-aquablue-640px-en.png" data-sm-style=" " data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   ">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="">Find out why PlayStation Vita is a totally original take on portable gaming. This slim and sleek device also features high-precision dual analog controls for a more immersive gaming experience away from your console and TV.</span>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_6fb7_sectionParsys_layout_896726980_col2_layoutRowParsys_style_container_a4ba_styleParsys_link_button" class="button tracking"><a href="https://asia.playstation.com/en-id/psvita/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="ghost section">
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            About SIE Worldwide Studios
+        </h2>
+    
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="img baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="img-responsive js-img-src js-style " src="./dgone2_files/sie-worldwide-studios-about-image-01.jpg" data-sm-src="/content/dam/pscom/japan-asia/sie-worldwide-studios/sie-worldwide-studios-about-image-01.jpg" data-xs-src="/content/dam/pscom/japan-asia/sie-worldwide-studios/sie-worldwide-studios-about-image-01.jpg" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:100%;">
+
+
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><p>SIE Worldwide Studios is a global development hub, a diverse network of highly successful and passionate game development studios and, above all else, a home for outstanding creative talent.</p>
+<p>We develop and publish a range of exciting new titles each year, created either by our fantastic in-house studios, or in collaboration with independent studios from the wider industry.</p>
+</div>
+
+</div>
+<div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pd1-top ">
+    
+    <div class="parsys styleParsys"><div class="baseComponent link_button section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_index_jcr_content_par_section_f5e4_sectionParsys_layout_e619_col2_layoutRowParsys_style_container_2b7c_styleParsys_link_button_4318" class="button tracking"><a href="https://asia.playstation.com/en-id/sie-worldwide-studios/" target="_parent" class=" " data-style-link="font-weight:normal;" data-style-over="font-weight:normal;"><div class="blue">LEARN MORE</div></a></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
+
+    
+    <div class="parsys sectionParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="section RSS_list">
+            <div id="_content_pscom_id_en_index_jcr_content_par_section_26c6_sectionParsys_layout_col1_layoutRowParsys_rss_list" class="psc-info-row tracking  ">
+                <div class="psc-pos-rel psc-bb-info psc-info-header">
+            
+                    <h3 class="psc-info-title  ">
+                
+                    <span class="inline-block  ">Press Release </span>
+                    
+                    </h3>
+                
+                    <div class="psc-info-button">
+                
+                        <a href="https://asia.playstation.com/en-id/press-releases/" target="_self">MORE</a>
+                    </div>
+                
+                </div>
+            
+                <ul>
+                
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/press-releases/2019/sea/20190403-EverybodysGolfVR/">
+                            <span class="psc-info-date">2019/04/03</span>
+                            <span class="psc-d-block psc-of-hidden">
+        PlayStation®4 Software (PlayStation®VR Required) “Everybody’s Golf VR” will be released on 21st May 2019
+Digital Pre-order starts from 3rd April 2019
+
+        
+        
+        Blu-ray Disc Standard Edition (SRP) at IDR 429,000
+        
+        
+
+        
+        Digital Standard Edition (SRP) at IDR 429,000
+        
+        
+
+        
+        Digital Deluxe Edition (SRP) at IDR 579,000
+        
+        
+
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/press-releases/2019/sea/20190327-BloodAndTruth/">
+                            <span class="psc-info-date">2019/03/27</span>
+                            <span class="psc-d-block psc-of-hidden">
+        PlayStation®4 Software (PlayStation®VR Required)
+“Blood &amp; Truth” will be released on 28th May 2019 
+Digital Pre-order starts from 27th March 2019
+        
+        
+        Blu-ray Disc Standard version (SRP) of IDR 579,000
+        
+        
+
+        
+        Digital Standard version (SRP) of IDR 579,000
+        
+        
+
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/press-releases/2019/sea/20190228-PUBGxHorizonZeroDawnCollaboration/">
+                            <span class="psc-info-date">2019/02/28</span>
+                            <span class="psc-d-block psc-of-hidden">
+        PUBG Adds Horizon Zero Dawn Skins to Celebrate the Two-Year Anniversary of the Acclaimed Open World Adventure
+      </span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="section RSS_list">
+            <div id="_content_pscom_id_en_index_jcr_content_par_section_26c6_sectionParsys_layout_4dfe_col1_layoutRowParsys_rss_list" class="psc-info-row tracking  ">
+                <div class="psc-pos-rel psc-bb-info psc-info-header">
+            
+                    <h3 class="psc-info-title  ">
+                
+                    <span class="inline-block  ">Latest News</span>
+                    
+                    </h3>
+                
+                    <div class="psc-info-button">
+                
+                        <a href="https://asia.playstation.com/en-id/latest-news/" target="_self">MORE</a>
+                    </div>
+                
+                </div>
+            
+                <ul>
+                
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/latest-news/2019/dreams-universe-early-access/">
+                            <span class="psc-info-date">2019/04/11</span>
+                            <span class="psc-d-block psc-of-hidden">
+        Dreams Universe Early Access
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/latest-news/2019/psn-weekly-0405/">
+                            <span class="psc-info-date">2019/04/05</span>
+                            <span class="psc-d-block psc-of-hidden">
+        PSN Weekly Update 5th April 2019
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/latest-news/2019/hands-on-30-minutes-with-marvels-iron-man-vr/">
+                            <span class="psc-info-date">2019/04/02</span>
+                            <span class="psc-d-block psc-of-hidden">
+        Hands on: 30 Minutes with Marvel’s Iron Man VR
+      </span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row  ">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="layoutRowParsys parsys"><div class="section RSS_list">
+            <div id="_content_pscom_id_en_index_jcr_content_par_section_26c6_sectionParsys_layout_2284_col1_layoutRowParsys_rss_list" class="psc-info-row tracking  ">
+                <div class="psc-pos-rel psc-bb-info psc-info-header">
+            
+                    <h3 class="psc-info-title  ">
+                
+                    <span class="inline-block  ">Important notice</span>
+                    
+                    </h3>
+                
+                    <div class="psc-info-button">
+                
+                        <a href="https://asia.playstation.com/en-id/important-notice/" target="_self">MORE</a>
+                    </div>
+                
+                </div>
+            
+                <ul>
+                
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/important-notice/2019/20190401-driveclub/">
+                            <span class="psc-info-date">2019/04/01</span>
+                            <span class="psc-d-block psc-of-hidden">
+        DRIVECLUB™, DRIVECLUB™ VR and DRIVECLUB™ Bikes server decommission notice
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/important-notice/2019/psn-change-of-service-provider/">
+                            <span class="psc-info-date">2019/02/27</span>
+                            <span class="psc-d-block psc-of-hidden">
+        Notice Regarding Change of Service Provider of PlayStation™Network Services
+      </span>
+                        </a>
+                    </li>
+                    <li class="psc-pdt16 psc-pdb16 psc-bb-dot">
+                        <a class="psc-d-block psc-fs14 psc-device-black psc-hover-light psc-sp-icon-info-btn " href="https://asia.playstation.com/en-id/important-notice/2018/20180524/">
+                            <span class="psc-info-date">2018/05/24</span>
+                            <span class="psc-d-block psc-of-hidden">
+        Termination of Dailymotion features on PlayStation®4
+      </span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div class="baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" class="js-style container-fluid section-cnt section-nav" data-sm-style="  background-color: rgba(0, 55, 145, 1.0);" data-xs-style="  background-color: rgba(0, 55, 145, 1.0);" data-style-origin=" " style="    background-color: rgba(0, 55, 145, 1.0);">
+
+    
+    <div class="parsys sectionParsys"><div class="section shared_contents_holder">
+
+	
+
+
+				<div class="par parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-style " data-sm-style="background-color:rgba(0, 55, 145, 1.0); " data-xs-style="background-color:rgba(0, 55, 145, 1.0); " data-style-origin=" " style="  background-color:rgba(0, 55, 145, 1.0); ">
+    
+    <div class="parsys styleParsys"><div class="layout baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box960">
+
+<div class="row js-align-height ">
+
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-align-item " style="height: 128px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style canvas-white xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            Products
+        </h6>
+    
+
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col1_layoutRowParsys_style_container_styleParsys_link_container" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/ps4/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®4</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col1_layoutRowParsys_style_container_styleParsys_link_container_1087018052" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psvr/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®VR</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col1_layoutRowParsys_style_container_styleParsys_link_container_1828011149" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psvita/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®Vita</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col1_layoutRowParsys_style_container_styleParsys_link_container_131f" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psclassic/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®Classic</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col1_layoutRowParsys_style_container_styleParsys_link_container_384751514" class="tracking">
+
+    <a href="https://asia.playstation.com/id/en/ps3" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®3</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-align-item " style="height: 128px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style canvas-white xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            Services
+        </h6>
+    
+
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col2_layoutRowParsys_style_container_styleParsys_link_container" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psn/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation™Network</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col2_layoutRowParsys_style_container_styleParsys_link_container_1087018052" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psn/playstation-store/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation™Store</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col2_layoutRowParsys_style_container_styleParsys_link_container_1828011149" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psn/playstation-music/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation™Music</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col2_layoutRowParsys_style_container_styleParsys_link_container_384751514" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psn/playstation-plus/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®Plus</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col2_layoutRowParsys_style_container_styleParsys_link_container_7686" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/psn/playstation-app/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">PlayStation®App</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-align-item " style="height: 128px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style canvas-white xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            News
+        </h6>
+    
+
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col3_layoutRowParsys_style_container_styleParsys_link_container_d8b1" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/press-releases/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">Press Release</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col3_layoutRowParsys_style_container_styleParsys_link_container_18b3" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/latest-news/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">Latest News</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        
+        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-align-item " style="height: 128px;">
+    
+    <div class="parsys styleParsys"><div class="baseComponent caption section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h6 class="js-style canvas-white xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
+            Support
+        </h6>
+    
+
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col4_layoutRowParsys_style_container_styleParsys_link_container_39aa" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/support/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">Support</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+<div class="link_container baseComponent section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_content_pscom_id_en_common_footerlink_jcr_content_par_style_container_e324_styleParsys_layout_763483401_col4_layoutRowParsys_style_container_styleParsys_link_container" class="tracking">
+
+    <a href="https://asia.playstation.com/en-id/support/warranty-services/" target="_parent" class="hover hover-dark ">
+        
+        
+        <div class="parsys linkContainerParsys"><div class="baseComponent plain_text section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="font12">Warranty Services</span>
+
+</div>
+
+</div>
+
+        
+        
+    </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="ghost section">
+
+</div>
+
+</div>
+
+	</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+            
+            <script type="text/javascript" src="./dgone2_files/clientlibs_psn.min.js.download"></script>
+
+            <div id="footer-load"><div id="footerParts">
+        	<div id="global-footer" class="psc-footer-container psc-bg-footer">
+
+    <div class="psc-footer-row">
+        <ul class="psc-align-center">
+            <li class="psc-cell-footer"><a href="https://asia.playstation.com/en-id/about/browse/">About this site</a></li>
+            <li class="psc-cell-footer"><a href="https://asia.playstation.com/en-id/about/terms-and-conditions/" class="psc-col-white psc-fs12 psc-hover-light">Terms and Conditions</a></li>
+            <li class="psc-cell-footer"><a href="https://asia.playstation.com/en-id/about/privacy-policy/" class="psc-col-white psc-fs12 psc-hover-light">Privacy Policy</a></li>
+            <li class="psc-cell-footer"><a href="https://asia.playstation.com/en-id/about/terms-and-conditions/#intellectual-property" class="psc-col-white psc-fs12 psc-hover-light">Intellectual Property Notices</a></li>
+                        <li class="psc-cell-footer"><a href="https://partners.playstation.net/" class="psc-col-white psc-fs12 psc-hover-light psc-pdr24 psc-icon-blank" target="_blank">Publisher&amp;Developer Relations</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="psc-row-footer">
+
+        <!-- Copyrights -->
+        <div class="psc-align-center">
+            <p class="psc-copyrights">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <div class="psc-row-footer psc-pdt16">
+        <!-- Global Link -->
+        <div class="psc-footer-global">
+            <a class="psc-icon-global" href="https://www.playstation.com/country-selector/">Indonesia (English)</a>
+        </div>
+    </div>
+
+    <!-- SIE Logo -->
+    <div class="psc-row-footer">
+        <a class="psc-footer-sce" href="http://www.sie.com/en/index.html" target="_blank" onclick="var s_c=s_gi(&#39;sonysceijpplaystationcom&#39;); s_c.tl(true,&#39;o&#39;,&#39;FTR_SIEcorpLogo&#39;);">
+            <img src="./dgone2_files/sie_logo.png" alt="Sony Interactive Entertainment">
+        </a>
+    </div>
+</div>
+
+        </div></div>
+            <div id="view-size"></div>
+        </div><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_sne_0" name="destination_publishing_iframe_sne_0_name" src="./dgone2_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe>
+
+        <!-- TOPに戻る -->
+        <div id="back-to-top" class="psc-back-to-top" style="opacity: 1; display: block;">
+	        <img src="./dgone2_files/btn_pagetop.png" alt="">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="./dgone2_files/clientlibs_components.js.download"></script>
+
+<!-- Script Start -->
+<!-- User Insight PCDF Code Start : playstation.com -->
+<script type="text/javascript">
+var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = 51768;
+_uih['lg_id'] = '';
+_uih['fb_id'] = '';
+_uih['tw_id'] = '';
+_uih['uigr_1'] = ''; _uih['uigr_2'] = ''; _uih['uigr_3'] = ''; _uih['uigr_4'] = ''; _uih['uigr_5'] = '';
+_uih['uigr_6'] = ''; _uih['uigr_7'] = ''; _uih['uigr_8'] = ''; _uih['uigr_9'] = ''; _uih['uigr_10'] = '';
+
+/* DO NOT ALTER BELOW THIS LINE */
+/* WITH FIRST PARTY COOKIE */
+(function() {
+var bi = document.createElement('script');bi.type = 'text/javascript'; bi.async = true;
+bi.src = '//cs.nakanohito.jp/b3/bi.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
+})();
+</script>
+<!-- User Insight PCDF Code End : playstation.com -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KSMJF76"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KSMJF76');</script>
+<!-- End Google Tag Manager -->
+
+<iframe id="sso_frame" name="sso_frame" src="./dgone2_files/saved_resource.html" style="display:none"></iframe>
+<script type="text/javascript" src="./dgone2_files/s_code_pscom.js.download"></script>
+
+    
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","220601095020255");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=220601095020255&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1930728400517800");fbq("set","agent","tmgoogletagmanager","1930728400517800");fbq("track","PageView");</script>
+<script id="sb-main" src="./dgone2_files/bootstrap.js.download"></script><link rel="stylesheet" href="./dgone2_files/sb-toolbar-d925b78ef63f0bffac408e74a69b50c9.css" media="all"></body></html>
