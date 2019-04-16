@@ -15,10 +15,10 @@ class crud extends CI_Controller {
 		$data['rebus']= 'mie';
 		$this->load->view('games', $data);
 	}
-	public function acc_setting()
+	public function profile()
 	{
 		$data['rebus']= 'mie';
-		$this->load->view('user_edit', $data);
+		$this->load->view('user_profile', $data);
 	}
 }
 ?>
