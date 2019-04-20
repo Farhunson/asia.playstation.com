@@ -357,7 +357,7 @@ a {text-decoration: none;}
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/games">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -543,38 +543,38 @@ a {text-decoration: none;}
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header">
-        <table style="margin-left:20%; margin-right:20%;">
-          <tr>
-            <td class="buttonpshover" style="padding-right: 150px; padding-left:150px" align="middle">
-              <a href="<?php echo base_url('www.facebook.com'); ?>" style="align-content: center;">
-              <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
-              <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
-            </td>
-            <td class="buttonpshover" style="padding-right:150px;padding-left: 150px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
-              <img src = "<?php echo base_url('img/menu_retailstore.png'); ?>" style="width: 100px " /> <br>
-              <h5 class="fontdropdown"style="text-align:center">Retail Stores</h5></a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table style="width: 100%;">
-                <tr style="border-left: 50px">
-                  <td height="0">
-                    <a class="buttonpshover" href="#"><h5 class="fontdropdown">Newest Releases</h5></a> 
-                  </td>
-                </tr>
-                <tr>
-                  <td height="0">
-                    <a class="buttonpshover" href="#"><h5 class="fontdropdown">Retail Stores</h5></a> 
-                  </td>
-                </tr>
-              </table>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </div>  
+        <div class="container">
+          <div class="buttonpshover" style="margin-left: 25%;margin-top: 1%">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_playstationstore.png');?>"/ style="width: 100px"> <br>
+              <h5 class="fontdropdown">PlayStation™Store</h5></a>
+          </div>
+          <div class="buttonpshover" style="margin-left: 60%;margin-top: 1%;">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_retailstore.png'); ?>" style="width: 100px " /><br>
+            <h5 class="fontdropdown">Retail Stores</h5></a>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 15%;border-top: 1px #609ccd solid;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Newest Releases
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 340px;height: 20px" ></h5>
+          </a>
+        </div>
+        <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Best Multiplayer Games
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 300px;height: 20px" ></h5>
+          </a>
+        </div>
+         <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" class="buttonpshover" href="#!" style="padding: 0">
+            <h5 class="fontdropdown">PS Plus Subscription
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 315px;height: 20px" ></h5>
+          </a>
+        </div>
+        <br><br>
+      </div> 
     </div>
   </div>
   <div style="float:right; padding-right: 20px">
@@ -678,11 +678,12 @@ a {text-decoration: none;}
     </div> 
   </div>
 </br>
+</br>
 <footer class="page-footer font-small indigo " id='foter'>
 
-    <div class="container text-center text-md-left" id='footer'>
+    <div class="container text-center text-md-left" id='footer' >
 
-      <div class="row"style="padding-left : 120px">
+      <div class="row"style="padding-left:  120px">
 
         <br>
         <div class="col-md-3" >

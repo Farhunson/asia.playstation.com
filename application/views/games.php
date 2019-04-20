@@ -47,7 +47,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 13px;
+  padding: 14.5px 13.5px;
   background-color: inherit;
   font: inherit;
   margin: 0;
@@ -242,6 +242,7 @@ body {
 
 #fontfooter:hover {
   color : #00a2ff;
+  text-decoration: none;
 }
 
 #fontfooternothover {
@@ -385,7 +386,7 @@ body {
         </div>
     </nav>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -428,7 +429,7 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/games">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -645,7 +646,7 @@ body {
           </a>
         </div>
         <br><br>
-      </div>  
+      </div> 
     </div>
   </div>
   <div style="float:right; padding-right: 20px">
@@ -806,7 +807,7 @@ body {
 </div>
 <footer class="page-footer font-small indigo " id='foter' style="clear: left;">
     <div class="container text-center text-md-left" id='footer' >
-      <div class="row"style="padding-left: : 100px">
+      <div class="row"style="padding-left : 100px">
         <br>
         <div class="col-md-3" >
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
