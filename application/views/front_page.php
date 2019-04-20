@@ -723,11 +723,11 @@ body {
 	</div>
 </div>
 </br></br></br>
-<footer class="page-footer font-small indigo " id='foter' >
+<footer class="page-footer font-small indigo " id='foter'>
 
     <div class="container text-center text-md-left" id='footer' >
 
-      <div class="row"style="padding-left: : 100px">
+      <div class="row"style="padding-left:  120px">
 
         <br>
         <div class="col-md-3" >

@@ -17,7 +17,8 @@
 body {
   margin: 0;
 }
- 
+
+a {text-decoration: none;} 
 .navbarsa {
   overflow: hidden;
   background-color: #1F1F1F;
@@ -83,6 +84,7 @@ body {
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 .column {
   float: left;
@@ -112,10 +114,12 @@ body {
 .buttonpshover {
   opacity: 1;
   transition: 0.3s;
+  text-decoration: none;
 }
 .buttonpshover :hover {
   color : #00a2ff;
   opacity: 0.6;
+  text-decoration: none;
 }
  
 .signin {
@@ -141,9 +145,11 @@ body {
 
   font-family: "SB SST W20 Roman",sans-serif;
   transition: 0.3s;
+  text-decoration: none;
 }
 #myplaystation:hover {
   color : #00a2ff;
+  text-decoration: none;
 }
 
 #grad1 {
@@ -240,27 +246,59 @@ body {
 }
 
 
-/*#foter{
-   background-color : #0066cc; 
+#foter{
+  /* background-color : #0066cc; */
 
   background: rgba(0, 55, 145, 1.0);
-}*/
-/*#footer{
+}
+#footer{
   text-align : left;
   color : white;
 }
-*/
-/*#footer a{
+
+#footer a{
   color : white;
-}*/
+}
 
-/*#gambarfooter{
-  min-height: 137px;
+#fontfooter {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+#fontfooter:hover {
+  color : #00a2ff;
+  text-decoration: none;
+}
+
+#fontfooternothover {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+
+#fonttitlefooter{
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.1375em;
+  font-weight: 700;
+}
+
+
+#gradfooter {
+  background: linear-gradient(top, transparent 100%, black 50%);
+  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+  background: radial-gradient(at top,#008FEB,#003791,#003791);
+
   background-size: 100% 100%;
-
-  background: url('<?php echo base_url("img/footer2.png");?>') no-repeat; 
-}*/
-
+}
 </style>
 <title>PS4 | Games | PlayStation</title>
 </head>
@@ -570,7 +608,7 @@ body {
   <br>
   <br>
   <br>
-  <div class="flex-container">
+  <div class="flex-container" >
     <div>
       <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article01-20170228.png'); ?>"> <br>
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation 4</h5> <br>
@@ -639,5 +677,116 @@ body {
     <div>
     </div> 
   </div>
+</br>
+<footer class="page-footer font-small indigo " id='foter'>
+
+    <div class="container text-center text-md-left" id='footer'>
+
+      <div class="row"style="padding-left : 120px">
+
+        <br>
+        <div class="col-md-3" >
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®4</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®VR</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Vita</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Classic</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®3</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
+
+          <ul class="list-unstyled" >
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Network</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Store</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Music</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Plus</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®App</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Press Release</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Latest News</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Support</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Warranty Services</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <br>
+      <div class='row' align="middle">
+        <div id='gradfooter'>
+          <br>
+          <a id="fontfooter" href="#!"> About this site </a>
+          |
+          <a id="fontfooter" href="#!"> Terms and Conditions </a>
+          |
+          <a id="fontfooter" href="#!"> Privacy Policy </a>
+          |
+          <a id="fontfooter" href="#!"> Intellectual Property Notices </a>
+          |
+          <a id="fontfooter" href="#!"> Publisher&Developer Relations </a>
+          <br><br>
+          <p id="fontfooter" style="color : #00a2ff">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+          <img src="<?php echo base_url('img/icon_global.png'); ?>" style="width: 16px "/> 
+          <a id="fontfooternothover" href="#!" style="padding-bottom: 0"> Indonesia (English) </a> 
+          <br><br>
+        </div>
+        <div>
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+          </div>
+      </div>
+    </div> 
+  </footer>  
 </body>
 </html>

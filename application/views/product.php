@@ -83,6 +83,7 @@ body {
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
+
 }
 .column {
   float: left;
@@ -123,7 +124,7 @@ body {
   background-color: #5f5b58;
   border: none;
   color: white;
-  font-family: "SB SST W20 Roman",sans-serif;
+  font-family: SB SST W20 Roman,sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 16px;
@@ -209,28 +210,95 @@ body {
 }
 
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1F1F1F;
+  height: 165px;
+  padding: 30px;
+}
 
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 137px;
+  height: 110px;
 
-/*#foter{
-   background-color : #0066cc; 
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.buttonmenu {
+  background-color: white;
+  width: 100%;
+  height: 34px; 
+  color: black;
+  border-bottom-right-radius: 3pt;
+  border-bottom-left-radius:  3pt;
+  border: 0;
+  font-family: MS PGothic;
+  transition: 0.3s;
+}
+
+.buttonmenu:hover {
+  background-color: #00a2ff;
+  color: white;
+
+}
+
+#foter{
+  /* background-color : #0066cc; */
 
   background: rgba(0, 55, 145, 1.0);
-}*/
-/*#footer{
+}
+#footer{
   text-align : left;
   color : white;
 }
-*/
-/*#footer a{
+
+#footer a{
   color : white;
-}*/
+}
 
-/*#gambarfooter{
-  min-height: 137px;
+#fontfooter {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+#fontfooter:hover {
+  color : #00a2ff;
+  text-decoration: none;
+}
+
+#fontfooternothover {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+
+#fonttitlefooter{
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.1375em;
+  font-weight: 700;
+}
+
+
+#gradfooter {
+  background: linear-gradient(top, transparent 100%, black 50%);
+  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+  background: radial-gradient(at top,#008FEB,#003791,#003791);
+
   background-size: 100% 100%;
-
-  background: url('<?php echo base_url("img/footer2.png");?>') no-repeat; 
-}*/
+}
 
 </style>
 <title>PS4 | Games | PlayStation</title>
@@ -502,6 +570,145 @@ body {
     </table>
   </div>
 </div>
+<img style="width: 100%"src="<?php echo base_url('img/product/ps4-top-hero-R-20170302.png'); ?>">
+<div class="flex-container">
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;  border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt;" src="<?php echo base_url('img/product/ps4-top-navigation01-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 >PS4 Features</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation02-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 >Line Up</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation03-20181226.png'); ?>">
+    <button class="buttonmenu"><h5 >Games</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation04-20161201.png'); ?>">
+    <button class="buttonmenu"><h5 >Entertainment</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation05-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 >Accessories</h5></button></a>
+  </div>  
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/footer2.png'); ?>">
+    <button class="buttonmenu"><h5 >Retail Store</h5></button></a>
+  </div>  
+</div>
+</br>
+<footer class="page-footer font-small indigo " id='foter'>
+
+    <div class="container text-center text-md-left" id='footer'>
+
+      <div class="row" style="padding-left: 120px">
+
+        <br>
+        <div class="col-md-3" >
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®4</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®VR</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Vita</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Classic</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®3</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
+
+          <ul class="list-unstyled" >
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Network</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Store</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Music</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Plus</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®App</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Press Release</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Latest News</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mx-auto">
+
+
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Support</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Warranty Services</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <br>
+      <div class='row' align="middle">
+        <div id='gradfooter'>
+          <br>
+          <a id="fontfooter" href="#!"> About this site </a>
+          |
+          <a id="fontfooter" href="#!"> Terms and Conditions </a>
+          |
+          <a id="fontfooter" href="#!"> Privacy Policy </a>
+          |
+          <a id="fontfooter" href="#!"> Intellectual Property Notices </a>
+          |
+          <a id="fontfooter" href="#!"> Publisher&Developer Relations </a>
+          <br><br>
+          <p id="fontfooter" style="color : #00a2ff">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+          <img src="<?php echo base_url('img/icon_global.png'); ?>" style="width: 16px "/> 
+          <a id="fontfooternothover" href="#!" style="padding-bottom: 0"> Indonesia (English) </a> 
+          <br><br>
+        </div>
+        <div>
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+          </div>
+      </div>
+    </div> 
+  </footer>
+</body>
 
 
 
