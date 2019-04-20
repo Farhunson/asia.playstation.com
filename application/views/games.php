@@ -301,6 +301,76 @@ body {
   color: #FFFFFF;
 }
 
+.menugamescontainer {
+  position: relative;
+  color: white;
+}
+
+#titlegame{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 36.4px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.gamelistcontainer{
+  background-color: #EEEEEE;
+  box-sizing: content-box;
+  padding: 1em;
+  position: relative;
+  height: 350px;
+}
+
+.item-gamescontainer{
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 327px;
+}
+
+.fontgametitle{
+  font-size:12px;
+  color: #1F1F1F;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.fontsubgame{
+  font-size:10px;
+  color: #9C9C9C;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.fontpricegame{
+  font-size:10px;
+  color: #1F1F1F;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.button-buy{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 12px;
+  background-color: #ed5f2b;
+  color: white;
+  border: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 100%;
+}
+
+.gamelistcontainer:hover{
+    color : #00a2ff;
+    opacity: 0.8;
+}
+}
 </style>
 <title>PS4 | Games | PlayStation</title>
 </head>
@@ -600,26 +670,146 @@ body {
       </tr>
     </table>
   </div>
-
 </div>
 <div class="gamescontainer">
-    <img style="width: 100%"src="<?php echo base_url('img/ps4-games-mainvisual-pc-20181226.png');?>">
+    <img style="width: 100%"src="<?php echo base_url('img/games/ps4-games-mainvisual-pc-20181226.png');?>">
     <div class="gamesfont">PS4 Games</div>
 </div>
-<div class="box" style="border-color: black;border-width: 50px;border-style: solid;background-color:white">
+<div class="menugamescontainer" style="background-color: #1f1f1f">
+  <br>
+  <a id="menu-games-font" href="#!" style="margin-left: 20%;padding-right: 50px">PS4 Top</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">PS4 Features</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">PS4 Pro Features</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">Line Up</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">Games</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">Entertainment</a>
+  <a id="menu-games-font" href="#!" style="padding-right: 50px">Accessories</a>
+  <br><br>
+  <a id="menu-games-font" href="#!" style="margin-left: 20%;">Accessories</a>
+  <br><br>
 </div>
 </br></br></br>
-<footer class="page-footer font-small indigo " id='foter' >
-
+<h2 id="titlegame" >Game List</h2>
+<div class="box" style="padding-left: 70px">
+  <div class="gamelistcontainer" style="float: left; margin:1%;">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="gamelistcontainer" style="float: left;margin:1%">
+    <div style="width: 170px;">
+    <a href="#!">
+    <div class="item-gamescontainer">
+    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+    <div class="fontsubgame">PS4™</div>
+    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+    <div class="fontsubgame">Sports</div>
+    <div class="fontpricegame">Price</div>
+    <div class="fontpricegame">Rp 745,000</div>
+    <button type="button" class="button-buy">BUY NOW</button>
+    </div>
+    </a>
+    </div>
+  </div>
+</div>
+<footer class="page-footer font-small indigo " id='foter' style="clear: left;">
     <div class="container text-center text-md-left" id='footer' >
-
       <div class="row"style="padding-left: : 100px">
-
         <br>
         <div class="col-md-3" >
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
-
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">PlayStation®4</a>
@@ -639,10 +829,7 @@ body {
           </ul>
 
         </div>
-
         <div class="col-md-3 mx-auto">
-
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
           <ul class="list-unstyled" >
@@ -662,12 +849,9 @@ body {
               <a id="fontfooter" href="#!">PlayStation®App</a>
             </li>
           </ul>
-
         </div>
         <div class="col-md-3 mx-auto">
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
-
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">Press Release</a>
@@ -676,11 +860,8 @@ body {
               <a id="fontfooter" href="#!">Latest News</a>
             </li>
           </ul>
-
         </div>
         <div class="col-md-3 mx-auto">
-
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
           <ul class="list-unstyled">
@@ -691,7 +872,6 @@ body {
               <a id="fontfooter" href="#!">Warranty Services</a>
             </li>
           </ul>
-
         </div>
       </div>
       <br>
