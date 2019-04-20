@@ -47,7 +47,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 13px;
+  padding: 14.5px 13.5px;
   background-color: inherit;
   font: inherit;
   margin: 0;
@@ -227,6 +227,18 @@ body {
   left: 15%;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
 
 /*#foter{
    background-color : #0066cc; 
@@ -264,7 +276,7 @@ body {
     </nav>
 <div>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -458,7 +470,7 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/support">
               <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
@@ -493,7 +505,37 @@ body {
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header">
-        <h2>PSN</h2>
+        <table style="margin-left:20%; margin-right:20%;">
+          <tr>
+            <td class="buttonpshover" style="padding-right: 150px; padding-left:150px" align="middle">
+              <a href="<?php echo base_url('www.facebook.com'); ?>" style="align-content: center;">
+              <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:150px;padding-left: 150px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_retailstore.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">Retail Stores</h5></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table style="width: 100%;">
+                <tr style="border-left: 50px">
+                  <td height="0">
+                    <a class="buttonpshover" href="#"><h5 class="fontdropdown">Newest Releases</h5></a> 
+                  </td>
+                </tr>
+                <tr>
+                  <td height="0">
+                    <a class="buttonpshover" href="#"><h5 class="fontdropdown">Retail Stores</h5></a> 
+                  </td>
+                </tr>
+              </table>
+              <br>
+            </td>
+          </tr>
+        </table>
       </div>  
     </div>
   </div>
@@ -523,6 +565,79 @@ body {
   <div class="supportcontainer">
     <img style="width: 100%"src="<?php echo base_url('img/main visual-pc-01.png'); ?>">
     <div class="supportfont">Support</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="flex-container">
+    <div>
+      <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article01-20170228.png'); ?>"> <br>
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation 4</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article02-20170228.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation VR</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br>      
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article03-20170302.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PSN</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">Change Online ID Support</a>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div>
+      <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article05-20170228.png'); ?>"> <br>
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation Vita</h5>
+      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article07-20170228.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation 3</h5>
+      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">System Update</a>  
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/fix-and-connect.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Fix & Connect</h5>
+      <a class="buttonpshover fontdropdown" href="#">Fix & Connect</a> <br><br>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div>
+      <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/support_icon.png'); ?>"> <br>
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Warranty Services</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">Warranty Services</a>
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article12-20170406.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Retail Store</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">Where to Buy</a>
+    </div>
+    <div>
+      <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article11-20170228.png'); ?>">
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Contact Us</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">Customer Service</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+    </div> 
+  </div>
+  <div class="flex-container">
+    <div>
+      <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article04-jp-20170419.png'); ?>"> <br>
+      <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Manuals</h5> <br>
+      <a class="buttonpshover fontdropdown" href="#">Consoles</a> <br><br>
+      <a class="buttonpshover fontdropdown" href="#">Accessories</a>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div> 
   </div>
 </body>
 </html>
