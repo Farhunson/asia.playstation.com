@@ -217,9 +217,6 @@ body {
     z-index: 1;
 }
 
-
-
-
 #foter{
   /* background-color : #0066cc; */
 
@@ -237,11 +234,30 @@ body {
 #fontfooter {
   position: relative;
   color: white;
+  font-size: 12px;
+  font-weight: 400;
   font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   transition: 0.3s;
 }
+
 #fontfooter:hover {
   color : #00a2ff;
+}
+
+#fontfooternothover {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+
+#fonttitlefooter{
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.1375em;
+  font-weight: 700;
 }
 
 
@@ -713,10 +729,10 @@ body {
 
       <div class="row"style="padding-left: : 100px">
 
-
+        <br>
         <div class="col-md-3" >
 
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Product</h5>
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
 
           <ul class="list-unstyled">
             <li>
@@ -741,7 +757,7 @@ body {
         <div class="col-md-3 mx-auto">
 
 
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
           <ul class="list-unstyled" >
             <li>
@@ -764,7 +780,7 @@ body {
         </div>
         <div class="col-md-3 mx-auto">
 
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News</h5>
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
 
           <ul class="list-unstyled">
             <li>
@@ -779,7 +795,7 @@ body {
         <div class="col-md-3 mx-auto">
 
 
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
           <ul class="list-unstyled">
             <li>
@@ -791,24 +807,31 @@ body {
           </ul>
 
         </div>
-
-
       </div>
-      <div class='row'>
-        <div id='gradfooter'  class='col'>
-          <br><br><br>
+      <br>
+      <div class='row' align="middle">
+        <div id='gradfooter'>
+          <br>
+          <a id="fontfooter" href="#!"> About this site </a>
+          |
+          <a id="fontfooter" href="#!"> Terms and Conditions </a>
+          |
+          <a id="fontfooter" href="#!"> Privacy Policy </a>
+          |
+          <a id="fontfooter" href="#!"> Intellectual Property Notices </a>
+          |
+          <a id="fontfooter" href="#!"> Publisher&Developer Relations </a>
+          <br><br>
+          <p id="fontfooter" style="color : #00a2ff">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+          <img src="<?php echo base_url('img/icon_global.png'); ?>" style="width: 16px "/> 
+          <a id="fontfooternothover" href="#!" style="padding-bottom: 0"> Indonesia (English) </a> 
+          <br><br>
         </div>
+        <div>
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+          </div>
       </div>
-
-
-    </div>
-
-
-  
- 
+    </div> 
   </footer>
-
-
-
 </body>
 </html>
