@@ -22,4 +22,8 @@ class front extends CI_Controller {
 	{
 		$this->load->view('support');
 	}
+	public function games()
+	{
+		$this->load->view('games');
+	}
 }

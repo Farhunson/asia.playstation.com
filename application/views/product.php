@@ -47,7 +47,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 13px;
+  padding: 14.5px 13.5px;
   background-color: inherit;
   font: inherit;
   margin: 0;
@@ -246,6 +246,41 @@ body {
 
 }
 
+#titletext{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 36.4px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.futurecontainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 140px;
+}
+
+.futurecontainer > div {
+  width: 533px;
+  margin: 20px;
+  height: 460px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.btnlearnmore {
+  width: 200px;
+  height: 50px;
+  background-color: #0267BF;
+  border: 0; 
+  color: white;
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+.btnlearnmore:hover {
+  background-color: #00a2ff;
+}
+
 #foter{
   /* background-color : #0066cc; */
 
@@ -357,7 +392,7 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/games">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -543,8 +578,38 @@ body {
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header">
-        <h2>PSN</h2>
-      </div>  
+        <div class="container">
+          <div class="buttonpshover" style="margin-left: 25%;margin-top: 1%">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_playstationstore.png');?>"/ style="width: 100px"> <br>
+              <h5 class="fontdropdown">PlayStation™Store</h5></a>
+          </div>
+          <div class="buttonpshover" style="margin-left: 60%;margin-top: 1%;">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_retailstore.png'); ?>" style="width: 100px " /><br>
+            <h5 class="fontdropdown">Retail Stores</h5></a>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 15%;border-top: 1px #609ccd solid;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Newest Releases
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 340px;height: 20px" ></h5>
+          </a>
+        </div>
+        <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Best Multiplayer Games
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 300px;height: 20px" ></h5>
+          </a>
+        </div>
+         <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" class="buttonpshover" href="#!" style="padding: 0">
+            <h5 class="fontdropdown">PS Plus Subscription
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 315px;height: 20px" ></h5>
+          </a>
+        </div>
+        <br><br>
+      </div> 
     </div>
   </div>
   <div style="float:right; padding-right: 20px">
@@ -597,12 +662,24 @@ body {
     <button class="buttonmenu"><h5 >Retail Store</h5></button></a>
   </div>  
 </div>
-</br>
+</br></br>
+<br>
+<h2 id="titletext" >Welcome to the Future of Play</h2>
+<br>
+<div class="futurecontainer">
+  <div><img style="width: 530px;height: 445px" src="<?php echo base_url('img/product/consoles-ps4-model-2000-640px-02.png'); ?>"></div>
+  <div style="padding-right: 140px">
+    <p><h5 style="font-family: MS PGothic; font-size: 11pt">A sleeker, smaller PS4, delivering awesome gaming power that’s always for the players.</h5></p>
+    <p><h5 style="font-family: MS PGothic; font-size: 11pt ">The freedom to play, share and socialise with your gaming world.</h5></p>
+    <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+  </div>  
+</div>
+<img style="width: 120%;"src="<?php echo base_url('img/product/pc_PS4TOP_05_02_170904_PS4PRO.png'); ?>">
 <footer class="page-footer font-small indigo " id='foter'>
 
-    <div class="container text-center text-md-left" id='footer'>
+    <div class="container text-center text-md-left" id='footer' >
 
-      <div class="row" style="padding-left: 120px">
+      <div class="row"style="padding-left:  120px">
 
         <br>
         <div class="col-md-3" >
@@ -708,9 +785,5 @@ body {
       </div>
     </div> 
   </footer>
-</body>
-
-
-
 </body>
 </html>
