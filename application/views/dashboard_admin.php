@@ -532,7 +532,7 @@ hr {
 
 .btn-menu:hover {opacity: 1}
 </style>
-<title>PS4 | Games | PlayStation</title>
+<title>PS4 | Dashboard | PlayStation</title>
 </head>
 <body>
    <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px;" >
@@ -961,29 +961,15 @@ hr {
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 var modal2 = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-}
-
 var modal3 = document.getElementById('id03');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal3) {
+  if (event.target == modal || event.target == modal2 || event.target == modal3) {
+    modal.style.display = "none";
     modal2.style.display = "none";
+    modal3.style.display = "none";
   }
 }
 </script>
