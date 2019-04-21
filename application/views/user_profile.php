@@ -74,11 +74,27 @@ body {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
   width: 70%;
   border-left: none;
   height: 300px;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
 </style>
 </head>
 <body>
@@ -103,12 +119,188 @@ body {
     </div>
     <div class="col-sm-8">
         <div id="basic" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3>Basic Account Information</h3>
+            <table>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>  
+                  <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title"align='middle'>Name</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-titleee">Gender</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
         </div>
         <div id="security" class="tabcontent">
-            <h3>security</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3>Security</h3>
+            <table>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
         </div>
     </div>
   </div>
