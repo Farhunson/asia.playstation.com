@@ -7,8 +7,11 @@ class crud extends CI_Controller {
 
 	public function create()
 	{
-		$data['rebus']= 'mie';
 		$this->load->view('create_account');
+	}
+	public function create2()
+	{
+		$this->load->view('create_account2');
 	}
 	public function sign_in()
 	{
