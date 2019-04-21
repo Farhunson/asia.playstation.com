@@ -8,7 +8,7 @@ class crud extends CI_Controller {
 	public function create()
 	{
 		$data['rebus']= 'mie';
-		$this->load->view('games', $data);
+		$this->load->view('create_account');
 	}
 	public function sign_in()
 	{

@@ -22,7 +22,7 @@
     	background-repeat: no-repeat;
     	margin: auto;
     	height: 5.6rem;
-    	width: 35%;
+    	width: 45%;
   	}
 
   	#x{
@@ -43,45 +43,47 @@
 
   	.content{
   		background-color: white;
+      display: flex;
+      flex-basis: 1;
+      flex-shrink: 1;
   		margin: auto;
     	height: 600px;
-    	width: 35%;
-
-  	}
-
-  	#ps-logo{
-  		width: 360px;
-  		max-height: 110px;
-  		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
+    	width: 45%;
+      box-sizing: border-box;
+      position: relative;
+      overflow-x:hidden;
+      overflow-y:hidden;
   	}
 
   	#black-text{
   		font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,HiraKakuProN-W3,'Noto Sans CJK JP',sans-serif;
-  		font-size: 14px;
-  		text-align: left;
-  		margin: 0;
+  		font-size: 24px;
+  		text-align: center;
+  		margin: auto;
   		display: block;
-  		padding-top: 30px;
+  		padding-top: 20px;
   		padding-bottom: 6px;
   		width: 320px;
   		min-height: 18px;
   	}
 
   	.content-text{
-  		margin-right: 40px;
-  		margin-left: 40px;
+      padding: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30%;
+
   	}
 
   	#blue-text{
   		font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,HiraKakuProN-W3,'Noto Sans CJK JP',sans-serif;
-  		text-align: left;
+  		text-align: right;
   		font-size: 1.4rem;
     	line-height: 1.8rem;
     	color: #4572ed;
     	cursor: pointer;
     	padding-top: 15px;
+      display: inline;
   	}
 
 	#blue-text:hover{
@@ -103,8 +105,71 @@
 		padding-right: 10px;
 		margin-top: 10%;
 	}
+
+  #img1{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+  }
+
+  .button-start{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    background-color: #5887f5;
+    color: white;
+    border: none;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 40px;
+    width: 350px;
+  }
+
+  #grey-text{
+      font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,HiraKakuProN-W3,'Noto Sans CJK JP',sans-serif;
+      color: #b4b4b4;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      text-align: left;
+      margin: auto;
+      display: inline;
+      padding-top: 20px;
+      padding-bottom: 6px;
+      width: 320px;
+      min-height: 18px;
+    }
+
+    .content-align{
+      text-align: center;
+      margin-top: 10%;
+    }
+
+    #foot-text{
+      font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,HiraKakuProN-W3,'Noto Sans CJK JP',sans-serif;
+      color: #949494;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      text-align: center;
+      display: inline-block;
+      margin-left:45%;
+      margin-top: 1%;
+      background-position: center center;
+    }
+
+    #foot-text:hover{
+      color:#4572ed;
+      text-decoration: none;
+    }    
   </style>
-  <title>Sign In | Sony Entertainment Network</title>
+  <title>Create Account | Sony Entertainment Network</title>
  </head>
  <body>
  	<br><br>
@@ -113,19 +178,27 @@
  			<a href="#!"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
  		</div>
  		<div class="content">
- 			<img id="ps-logo" src="<?php echo base_url('img/login/logo_playstation.png'); ?>">
  			<div class="content-text">
  				<div id="black-text" align="center">
- 				Access many Sony group services, all with one sign-in ID.
+ 				Create Account
  				</div>
- 				<div id="blue-text" align="center">
- 				Learn More
- 				</div>
- 				<div>
- 					<input type="text" name="email" class="input-box" placeholder="Sign-In ID (Email Address)">
- 				</div>
+        <img id="img1"src="<?php echo base_url('img/create_account/image_create_account.png'); ?>">
+        <a href="#!"><button type="button" class="button-start">Start</button></a>
+        <div class="content-align">
+          <div id="grey-text" align="center">
+            Already have an account? 
+            <div id="blue-text" align="center">
+            Sign In
+            </div>
+          </div>
+        </div>
  			</div>
  		</div>
+    <a href="#!">
+      <div id="foot-text">
+        Terms / Privacy / Help
+      </div>
+    </a>
  	</div>
  </body>
  </html>
