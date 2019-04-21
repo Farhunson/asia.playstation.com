@@ -12,8 +12,7 @@ class crud extends CI_Controller {
 	}
 	public function sign_in()
 	{
-		$data['rebus']= 'mie';
-		$this->load->view('games', $data);
+		$this->load->view('login');
 	}
 	public function profile()
 	{
