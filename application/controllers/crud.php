@@ -27,8 +27,12 @@ class crud extends CI_Controller {
 	}
 	public function profile()
 	{
-		$data['rebus']= 'mie';
-		$this->load->view('user_profile', $data);
+		$this->load->view('user_profile');
 	}
+	public function dashboard()
+	{
+		$this->load->view('dashboard_admin');
+	}
+
 }
 ?>
