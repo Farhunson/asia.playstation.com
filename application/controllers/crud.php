@@ -13,6 +13,14 @@ class crud extends CI_Controller {
 	{
 		$this->load->view('create_account2');
 	}
+	public function create3()
+	{
+		$this->load->view('create_account3');
+	}
+	public function create4()
+	{
+		$this->load->view('create_account4');
+	}
 	public function sign_in()
 	{
 		$this->load->view('login');

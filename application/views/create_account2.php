@@ -223,12 +223,6 @@
           <input type="text" name="password" class="input-box" placeholder="Password">
         </div>
         <div class="content-align">
-          <div id="grey-text" align="center">
-            Already have an account? 
-            <div id="blue-text" align="center">
-            Sign In
-            </div>
-          </div>
         </div>
       </div>
     </div>

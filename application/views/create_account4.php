@@ -193,6 +193,25 @@
     border-top: 1px solid #ccc;
     width: auto;
   }
+
+  .button-create{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    background-color: #5887f5;
+    color: white;
+    border: none;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 40px;
+    width: 100%;
+  }
   </style>
   <title>Create Account | Sony Entertainment Network</title>
  </head>
@@ -211,17 +230,18 @@
          <a href="#!"><button type="button" class="button-next">Next</button></a>
           <hr/>
          <div id="black-small-text">
-          Address
+          Online ID
          </div>
          <div>
-          <input type="text" name="address" class="input-box" placeholder="Address">
+          <input type="text" name="username" class="input-box" placeholder="">
         </div>
         <div id="black-small-text">
-          Date of Birth
+          Full Name
          </div>
          <div>
-          <input type="Date" name="password" class="input-box" placeholder="Password">
+          <input type="text" name="fullname" class="input-box" placeholder="Your Name">
         </div>
+        <a href="#!"><button type="button" class="button-create">Create Account</button></a>
       </div>
     </div>
     <a href="#!">
