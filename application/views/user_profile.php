@@ -1,3 +1,5 @@
+
+
 <!doctype HTML>
 <html lang="en">
 <head>
@@ -94,7 +96,35 @@ th, td {
   color: black;
   border: 2px solid #e7e7e7;
 }
+#black-small-text{
+      font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,HiraKakuProN-W3,'Noto Sans CJK JP',sans-serif;
+      font-size: 16px;
+      text-align: left;
+      margin: 0;
+      display: block;
+      padding-top: 5px;
+      width: 320px;
+      min-height: 18px;
+      margin-top: 3%;
+    }
 
+
+
+    .input-box{
+		background-color: white;
+		border-color: rgb(200, 200, 200);
+		border-radius: 0;
+		border-style: solid;
+		border-width: 1px;
+		font-family: Arial;
+		font-size: 16px;
+		height: 48px;
+		margin: 0;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+    margin-top: 1%;
+	}
 </style>
 </head>
 <body>
@@ -122,78 +152,101 @@ th, td {
             <h3>Basic Account Information</h3>
             <table>
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
+                <th>Nama</th>
+                <td><?php echo $name;?></td>
                 <th>  
-                  <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal" data-whatever="@nama">Edit</button>
                   <!-- Modal -->
                   <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog ">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title"align='middle'>Name</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <form method='post' action='<?php echo site_url("crud/edit_nama/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" align='middle'>Name</h4>
+                          </div>
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Full Name
+                            </div>
+                            <div align='middle' >
+                              <input type="text" name="name" class="input-box" placeholder="Full Name">
+                            </div>
+                          </div>
+                          <div align=middle>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="submitbtn" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
               </th>
               </tr>
               <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
+                <th>Gender</th>
+                <td><?php echo $gender;?></td>
                 <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal2" data-whatever="@gender">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                  <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog ">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-titleee">Gender</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <form method='post' action='<?php echo site_url("crud/edit_gender/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-titleee" align=middle>Gender</h4>
+                          </div>
+                          <div class="modal-body">
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Gender
+                            </div>
+                            <div align='middle' >
+                            <select name='gender' class="input-box">
+                              <option value = "-">-</option>
+                              <option value = "Laki-laki">Laki-Laki</option>
+                              <option value = "Perempuan">Perempuan</option>
+                            </select>
+                            </div>
+                          </div>
+                          <div align=middle>
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                              <button type="submit" class="submitbtn1" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td>Lois</td>
-                <td>Griffin</td>
+                <th>Residential Address</th>
+                <td><?php echo $address;?></td>
                 <td>
-                </td>
-              </tr>
-              <tr>
-                <td>Joe</td>
-                <td>Swanson</td>
-                <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal3">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal fade" id="myModal3" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <form method='post' action='<?php echo site_url("crud/edit_address/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" align='middle'>Address</h4>
+                          </div>
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Address
+                            </div>
+                            <div align='middle' >
+                              <input type="text" name="address" class="input-box" placeholder="Alamat">
+                            </div>
+                          </div>
+                          <div align=middle>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="submitbtn" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -205,96 +258,96 @@ th, td {
             <h3>Security</h3>
             <table>
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
+                <th>Sign-In ID</th>
+                <td><?php echo $email;?></td>
                 <th>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal4">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal fade" id="myModal4" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                      <form method='post' action='<?php echo site_url("crud/edit_email/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" align='middle'>Email</h4>
+                          </div>
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Email
+                            </div>
+                            <div align='middle' >
+                              <input type="text" name="email" class="input-box" placeholder="Email">
+                            </div>
+                          </div>
+                          <div align=middle>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="submitbtn" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </th>
               </tr>
               <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
+                <th>Password</th>
+                <td><input type='password' value="<?php echo $password;?>" style='border:0!important'></td>
                 <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal5">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal fade" id="myModal5" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                      <form method='post' action='<?php echo site_url("crud/edit_password/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" align='middle'>Password</h4>
+                          </div>
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Password
+                            </div>
+                            <div align='middle' >
+                              <input type="password" name="password" class="input-box" placeholder="Password">
+                            </div>
+                          </div>
+                          <div align=middle>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="submitbtn" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td>Lois</td>
-                <td>Griffin</td>
+                <th>Phone Number</th>
+                <td><?php echo $phoneNo?></td>
                 <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal5">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal fade" id="myModal5" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Joe</td>
-                <td>Swanson</td>
-                <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal">Edit</button>
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>This is a large modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <form method='post' action='<?php echo site_url("crud/edit_phone/nangem");?>'>
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" align='middle'>Phone Number</h4>
+                          </div>
+                          <div class="modal-body" id='content' >
+                            <div id="black-small-text" margin=20px>
+                              Phone Number
+                            </div>
+                            <div align='middle' >
+                              <input type="password" name="phoneNo" class="input-box" placeholder="Password">
+                            </div>
+                          </div>
+                          <div align=middle>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="submitbtn" onclick="">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -324,6 +377,8 @@ function opensetting(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
 </script>
 
     
