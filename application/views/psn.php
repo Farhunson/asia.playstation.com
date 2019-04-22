@@ -72,7 +72,6 @@
   top: -1000px;
   transition: 0.6s;
 
-
 }
 .dropdownsa:hover .dropdown-contentsa {
   display: inline-block;
@@ -130,71 +129,101 @@
   top: 100px;
 
 }
-    .fontdropdown {
-      font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-      font-weight: 400;
-    }
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 10px;
-      background-color: #ccc;
-      height: 250px;
-    }
 
-    .column a {
-      float: none;
-      color: black;
-      padding: 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
+.fontdropdown {
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 400;
+}
 
-    .column a:hover {
-      background-color: #ddd;
-    }
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    .buttonpshover {
-      opacity: 1;
-      transition: 0.3s;
-    }
-    .buttonpshover :hover {
-      color : #00a2ff;
-      opacity: 0.6;
-    }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
 
-    .signin {
-      position: relative;
-      background-color: #5f5b58;
-      border: none;
-      color: white;
-      font-family: "SB SST W20 Roman",sans-serif;
-      font-weight: bold;
-      text-align: center;
-      font-size: 16px;
-      padding: 5px 14px;
-      margin: 4px 2px;
-      opacity: 0.8;
-      transition: 0.3s;
-    }
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-    .signin:hover {opacity: 1}
+.column a:hover {
+  background-color: #ddd;
+}
 
-    #myplaystation {
-      position: relative;
-      color: white;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-      font-family: "SB SST W20 Roman",sans-serif;
-      transition: 0.3s;
-    }
-    #myplaystation:hover {
-      color : #00a2ff;
-    }
+.buttonpshover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonpshover :hover {
+  color : #00a2ff;
+  opacity: 0.6;
+}
+
+.signin {
+  position: relative;
+  background-color: #5f5b58;
+  border: none;
+  color: white;
+  font-family: "SB SST W20 Roman",sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 14px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.signin:hover {opacity: 1}
+
+
+#myplaystation {
+  position: relative;
+  color: white;
+  font-family: "SB SST W20 Roman",sans-serif;
+  transition: 0.3s;
+}
+
+#myplaystation:hover {
+  color : #00a2ff;
+}
+
+.buycontainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+}
+
+.buycontainer > div {
+  width: 530px;
+  height: 360px;
+  padding: 10px;
+}
+
+.linkcontainer {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+
+}
+
+.linkcontainer > div {
+  width: 300px;
+  height: 80px;
+}
 
 #grad1 {
   background: linear-gradient(bottom, transparent 100%, black 50%);
@@ -210,12 +239,15 @@
 
   background-size: 100% 100%;
 }
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-        height: auto;
-      }
-    }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
 #containersearch {
   width: 35px;
@@ -266,7 +298,58 @@
 }
 
 
+.ps4procontainer {
+  color: white;
+}
 
+.textcontainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-bottom: 500px;
+
+}
+
+.textcontainer > div {
+  padding: 14px;
+  width: 398px;
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 235px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.btnlearnmore {
+  width: 200px;
+  height: 50px;
+  background-color: #0267BF;
+  border: 0; 
+  color: white;
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+.btnlearnmore:hover {
+  background-color: #00a2ff;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 290px;
+  height: 400px;
+  margin: 15px;
+  text-align: center;
+}
+#titletext{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 36.4px;
+  text-align: center;
+}
 
 #foter{
   /* background-color : #0066cc; */
@@ -652,785 +735,80 @@
   </div>
 
 </div>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="<?php echo base_url('img/psn-top-hero-20170201.png');?>" alt="Los Angeles" style="width:100%;">
+
+<img style="width: 100%;position: relative;z-index: 1;"src="<?php echo base_url('img/psn/psn-top-hero-20170201.png'); ?>">
+<div class="ps4procontainer" style="margin-bottom:-400px;z-index: -4;margin-top: 0px">
+  <h2 id="titletext" style="position: relative;padding-top: 80px; margin-bottom: -185px;color: #1F1F1F;" >Experience More with PlayStation Network</h2>
+  <img src="<?php echo base_url('img/psn/spsn2.png'); ?>" style="z-index: -4;margin-right: -20px;margin-left: -190px">
+  <div class="textcontainer" style=" margin-top: -520px">
+    <div>
+      
     </div>
-    <div class="item active">
-
-
-      <img src="<?php echo base_url('img/spsn2.png');?>" alt="Los Angeles" style="width:100%;">
-      <div class="container">
-        <div class="centered"><div class="parsys sectionParsys"><div class="layout baseComponent section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="box960">
-
-            <div class="row mrg2-top mrg2-bottom ">
-
-
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-                <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
-
-                  <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
-                    Experience More with PlayStation Network
-                  </h2>
-
-
-
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-
-
-      </div>
-      <div class="layout baseComponent section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="box960">
-
-          <div class="row mrg2-top mrg2-bottom ">
-
-
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-
-              <div class="layoutRowParsys parsys">
-              </div>
-
-            </div>
-
-
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-
-              <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="pd1 js-style " data-sm-style="background-color:rgba(31, 31, 31, 0.8); " data-xs-style="background-color:rgba(31, 31, 31, 0.8); " data-style-origin=" " style="  background-color:rgba(31, 31, 31, 0.8); ">
-
-                  <div class="parsys styleParsys"><div class="baseComponent section text">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div style="color:rgba(255, 255, 255, 1.0);">
-                      <p>PSN let you play the world live and it is completely FREE! Connect your console to the Internet to enjoy PSN service and expand your entertainment world! Wanna show your great performance in PlayStation games? The PSN trophy function can let your friends know what you win in real time.&nbsp;</p>
-                    </div>
-
-                  </div>
-                  <div class="baseComponent section style_container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="pd1-top ">
-
-                      <div class="parsys styleParsys"><div class="baseComponent link_button section">
-                        <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">ABOUT ACCOUNT</a>
-
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
+    <div style="padding-right: 30px; z-index: 1;   background-color: #000000a3;">
+      <p><h5 style="font-family: MS PGothic; font-size: 11pt">PSN let you play the world live and it is completely FREE! Connect your console to the Internet to enjoy PSN service and expand your entertainment world! Wanna show your great performance in PlayStation games? The PSN trophy function can let your friends know what you win in real time.  </h5></p>
+      <button class="btnlearnmore"><h5>ABOUT ACCOUNT</h5></button>
     </div>
-
-
   </div>
-
-
-
-
 </div>
+<h2 id="titletext" style="position:relative;color: #1F1F1F; background-color: white;z-index: 1; padding-top: 75px; padding-bottom: 40px" >PlayStation Network Services</h2>
+  <div class="flex-container" >
+    <div>
+      <img style="width: 170px;height: 120px; "src="<?php echo base_url('img/psn/menu_playstationstore.png'); ?>"> <br>
+      <h4 style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation Store</h4> <br>
+      <p style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation Store is an all-in-one online store which provides fabulous contents and exclusive offers, from classic games to latest games, add-ons, avatars.... Simply connect your PlayStation 4, PlayStation 3, PlayStation Vita to PSN and you can enjoy all these goodies anytime!</p><br>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    <div>
+      <img style="width: 170px;height: 120px; "src="<?php echo base_url('img/psn/menu_playstationplus.png'); ?>"> <br>
+      <h4 style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation Plus</h4> <br>
+      <p style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">Enhance your account with PlayStation Plus! PS Plus members enjoy access to exclusive gaming features and special offers on PlayStation Store.</p><br><br><br><br>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    <div>
+      <img style="width: 170px;height: 120px; "src="<?php echo base_url('img/psn/menu_playstationmusic.png'); ?>"> <br>
+      <h4 style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation Music</h4> <br>
+      <p style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">Listen to millions of songs on-demand with Spotify, available on your PlayStation 4 system and Xperia™ devices. Play any song, anytime.</p><br><br><br><br>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+  <div class="flex-container" >
+    <div>
+      <img style="width: 170px;height: 120px; "src="<?php echo base_url('img/psn/menu_playstationapp.png'); ?>"> <br>
+      <h4 style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation App</h4> <br>
+      <p style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">PlayStation App will enhance your PlayStation experience with your smartphone or Tablet.</p><br><br><br><br><br>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    <div>
 
-</div></div>
-</div>
-
-
-
-</div>
-<div class="baseComponent section">
-  <div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
-
-
-    <div class="parsys sectionParsys"><div class="layout baseComponent section">
-
-
-      <div class="box960">
-
-        <div class="row  ">
-
-
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
-
-
-              <br><br><br><br><br><br><br><br><br>
-              <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;"><div class="centered">PlayStation Network Services</div></h2>
-
-
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
+    </div>
+    <div>
 
     </div>
   </div>
-  <div class="layout baseComponent section">
-
-    <div class="box960">
-
-      <div class="row js-align-height ">
-
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-          <div class="layoutRowParsys parsys"><div class="layout baseComponent section">
-            <div class="row   split-2">
-
-
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-                <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <div>
-
-                    <div class="parsys styleParsys"><div class="img baseComponent section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      <img class="img-responsive js-img-src js-style center-block" src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner01-sm-20170303.png" data-sm-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner01-sm-20170303.png" data-xs-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner01-sm-20170303.png" data-sm-style=" width:100%;" data-xs-style=" " alt="" title="" data-style-origin=" " style="   width:75%;">
-
-
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-
-              <div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 205px;">
-
-                <div class="parsys styleParsys"><div class="baseComponent caption section">
-
-                  <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
-                    PlayStation Store
-                  </h6>
-
-
-
-
-                </div>
-                <div class="baseComponent section text">
-                  <div><p>PlayStation Store is an all-in-one online store which provides fabulous contents and exclusive offers, from classic games to latest games, add-ons, avatars.... Simply connect your PlayStation 4, PlayStation 3, PlayStation Vita to PSN and you can enjoy all these goodies anytime!</p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-
-
-
+<br><br><br><br><br><br><br>
+<h2 id="titletext" style="position:relative;color: #1F1F1F; background-color: white;" >Ways to Pay</h2>
+<br>
+<div class="buycontainer">
+  <div>
+    <img style="width: 510px" src="<?php echo base_url('img/psn/psn-top-article01-20170223.png'); ?>">
   </div>
-  <div class="baseComponent section style_container">
-    <div class="text-center / lg-center pd1-top ">
-
-      <div class="parsys styleParsys"><div class="baseComponent link_button section">
-        <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">LEARN MORE</a>
-
-
-      </div>
-
-    </div>
-
+  <div>
+    <p style="font-family: 'ＭＳ Ｐゴシック'; font-weight: 400;">How to purchase in PlayStation Store?</p><br>
+    <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
   </div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-  <div class="layoutRowParsys parsys"><div class="layout baseComponent section">
-
-    <div class="row   split-2">
-
-
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-          <div>
-
-            <div class="parsys styleParsys"><div class="img baseComponent section">
-              <img class="img-responsive js-img-src js-style center-block" src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner02-sm-20170303.png" data-sm-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner02-sm-20170303.png" data-xs-src="/https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner02-sm-20170303.png" data-sm-style=" width:100%;" data-xs-style=" " alt="" title="" data-style-origin=" " style="   width:75%;">
-
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-    <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-      <div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 205px;">
-
-        <div class="parsys styleParsys"><div class="baseComponent caption section">
-          <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
-            PlayStation Plus
-          </h6>
-        </div>
-        <div class="baseComponent section text">
-
-          <div><p>Enhance your account with PlayStation Plus! PS Plus members enjoy access to exclusive gaming features and special offers on PlayStation Store.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-</div>
-<div class="baseComponent section style_container">
-  <div class="text-center / lg-center pd1-top ">
-
-    <div class="parsys styleParsys"><div class="baseComponent link_button section">
-
-      <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">LEARN MORE</a>
-
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-  <div class="layoutRowParsys parsys"><div class="layout baseComponent section">
-    <div class="row   split-2">
-
-
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-          <div>
-
-            <div class="parsys styleParsys"><div class="img baseComponent section">
-              <img class="img-responsive js-img-src js-style center-block" src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner05-20170221.png" data-sm-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner05-20170221.png" data-xs-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner05-20170221.png" data-sm-style=" width:100%;" data-xs-style=" " alt=" " title=" " data-style-origin=" " style="   width:75%;">
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-    <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-      <div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 205px;">
-
-        <div class="parsys styleParsys"><div class="baseComponent caption section">
-
-          <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
-            PlayStation Music
-          </h6>
-        </div>
-        <div class="baseComponent section text">
-          <div><p>Listen to millions of songs on-demand with Spotify, available on your PlayStation 4 system and Xperia™ devices. Play any song, anytime.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-
-</div>
-</div>
-<div class="baseComponent section style_container">
-  <div class="text-center / lg-center pd1-top ">
-
-    <div class="parsys styleParsys"><div class="baseComponent link_button section">
-      <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">LEARN MORE</a>
-
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-  <div class="layoutRowParsys parsys"><div class="layout baseComponent section">
-    <div class="row   split-2">
-
-
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-        <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-          <div>
-
-            <div class="parsys styleParsys"><div class="img baseComponent section">
-              <img class="img-responsive js-img-src js-style center-block" src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner06-20170311.png" data-sm-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner06-20170311.png" data-xs-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-banner06-20170311.png" data-sm-style=" width:100%;" data-xs-style=" " alt=" " title=" " data-style-origin=" " style="   width:75%;">
-
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-    <div class="layoutRowParsys parsys"><div class="baseComponent section style_container">
-
-      <div class="text-center / lg-center js-align-item js-align-xs-ignore " style="height: 205px;">
-
-        <div class="parsys styleParsys"><div class="baseComponent caption section">
-
-          <h6 class="js-style xs-font14 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;">
-            PlayStation App
-          </h6>
-
-
-
-
-        </div>
-        <div class="baseComponent section text">
-          <div><p>PlayStation App will enhance your PlayStation experience with your smartphone or Tablet.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-
-</div>
-</div>
-<div class="baseComponent section style_container">
-
-  <div class="text-center / lg-center pd1-top ">
-
-    <div class="parsys styleParsys"><div class="baseComponent link_button section">
-
-      <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">LEARN MORE</a>
-
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
-</div>
-
-
-</div>
-
-
 </div>
 <br><br><br><br>
-<div class="baseComponent section">
-  <div id="" class="js-style container-fluid section-cnt " data-sm-style=" " data-xs-style=" " data-style-origin=" " style="   ">
-
-
-    <div class="parsys sectionParsys"><div class="layout baseComponent section">
-
-      <div class="box960">
-
-        <div class="row mrg2-top mrg2-bottom ">
-
-
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            <div class="layoutRowParsys parsys"><div class="baseComponent caption section">
-
-              <h2 class="js-style lg-center xs-font28 " data-sm-style="border-bottom-style: none;" data-xs-style="border-bottom-style: none;" data-style-origin=" " style="  border-bottom-style: none;"><div class="centered">Ways to Pay</div>
-              </h2>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
+<div class="linkcontainer">
+  <div style="margin-top: 50px">
+    <a style="text-decoration: none;" href="#"><h5 style="font-family: 'ＭＳ Ｐゴシック';">PSN Terms of Service and User Agreement</h5></a>
   </div>
-  <div class="layout baseComponent section">
-
-    <div class="box960">
-
-      <div class="row mrg2-top mrg2-bottom ">
-
-
-        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-
-          <div class="layoutRowParsys parsys"><div class="img baseComponent section">
-
-            <br><br>
-            <center><img class="img-responsive js-img-src js-style " src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-article01-20170223.png" data-sm-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-article01-20170223.png" data-xs-src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation-network/top/psn-top-article01-20170223.png" data-sm-style=" width:100%;" data-xs-style=" width:100%;" alt=" " title=" " data-style-origin=" " style="   width:75%;"></center>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-
-        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
-          <div><p>How to purchase in PlayStation Store?</p>
-          </div>
-
-        </div>
-        <div class="baseComponent section style_container">
-          <div class="pd1-top ">
-
-            <div class="parsys styleParsys"><div class="baseComponent link_button section">
-            
-              <a href="#" class="btn btn-primary" role="button" style="font-size:1vw">LEARN MORE</a>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+  <div style="margin-top: 50px">
+    <a style="text-decoration: none;" href="#"><h5 style="font-family: 'ＭＳ Ｐゴシック';">PSN Privacy Policy</h5></a>
+  </div>
+  <div style="margin-top: 50px"> 
+    <a style="text-decoration: none;" href="#"><h5 style="font-family: 'ＭＳ Ｐゴシック';">Copyright and Trademark Notices</h5></a>
   </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<br><br><br>
-<div class="baseComponent section">
-  <div id="" class="js-style container-fluid section-cnt " data-sm-style="  background-color: rgba(238, 238, 238, 1.0);" data-xs-style="  background-color: rgba(238, 238, 238, 1.0);" data-style-origin=" " style="    background-color: rgba(238, 238, 238, 1.0);">
-
-
-    <div class="parsys sectionParsys"><div class="layout baseComponent section">
-      <div class="box960">
-
-        <div class="row js-align-height ">
-
-
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-            <div class="layoutRowParsys parsys"><div class="baseComponent section text">
-
-              <center><div class="font12"><p><a href="http://legaldoc.dl.playstation.net/ps3-eula/psn/h/h_tosua_en.html" target="_blank" adhocenable="false">PSN Terms of Service and User Agreement</a></p>
-              </div></center>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-          <div class="layoutRowParsys parsys"><div class="baseComponent section text">
-            <div class="font14"><p><a href="http://legaldoc.dl.playstation.net/ps3-eula/psn/h/h_privacy_en.html" target="_blank" adhocenable="false">PSN Privacy Policy</a></p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-        <div class="layoutRowParsys parsys"><div class="baseComponent section text">
-          <div><p><a href="http://legaldoc.dl.playstation.net/ps3-eula/psn/i/i_copyright_en.html" target="_blank" adhocenable="false">Copyright and Trademark Notices</a></p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-
-</div>
-
-
-
-
-</div>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-</br></br></br>
 <footer class="page-footer font-small indigo " id='foter' style="clear: left;">
     <div class="container text-center text-md-left" id='footer' >
       <div class="row"style="padding-left : 100px">
