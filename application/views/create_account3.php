@@ -217,10 +217,10 @@
           <input type="text" name="address" class="input-box" placeholder="Address">
         </div>
         <div id="black-small-text">
-          Date of Birth
+          Phone Number
          </div>
          <div>
-          <input type="Date" name="password" class="input-box" placeholder="Password">
+          <input type="text" name="phoneNo" class="input-box" placeholder="Phone Number">
         </div>
       </div>
     </div>

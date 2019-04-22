@@ -160,7 +160,7 @@ th, td {
                   <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog ">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("crud/edit_nama/nangem");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_nama/1301174515");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Name</h4>
@@ -192,7 +192,7 @@ th, td {
                   <div class="modal fade" id="myModal2" role="dialog">
                     <div class="modal-dialog ">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("crud/edit_gender/nangem");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_gender/1301174515");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-titleee" align=middle>Gender</h4>
@@ -205,8 +205,8 @@ th, td {
                             <div align='middle' >
                             <select name='gender' class="input-box">
                               <option value = "-">-</option>
-                              <option value = "Laki-laki">Laki-Laki</option>
-                              <option value = "Perempuan">Perempuan</option>
+                              <option value = "l">Male</option>
+                              <option value = "p">Female</option>
                             </select>
                             </div>
                           </div>
@@ -229,7 +229,8 @@ th, td {
                   <div class="modal fade" id="myModal3" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("crud/edit_address/nangem");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_address/1301174515");?>'>
+                          <!-- 1301174515 itu user_id -->
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Address</h4>
@@ -266,7 +267,7 @@ th, td {
                   <div class="modal fade" id="myModal4" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                      <form method='post' action='<?php echo site_url("crud/edit_email/nangem");?>'>
+                      <form method='post' action='<?php echo site_url("account/edit_email/1301174515");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Email</h4>
@@ -298,7 +299,7 @@ th, td {
                   <div class="modal fade" id="myModal5" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                      <form method='post' action='<?php echo site_url("crud/edit_password/nangem");?>'>
+                      <form method='post' action='<?php echo site_url("account/edit_password/1301174515");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Password</h4>
@@ -330,7 +331,7 @@ th, td {
                   <div class="modal fade" id="myModal5" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("crud/edit_phone/nangem");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_phone/1301174515");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Phone Number</h4>

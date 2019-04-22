@@ -48,6 +48,11 @@ class front extends CI_Controller {
 		$this->load->view('in_front_page');
 	}
 
+	public function homepage_admin()
+	{
+		$this->load->view('admin_front_page');
+	}
+
 }
 
 
