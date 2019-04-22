@@ -2,11 +2,11 @@
 
 class UserModel extends CI_Model
 {
-  public function login_user($user_id, $password){
-    $this->db->where('user_id',$user_id);
+  public function login_user($email, $password){
+    $this->db->where('email',$email);
     $this->db->where('password',$password);
 
-    $result = $this->db->get('customer');
+    $result = $this->db->get('user');
     if($result->num_rows()==1){
         return $result->row(0);
     }else{

@@ -164,11 +164,11 @@
  				<div id="blue-text" align="center">
  				Learn More
  				</div>
- 				<div>
+ 				<form method='post' action='<?php echo site_url("account/check_login");?>'>
  					<input type="text" name="email" class="input-box" placeholder="Sign-In ID (Email Address)">
           <input type="password" name="password" class="input-box" placeholder="Password">
- 				</div>
-        <a href="<?php echo site_url('front/homepage_user')?>"><button type="button" class="button-signin">Sign In</button></a>
+          <button type="submit" class="button-signin">Sign In</button>
+ 				</form>
         <div id="blue-text" align="center" style="margin-bottom: 5%">
         Trouble Signing In?
         </div>

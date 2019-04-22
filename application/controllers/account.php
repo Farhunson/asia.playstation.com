@@ -2,7 +2,18 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class account extends CI_Controller {
+	function __construct(){
+    	parent::__construct();
+    	$this->load->model('UserModel');
+  	}
 
+  	public function index()
+  	{
+    	if ($this->session->userdata('login')==1) {
+      		redirect('account/index');
+    	}
+    	$this->load->view('login');
+  	}
 	
 	public function create()
 	{
@@ -27,6 +38,25 @@ class account extends CI_Controller {
 	public function sign_in()
 	{
 		$this->load->view('login');
+	}
+
+	public function check_login(){
+		$email = $this->input->post('email');
+    	$password = $this->input->post('password');
+
+    	$login = $this->UserModel->login_user($email, $password);
+
+    	if ($login) {
+      		$sess_data = array(
+          	'logged_in' => 1,
+          	'email' => $login->email
+      		);
+      		$this->session->set_userdata($sess_data);
+      		redirect('front/homepage_user');
+    	} else {
+      		echo "<script>alert('Gagal login: Cek email, password!');</script>";
+      		redirect('account/index');
+    	}
 	}
 
 	public function profile()
