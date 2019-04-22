@@ -16,6 +16,7 @@
  
 body {
   margin: 0;
+  overflow-x: hidden;
 }
  
 .navbarsa {
@@ -859,7 +860,7 @@ body {
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
           </div>
       </div>
     </div> 

@@ -16,6 +16,7 @@
  
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {text-decoration: none;} 
@@ -609,68 +610,68 @@ a {text-decoration: none;}
   <br>
   <br>
   <div class="flex-container" >
-    <div>
+    <div style="text-decoration: none;">
       <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article01-20170228.png'); ?>"> <br>
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation 4</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a>
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article02-20170228.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation VR</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br>      
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a> <br>      
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article03-20170302.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PSN</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">Change Online ID Support</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Change Online ID Support</a>
     </div>
   </div>
   <div class="flex-container">
     <div>
       <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article05-20170228.png'); ?>"> <br>
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation Vita</h5>
-      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a>
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article07-20170228.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">PlayStation 3</h5>
-      <a class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">System Update</a>  
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">User's Guide</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">System Update</a>  
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/fix-and-connect.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Fix & Connect</h5>
-      <a class="buttonpshover fontdropdown" href="#">Fix & Connect</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Fix & Connect</a> <br><br>
     </div>
   </div>
   <div class="flex-container">
     <div>
       <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/support_icon.png'); ?>"> <br>
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Warranty Services</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">Warranty Services</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Warranty Services</a>
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article12-20170406.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Retail Store</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">Where to Buy</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Where to Buy</a>
     </div>
     <div>
       <img style="width: 300px;height: 170px"src="<?php echo base_url('img/support/psn-support-article11-20170228.png'); ?>">
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Contact Us</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">Customer Service</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">FAQ</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Customer Service</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">FAQ</a>
     </div> 
   </div>
   <div class="flex-container">
     <div>
       <img style="width: 300px;height: 170px; "src="<?php echo base_url('img/support/psn-support-article04-jp-20170419.png'); ?>"> <br>
       <h5 style="font-family: SB SST W20 Roman,sans-serif; font-weight: bold;">Manuals</h5> <br>
-      <a class="buttonpshover fontdropdown" href="#">Consoles</a> <br><br>
-      <a class="buttonpshover fontdropdown" href="#">Accessories</a>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Consoles</a> <br><br>
+      <a style="text-decoration: none;" class="buttonpshover fontdropdown" href="#">Accessories</a>
     </div>
     <div>
     </div>
@@ -784,7 +785,7 @@ a {text-decoration: none;}
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
           </div>
       </div>
     </div> 
