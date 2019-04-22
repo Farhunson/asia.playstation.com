@@ -33,77 +33,77 @@ class account extends CI_Controller {
 	{
 		$this->load->model('UserModel');
 		
-		$data=$this->UserModel->get_data('nangem') ;
+		$data=$this->UserModel->get_data('1301174515') ;
 		$this->load->view('user_profile', $data);
 	}
 
-	public function edit_nama($username){
+	public function edit_nama($user_id){
 		$this->load->model('UserModel');
 		$nama = $this->input->post('name');
 	
 		$data_update = array (
 		  'name' => $nama,
 		);
-		$update = $this->UserModel->update_nama($username,$data_update);
+		$update = $this->UserModel->update_nama($user_id,$data_update);
 
 	
 	}
-	public function edit_gender($username){
+	public function edit_gender($user_id){
 		$this->load->model('UserModel');
 		$gender = $this->input->post('gender');
 	
 		$data_update = array (
 		  'gender' => $gender,
 		);
-		$update = $this->UserModel->update_gender($username,$data_update);
+		$update = $this->UserModel->update_gender($user_id,$data_update);
 
 	
 	}
 
-	public function edit_address($username){
+	public function edit_address($user_id){
 		$this->load->model('UserModel');
 		$address = $this->input->post('address');
 	
 		$data_update = array (
 		  'address' => $address,
 		);
-		$update = $this->UserModel->update_address($username,$data_update);
+		$update = $this->UserModel->update_address($user_id,$data_update);
 
 	
 	}
 
-	public function edit_email($username){
+	public function edit_user_id($user_id){
 		$this->load->model('UserModel');
-		$address = $this->input->post('email');
+		$address = $this->input->post('user_id');
 	
 		$data_update = array (
-		  'email' => $email,
+		  'user_id' => $user_id,
 		);
-		$update = $this->UserModel->update_email($username,$data_update);
+		$update = $this->UserModel->update_user_id($user_id,$data_update);
 
 	
 	}
 
-	public function edit_password($username){
+	public function edit_password($user_id){
 		$this->load->model('UserModel');
 		$address = $this->input->post('password');
 	
 		$data_update = array (
 		  'password' => $password,
 		);
-		$update = $this->UserModel->update_email($username,$data_update);
+		$update = $this->UserModel->update_user_id($user_id,$data_update);
 
 	
 	}
 
-	public function edit_phone($username){
+	public function edit_phone($user_id){
 		$this->load->model('UserModel');
 		$address = $this->input->post('phoneNo');
 	
 		$data_update = array (
 		  'phoneNo' => $phoneNo,
 		);
-		$update = $this->UserModel->update_phone($username,$data_update);
+		$update = $this->UserModel->update_phone($user_id,$data_update);
 
 	
 	}
