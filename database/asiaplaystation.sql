@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2019 at 07:51 PM
+-- Generation Time: Apr 22, 2019 at 06:54 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -29,9 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `admin_id` varchar(10) NOT NULL,
-  `admin_email` varchar(30) NOT NULL,
-  `admin_password` varchar(30) NOT NULL
+  `user_id` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -42,8 +40,24 @@ CREATE TABLE `admin` (
 
 CREATE TABLE `buy` (
   `buy_id` varchar(10) NOT NULL,
-  `username` varchar(30) NOT NULL,
+  `user_id` varchar(10) NOT NULL,
   `games_id` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `user_id` int(11) NOT NULL,
+  `name` int(11) NOT NULL,
+  `username` int(11) NOT NULL,
+  `address` int(11) NOT NULL,
+  `avatar` int(11) NOT NULL,
+  `phoneNo` int(11) NOT NULL,
+  `gender` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -72,7 +86,7 @@ CREATE TABLE `games` (
 
 CREATE TABLE `manage_games` (
   `managegames_id` varchar(10) NOT NULL,
-  `admin_id` varchar(10) NOT NULL,
+  `user_id` varchar(10) NOT NULL,
   `games_id` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -84,7 +98,7 @@ CREATE TABLE `manage_games` (
 
 CREATE TABLE `manage_news` (
   `managenews_id` varchar(10) NOT NULL,
-  `admin_id` varchar(10) NOT NULL,
+  `user_id` varchar(10) NOT NULL,
   `news_id` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -109,14 +123,9 @@ CREATE TABLE `news` (
 --
 
 CREATE TABLE `user` (
-  `username` varchar(30) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `address` varchar(70) NOT NULL,
-  `phoneNo` varchar(12) NOT NULL,
-  `gender` varchar(1) NOT NULL,
-  `avatar` varchar(50) NOT NULL
+  `user_id` varchar(10) NOT NULL,
+  `email` int(11) NOT NULL,
+  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -127,7 +136,7 @@ CREATE TABLE `user` (
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`admin_id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `buy`
@@ -163,7 +172,7 @@ ALTER TABLE `news`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`username`);
+  ADD PRIMARY KEY (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
