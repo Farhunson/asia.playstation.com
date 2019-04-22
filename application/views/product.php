@@ -60,16 +60,48 @@ body {
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
+  padding-bottom: 30px;
   opacity :1;
   transform: translateY(0);
 }
- 
 .dropdown-contentsa {
   display: none;
   position: absolute;
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
+}
+ 
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
 }
  
 .dropdown-contentsa .header {
@@ -77,9 +109,27 @@ body {
   color: white;
   /*margin-top: 10px;*/
 }
- 
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
 .dropdownsa:hover .dropdown-contentsa {
-  display: block;
+  display: inline-block;
+  top: 100px;
+
 }
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -160,6 +210,13 @@ body {
     width: 100%;
     height: auto;
   }
+}
+
+.morebutton {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  background-position: right;
+  float: right;
 }
 
 #containersearch {
@@ -942,6 +999,20 @@ body {
 
   </div>
 </div>
+<br><br>
+<div style="margin-left: 18%;margin-right: 18%;background-color: red">
+  <h6 class="js-style xs-font14 " style="font-size: 1.2em; font-weight: 400; padding-top: 10px;float: left;">System Update</h6>
+  <div class="morebutton">
+    <a href="#" style="text-decoration: none;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック'; display: inline-block;" >MORE</h5>
+      <img src="<?php echo base_url('img/product/icon_link.svg'); ?>">
+    </a>
+  </div>
+  <div>
+    
+  </div>
+</div>
+<br><br><br><br>
 <footer class="page-footer font-small indigo " id='foter'>
 
     <div class="container text-center text-md-left" id='footer'>

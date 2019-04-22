@@ -26,6 +26,7 @@ body {
   height: 65px;
   padding-left: 6px;
   border-radius: 0px;
+
   
 }
  
@@ -41,6 +42,7 @@ body {
 .dropdownsa {
   float: left;
   overflow: hidden;
+
 }
  
 .dropdownsa .dropbtnsa {
@@ -60,6 +62,7 @@ body {
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
+  padding-bottom: 30px;
   opacity :1;
   transform: translateY(0);
 }
@@ -70,16 +73,23 @@ body {
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
 }
  
 .dropdown-contentsa .header {
   /*padding: 16px;*/
   color: white;
   /*margin-top: 10px;*/
+
 }
  
 .dropdownsa:hover .dropdown-contentsa {
-  display: block;
+  display: inline-block;
+  top: 100px;
+
 }
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;

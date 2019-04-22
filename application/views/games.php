@@ -60,16 +60,47 @@ body {
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
+  padding-bottom: 30px;
   opacity :1;
   transform: translateY(0);
 }
- 
 .dropdown-contentsa {
   display: none;
   position: absolute;
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
+}
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
 }
  
 .dropdown-contentsa .header {
@@ -78,8 +109,27 @@ body {
   /*margin-top: 10px;*/
 }
  
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
 .dropdownsa:hover .dropdown-contentsa {
-  display: block;
+  display: inline-block;
+  top: 100px;
+
 }
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
