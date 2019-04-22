@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 11:03 PM
+-- Generation Time: Apr 23, 2019 at 12:28 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -32,6 +32,13 @@ CREATE TABLE `admin` (
   `user_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`user_id`) VALUES
+(1301174516);
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +65,13 @@ CREATE TABLE `customer` (
   `phoneNo` varchar(12) NOT NULL,
   `username` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`user_id`, `address`, `gender`, `name`, `phoneNo`, `username`) VALUES
+(1301174515, 'Sukabirus', 'Male', 'Farhun Suhanto', '085751457739', 'farhunson');
 
 -- --------------------------------------------------------
 
@@ -128,6 +142,14 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `email`, `password`) VALUES
+(1301174515, 'cust1@gmail.com', '123'),
+(1301174516, 'admin1@gmail.com', '123');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -193,7 +215,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1301174517;
 
 --
 -- AUTO_INCREMENT for table `buy`
@@ -205,7 +227,7 @@ ALTER TABLE `buy`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1301174518;
 
 --
 -- AUTO_INCREMENT for table `games`
@@ -235,7 +257,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1301174522;
 
 --
 -- Constraints for dumped tables
