@@ -219,6 +219,17 @@ body {
   float: right;
 }
 
+.fontnews {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.fontnews:hover {
+  color : #00a2ff;
+  text-decoration: none;
+}
+
 #containersearch {
   width: 35px;
   height: 35px;
@@ -402,7 +413,7 @@ body {
   padding: 15px;
   width: 400px;
   margin: 20px;
-  height: 200px;
+  height: 215px;
   line-height: 75px;
   font-size: 30px;
 }
@@ -848,8 +859,8 @@ body {
 <div class="ps4procontainer" style=" margin-top: -100px;margin-bottom:-420px">
   <h2 id="titletext" style="position: relative; padding-top: 90px; margin-bottom: -130px;color: white;" >Entertainment on PlayStation 4</h2>
   <img src="<?php echo base_url('img/product/ps4-top-article12-bg-20170224.png'); ?>" style="width:100%;z-index: -4;">
-  <div class="textcontainer" style=" margin-top: -650px">
-    <div style="padding-right: 10px; z-index: 1;   background-color: #000000a3;">
+  <div class="textcontainer" style=" margin-top: -720px">
+    <div style="padding-right: 30px; z-index: 1;   background-color: #000000a3;">
       <p><h5 style="font-family: MS PGothic; font-size: 11pt">A built-in Blu-ray Disc player, plus an incredible range of entertainment apps are available whenever you want them. </h5></p>
       <p><h5 style="font-family: MS PGothic; font-size: 11pt ">All the greatest TV, movies, music, and more from your favourite entertainment apps.</h5></p>
       <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
@@ -999,20 +1010,52 @@ body {
 
   </div>
 </div>
-<br><br>
-<div style="margin-left: 18%;margin-right: 18%;background-color: red">
-  <h6 class="js-style xs-font14 " style="font-size: 1.2em; font-weight: 400; padding-top: 10px;float: left;">System Update</h6>
+<br><br><br><br><br><br><br>
+<div style="margin-left: 18.5%;margin-right: 18.5%;">
+  <h6 class="js-style xs-font14 " style="font-size: 1.2em; font-weight: 400;float: left;">System Update</h6>
   <div class="morebutton">
     <a href="#" style="text-decoration: none;">
       <h5 style="font-family: 'ＭＳ Ｐゴシック'; display: inline-block;" >MORE</h5>
       <img src="<?php echo base_url('img/product/icon_link.svg'); ?>">
     </a>
   </div>
+  <br>
+  <hr style="border:1.5px solid black;">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2019/03/28</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">About PlayStation 4 system software version 6.51</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2019/03/07</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">About PlayStation 4 system software version 6.50</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2018/12/12</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">System Software Update 6.20 for PlayStation 4 Systems</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">  
+  <br><br><br>
   <div>
-    
+    <h4 style="font-family: 'ＭＳ Ｐゴシック'">Beta Tester Registration</h4>
+    <br>
+    <p style="font-family: 'ＭＳ Ｐゴシック'">You may register to participate in beta programs for PlayStation. Upon registration, you will receive an invitation to join the beta programs of PlayStation system software, applications or network services.</p>
+  </div>
+  <br><br>
+  <div style="text-align: center;">
+    <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
   </div>
 </div>
+
 <br><br><br><br>
+
 <footer class="page-footer font-small indigo " id='foter'>
 
     <div class="container text-center text-md-left" id='footer'>
