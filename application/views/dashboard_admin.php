@@ -16,7 +16,6 @@
  
 body {
   margin: 0;
-  overflow-x: hidden;
 }
  
 .navbarsa {
@@ -262,9 +261,278 @@ body {
   font-weight: 700;
 }
 
+.container-fluid {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+#text-on-img {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.gamescontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.gamesfont {
+  position: absolute;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 45pt;
+  top: 40%;
+  left: 20%;
+}
+
+#menu-games{
+  background-color: #1F1F1F;
+}
+
+#menu-games-font{
+  color: #98AAA9;
+  font-family: 'ＭＳ Ｐゴシック';
+  font-weight: 400;
+}
+
+#menu-games-font:hover{
+  color: #FFFFFF;
+}
+
+.menugamescontainer {
+  position: relative;
+  color: white;
+}
+
+#titlegame{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 36.4px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.gamelistcontainer{
+  background-color: #EEEEEE;
+  box-sizing: content-box;
+  padding: 1em;
+  position: relative;
+  height: 400px;
+}
+
+.item-gamescontainer{
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 327px;
+}
+
+.fontgametitle{
+  font-size:14px;
+  color: #1F1F1F;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.fontsubgame{
+  font-size:12px;
+  color: #9C9C9C;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.fontpricegame{
+  font-size:12px;
+  color: #1F1F1F;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.button-delete{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  display: block;
+  margin-left: auto;
+  width: 50%;
+}
+
+.button-edit{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 12px;
+  background-color: #ed5f2b;
+  color: white;
+  border: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 100%;
+}
+
+
+
+.btn-menu {
+  position: relative;
+  background-color: rgba(0, 55, 145, 1.0);
+  border: none;
+  color: white;
+  font-family: "SB SST W20 Roman",sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 14px;
+  margin-left: 35%;
+  margin-top: 2%;
+  margin-bottom:1%;
+  opacity: 0.8;
+  transition: 0.3s;
+  width: 30%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .submitbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .submitbtn {
+     width: 100%;
+  }
+}
+
+.img-delete{
+  width: 20%;
+  margin-bottom: 1%;
+  margin-top: 20%;
+  margin-left: 25%;
+  margin-right: auto;
+}
+
+.img-edit{
+  width: 20%;
+  margin-bottom: 1%;
+  margin-top: 20%;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+.img-delete:hover, .img-edit:hover{opacity: 0.5}
+
+.btn-menu:hover {opacity: 1}
 </style>
-<title>PS4 | Games | PlayStation</title>
+<title>PS4 | Dashboard | PlayStation</title>
 </head>
 <body>
    <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px;" >
@@ -277,7 +545,7 @@ body {
         </div>
     </nav>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -544,11 +812,10 @@ body {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Dashboard</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <a href="<?php echo site_url('account/sign_in')?>">
-          <button class="signin">Sign In</button></a>
+          <button class="signin">Log Out</button>
         </td>
         <td >
           <FORM id="containersearch" >
@@ -563,210 +830,158 @@ body {
       </tr>
     </table>
   </div>
-
 </div>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<!---topnav-->
+</br></br></br>
+<h2 id="titlegame" >Dashboard</h2>
+<button class="btn-menu" onclick="document.getElementById('id01').style.display='block'" >Add New Games</button>
+<button class="btn-menu" onclick="document.getElementById('id03').style.display='block'">Show Game List</button>
+<button class="btn-menu" onclick="document.getElementById('id02').style.display='block'">Post News</button>
+<button class="btn-menu">Show All News</button>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="<?php echo base_url('img/spidey.png');?>" alt="Los Angeles" style="width:100%;">
-      </div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Add New Games</h1>
+      <p>Please fill in this form to add a game.</p>
+      <hr>
+      <label for="game_title"><b>Game Title</b></label>
+      <input type="text" placeholder="Enter Game Title" name="game_title" required>
 
-      <div class="item">
-        <img src="<?php echo base_url('img/kindom.png');?>" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="<?php echo base_url('img/dgone.png');?>" alt="New york" style="width:100%;">
+      <label for="genre"><b>Genre</b></label>
+      <input type="text" placeholder="Enter Genre" name="genre" required>
+
+      <label for="release_date"><b>Release Date</b></label>
+      <br>
+      <input type="date" placeholder="" name="release_date" required>
+      <br><br>
+
+      <label for="provider"><b>Provider</b></label>
+      <input type="text" placeholder="Enter Provider" name="provider" required>
+
+      <label for="size"><b>Size</b></label>
+      <input type="text" placeholder="Enter Size (GB)" name="size" required>
+
+      <label for="price"><b>Price</b></label>
+      <input type="text" placeholder="Enter Price (Rp)" name="price" required>
+
+      <label for="picture"><b>Picture</b></label>
+      <input type="file" name="picture" id="picture">
+
+      <br><br>
+      <label for="desc"><b>Description</b></label>
+      <br>
+      <textarea name="desc" placeholder="Enter Description" name="desc" required></textarea>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="submitbtn">Submit</button>
       </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-<div class="container">
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">Garansi PlayStation 4 di Indonesia</h1>
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" ><p>&nbsp;</p>
-			<p>Dengan Sistem Garansi baru, para pengguna di Indonesia akan dapat menikmati manfaat berikut:</p>
-			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Produk <i>Authentic Official</i> (Asli Resmi) – Produk Resmi PlayStation akan memiliki stiker hologram yang menyatakan “Produk Resmi Indonesia”</p>
-			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lebih dari 50 Pusat Layanan di seluruh Indonesia – Pengguna dapat membawa Produk Resmi PlayStation mereka ke beragam pusat layanan di Indonesia.</p>
-			<p>&nbsp;</p>
-			</div>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/indo.jpg');?>" width=100% height=100%>
-		</div> 		
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation 4</h1>
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PS4 system is the home to games with rich, high-fidelity graphics and deeply immersive experiences that shatter expectations.</p>
-					<p>Simply hit the SHARE button on the controller to share your gameplay experience to the world, or communicate with your friends online.</p>
-					<p>PlayStation exclusives and most immersive games are waiting for you.</p>
-				</div></br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/luol.png');?>" width=100% height=100%>
-		</div> 		
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation VR</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/vr.png');?>" width=100% height=100%>
-		</div> 		
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PlayStation VR (PS VR) uses a combination of 3D space and independent 3D audio technology to surround the player in a 360° world, giving an incredible level of immersion and a &quot;Sense of Presence&quot; so you will really feel like you are in the game.</p>
-					<p>There is also a huge variety of amazing non-game content to enjoy!</p>
-					<p>With a great new price, the immersive world of PS VR is now easier than ever to experience!</p>
-				</div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Classic</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PlayStation Classic, a miniature games console that mirrors the look of the original PlayStation and comes preloaded with 20 original games, has launched.</p>
-					<p>The design of the PlayStation Classic resembles PlayStation, including the button layout, as well as controllers and outer package, but in a miniature size, it is 45% smaller on the sides and 80% smaller in volume than the original console.</p>
-				</div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/classic.png');?>" width=100% height=100%>
-		</div> 		
-	</div>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">Find Your Perfect Game</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6" align='middle'>
-			<img src="<?php echo base_url('img/kindom2.png');?>" width=100% height=100%>
-			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div>
-		<div class="col-sm-6" align='middle'>
-			<img src="<?php echo base_url('img/re2.png');?>" width=100% height=100%>
-			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div> 		
-	</div>
-  <div class="row">
-		<div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Network</h1>	
-		</div>
-	</div>
-	<div class="row">
-    <div class="col-sm-6">
-			<img src="<?php echo base_url('img/network.png');?>" width=100% height=100%>
-		</div> 
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <div  >
-        <p>With PlayStation Network, you can buy your games, listen to music, or play online multi-player games anytime. PS app for smart phone will enhance your PlayStation experience even more.</p>
-      </div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>		
-	</div>
-  <div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Vita</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <span class="">Find out why PlayStation Vita is a totally original take on portable gaming. This slim and sleek device also features high-precision dual analog controls for a more immersive gaming experience away from your console and TV.</span>
-
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/psvita.png');?>" width=100% height=100%>
-		</div> 		
-	</div>
-  <div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">About SIE Worldwide Studios</h1>	
-		 </div>
-	</div>
-	<div class="row">
-    <div class="col-sm-6">
-			<img src="<?php echo base_url('img/sie.jpg');?>" width=100% height=100%>
-		</div> 		
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <div  >
-        <p>SIE Worldwide Studios is a global development hub, a diverse network of highly successful and passionate game development studios and, above all else, a home for outstanding creative talent.</p>
-        <p>We develop and publish a range of exciting new titles each year, created either by our fantastic in-house studios, or in collaboration with independent studios from the wider industry.</p>
-      </div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-	</div>
+  </form>
 </div>
-</br></br></br>
-<footer class="page-footer font-small indigo " id='foter'>
 
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Post News</h1>
+      <p>Please fill in this form to post a news.</p>
+      <hr>
+      <label for="news_title"><b>News Title</b></label>
+      <input type="text" placeholder="Enter News Title" name="news_title" required>
+
+      <label for="type"><b>Type</b></label>
+      <select name="type">
+      <option value="press">Press News</option>
+      <option value="latest">Latest News</option>
+      </select>
+
+      <br><br>
+      <label for="news_date"><b>Release Date</b></label>
+      <br>
+      <input type="date" placeholder="" name="news_date" required>
+      <br><br>
+
+      <label for="content"><b>Content</b></label>
+      <br>
+      <textarea name="content" placeholder="Enter News Content" name="content" required></textarea>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="submitbtn">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 align="center">Game List</h1>
+      <hr>
+
+      <div class="gamelistcontainer" style="float: left;margin:1%">
+        <div style="width: 170px;">
+          <div class="item-gamescontainer">
+            <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+            <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+            <div class="fontsubgame">PS4™</div>
+            <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+            <div class="fontsubgame">Sports</div>
+            <div class="fontpricegame">Price</div>
+            <div class="fontpricegame">Rp 745,000</div>
+            <a href="#!"><img class="img-delete" src="<?php echo base_url('img/Dashboard/delete-737-475058.png');?>"/></a>
+            <a href="#!"><img class="img-edit" src="<?php echo base_url('img/Dashboard/box_edit-512.png');?>"/></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gamelistcontainer" style="float: left;margin:1%">
+        <div style="width: 170px;">
+          <div class="item-gamescontainer">
+            <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
+            <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
+            <div class="fontsubgame">PS4™</div>
+            <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
+            <div class="fontsubgame">Sports</div>
+            <div class="fontpricegame">Price</div>
+            <div class="fontpricegame">Rp 745,000</div>
+            <a href="#!"><img class="img-delete" src="<?php echo base_url('img/Dashboard/delete-737-475058.png');?>"/></a>
+            <a href="#!"><img class="img-edit" src="<?php echo base_url('img/Dashboard/box_edit-512.png');?>"/></a>
+          </div>
+        </div>
+      </div>
+  </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+var modal3 = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal || event.target == modal2 || event.target == modal3) {
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+  }
+}
+</script>
+
+<br><br><br></br></br>
+<!---botfot-->
+<footer class="page-footer font-small indigo " id='foter' style="clear: left;">
     <div class="container text-center text-md-left" id='footer' >
-
-      <div class="row"style="padding-left:  120px">
-
+      <div class="row"style="padding-left : 100px">
         <br>
         <div class="col-md-3" >
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
-
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">PlayStation®4</a>
@@ -786,10 +1001,7 @@ body {
           </ul>
 
         </div>
-
         <div class="col-md-3 mx-auto">
-
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
           <ul class="list-unstyled" >
@@ -809,12 +1021,9 @@ body {
               <a id="fontfooter" href="#!">PlayStation®App</a>
             </li>
           </ul>
-
         </div>
         <div class="col-md-3 mx-auto">
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
-
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">Press Release</a>
@@ -823,11 +1032,8 @@ body {
               <a id="fontfooter" href="#!">Latest News</a>
             </li>
           </ul>
-
         </div>
         <div class="col-md-3 mx-auto">
-
-
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
           <ul class="list-unstyled">
@@ -838,7 +1044,6 @@ body {
               <a id="fontfooter" href="#!">Warranty Services</a>
             </li>
           </ul>
-
         </div>
       </div>
       <br>
@@ -861,10 +1066,10 @@ body {
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
           </div>
       </div>
     </div> 
-  </footer> 
+  </footer>
 </body>
 </html>
