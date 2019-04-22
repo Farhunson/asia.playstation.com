@@ -13,4 +13,10 @@ class C_games extends CI_Controller {
 		$data['rebus']= 'mie';
 		$this->load->view('games', $data);
 	}
+
+	public function lilili()
+	{
+		$data['rebus']= 'mie';
+		$this->load->view('view_games', $data);
+	}
 }
