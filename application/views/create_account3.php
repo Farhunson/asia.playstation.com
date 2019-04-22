@@ -193,6 +193,25 @@
     border-top: 1px solid #ccc;
     width: auto;
   }
+
+  .button-create{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    background-color: #5887f5;
+    color: white;
+    border: none;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 40px;
+    width: 100%;
+  }
   </style>
   <title>Create Account | Sony Entertainment Network</title>
  </head>
@@ -207,8 +226,8 @@
         <div id="black-text" align="center">
         Create Account
         </div>
+        <form method='post' action='<?php echo site_url("account/register3");?>'>
         <a href="<?php echo site_url('account/create2')?>"><button type="button" class="button-back">Back</button></a>
-         <a href="<?php echo site_url('account/create4')?>"><button type="button" class="button-next">Next</button></a>
           <hr/>
          <div id="black-small-text">
           Address
@@ -222,6 +241,20 @@
          <div>
           <input type="text" name="phoneNo" class="input-box" placeholder="Phone Number">
         </div>
+        <div id="black-small-text">
+          Online ID
+         </div>
+         <div>
+          <input type="text" name="username" class="input-box" placeholder="">
+        </div>
+        <div id="black-small-text">
+          Full Name
+         </div>
+         <div>
+          <input type="text" name="name" class="input-box" placeholder="Your Name">
+        </div>
+        <button type="submit" class="button-create">Create Account</button>
+      </form>
       </div>
     </div>
     <a href="#!">
