@@ -709,20 +709,20 @@ body {
     </div>
     <table class="table-game" id="desc-game">
       <tr class="table-game">
-        <td style="background-color: #ed5f2b;">Platform: </td>
-        <td style="background-color: white;">PS4™</td>
+        <td style="background-color: #ed5f2b; padding: 3px">Platform: </td>
+        <td style="background-color: white; padding: 3px">PS4™</td>
       </tr>
       <tr class="table-game">
-        <td style="background-color: #ed5f2b;">Genre: </td>
-        <td style="background-color: white;">Sports</td>
+        <td style="background-color: #ed5f2b; padding: 3px">Genre: </td>
+        <td style="background-color: white; padding: 3px">Sports</td>
       </tr>
       <tr class="table-game">
-        <td style="background-color: #ed5f2b;">Price: </td>
-        <td style="background-color: white;">Rp 745,000</td>
+        <td style="background-color: #ed5f2b; padding: 3px">Price: </td>
+        <td style="background-color: white; padding: 3px">Rp 745,000</td>
       </tr>
       <tr class="table-game">
-        <td style="background-color: #ed5f2b;">Description: </td>
-        <td style="background-color: white;">HISTORY WILL REMEMBER
+        <td style="background-color: #ed5f2b; padding: 3px">Description: </td>
+        <td style="background-color: white;padding: 3px">HISTORY WILL REMEMBER
 
 In Tom Clancy’s The Division® 2, the fate of the free world is on the line. 
 

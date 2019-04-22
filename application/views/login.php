@@ -82,6 +82,7 @@
     	color: #4572ed;
     	cursor: pointer;
     	padding-top: 15px;
+      margin-bottom: 10%;
   	}
 
 	#blue-text:hover{
@@ -101,8 +102,46 @@
 		width: 320px;
 		padding-left: 10px;
 		padding-right: 10px;
-		margin-top: 10%;
 	}
+
+  .button-signin{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    background-color: #5887f5;
+    color: white;
+    border: none;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 40px;
+    width: 320px;
+  }
+
+  .button-create{
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+    color: #3c3c3c;
+    border-color: rgb(200, 200, 200);
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 320px;
+  }
   </style>
   <title>Sign In | Sony Entertainment Network</title>
  </head>
@@ -110,7 +149,7 @@
  	<br><br>
  	<div class="container">
  		<div class="header">
- 			<a href="#!"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
+ 			<a href="<?php echo site_url('front/homepage')?>"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
  		</div>
  		<div class="content">
  			<img id="ps-logo" src="<?php echo base_url('img/login/logo_playstation.png'); ?>">
@@ -123,7 +162,13 @@
  				</div>
  				<div>
  					<input type="text" name="email" class="input-box" placeholder="Sign-In ID (Email Address)">
+          <input type="password" name="password" class="input-box" placeholder="Password">
  				</div>
+        <a href="<?php echo site_url('front/homepage')?>"><button type="button" class="button-signin">Sign In</button></a>
+        <div id="blue-text" align="center" style="margin-bottom: 5%">
+        Trouble Signing In?
+        </div>
+        <a href="<?php echo site_url('account/create')?>"><button type="button" class="button-create">Create New Account</button></a>
  			</div>
  		</div>
  	</div>

@@ -219,15 +219,14 @@
  	<br><br>
  	<div class="container">
  		<div class="header">
- 			<a href="#!"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
+ 			<a href="<?php echo site_url('front/homepage')?>"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
  		</div>
  		<div class="content">
       <div class="content-text">
         <div id="black-text" align="center">
         Create Account
         </div>
-        <a href="#!"><button type="button" class="button-back">Back</button></a>
-         <a href="#!"><button type="button" class="button-next">Next</button></a>
+        <a href="<?php echo site_url('account/create3')?>"><button type="button" class="button-back">Back</button></a>
           <hr/>
          <div id="black-small-text">
           Online ID
@@ -241,7 +240,7 @@
          <div>
           <input type="text" name="fullname" class="input-box" placeholder="Your Name">
         </div>
-        <a href="#!"><button type="button" class="button-create">Create Account</button></a>
+        <a href="<?php echo site_url('front/homepage')?>"><button type="button" class="button-create">Create Account</button></a>
       </div>
     </div>
     <a href="#!">

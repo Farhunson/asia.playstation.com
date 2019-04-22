@@ -175,7 +175,7 @@
  	<br><br>
  	<div class="container">
  		<div class="header">
- 			<a href="#!"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
+ 			<a href="<?php echo site_url('front/homepage')?>"><img id="x" src="<?php echo base_url('img/login/download.png'); ?>"></a>
  		</div>
  		<div class="content">
  			<div class="content-text">
@@ -183,7 +183,7 @@
  				Create Account
  				</div>
         <img id="img1"src="<?php echo base_url('img/create_account/image_create_account.png'); ?>">
-        <a href="#!"><button type="button" class="button-start">Start</button></a>
+        <a href="<?php echo site_url('account/create2')?>"><button type="button" class="button-start">Start</button></a>
         <div class="content-align">
           <div id="grey-text" align="center">
             Already have an account? 

@@ -10,6 +10,6 @@ class games extends CI_Controller {
 
 	public function view_game()
 	{
-		$this->load->view('view_games', $data);
+		$this->load->view('view_games');
 	}
 }
