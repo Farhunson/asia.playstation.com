@@ -30,23 +30,16 @@ class UserModel extends CI_Model
     }
   }
 
-  public function role_user($user_id){
-    $this->db->where('user_id',$user_id);
-
-    $result = $this->db->get('admin');
-    if($result->num_rows()==1){
-        return $result->row(0);
+  public function register_user2($user,$data){
+    $insert = $this->db->insert($user, $data);
+    if ($insert){
+      return TRUE;
     }else{
-         $result = $this->db->get('customer');
-         if($result->num_rows()==1){
-            return $result->row(0);
-          } else {
-              return false;
-          }
+      return FALSE;
     }
   }
 
-  public function register_user($customer,$data){
+  public function register_user3($customer,$data){
     $insert = $this->db->insert($customer, $data);
     if ($insert){
       return TRUE;
@@ -54,6 +47,7 @@ class UserModel extends CI_Model
       return FALSE;
     }
   }
+
 
   public function update_nama($user_id,$data){
     $sql = "UPDATE customer

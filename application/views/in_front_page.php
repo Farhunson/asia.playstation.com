@@ -549,8 +549,9 @@ body {
           <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Manage Account</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <a href="<?php echo site_url('front/homepage')?>">
-          <button class="signin">Log Out</button></a>
+          <form method='post' action='<?php echo site_url("account/logout");?>'>
+            <button class="signin" type="submit">Log Out</button></a>
+          </form>
         </td>
         <td >
           <FORM id="containersearch" >

@@ -40,6 +40,58 @@ class account extends CI_Controller {
 		$this->load->view('login');
 	}
 
+	public function dashboard()
+	{
+		$this->load->view('dashboard_admin');
+	}
+
+	public function logout()
+  	{
+    	$this->session->sess_destroy();
+    	redirect('front/index');
+  	}
+
+	public function register2()
+  	{
+    	$this->load->model('UserModel');
+    	$password = $this->input->post('password');
+    	$email = $this->input->post('email');
+    	$table = 'user';
+
+    	$data_insert = array (
+      	'password' => $password,
+      	'email' => $email
+    	);
+
+    	$register2 = $this->UserModel->register_user2($table, $data_insert);
+
+    	if ($register2) {
+     		redirect('account/create3');
+    	}
+  	}
+
+  	public function register3()
+  	{
+    	$this->load->model('UserModel');
+    	$address = $this->input->post('address');
+    	$phoneNo = $this->input->post('phoneNo');
+    	$username = $this->input->post('username');
+    	$name = $this->input->post('name');
+    	$table = 'customer';
+
+    	$data_insert = array (
+      	'address' => $address,
+      	'phoneNo' => $phoneNo,
+      	'username' => $username,
+      	'name' => $name
+    	);
+
+    	$register3 = $this->UserModel->register_user3($table, $data_insert);
+
+    	if ($register3) {
+     		redirect('account/sign_in');
+    	}
+  	}
 
 	public function check_login(){
 		$email = $this->input->post('email');
@@ -145,11 +197,6 @@ class account extends CI_Controller {
 		$update = $this->UserModel->update_phone($user_id,$data_update);
 
 	
-	}
-	
-	public function dashboard()
-	{
-		$this->load->view('dashboard_admin');
 	}
 
 }

@@ -205,8 +205,8 @@ th, td {
                             <div align='middle' >
                             <select name='gender' class="input-box">
                               <option value = "-">-</option>
-                              <option value = "l">Male</option>
-                              <option value = "p">Female</option>
+                              <option value = "Male">Male</option>
+                              <option value = "Female">Female</option>
                             </select>
                             </div>
                           </div>

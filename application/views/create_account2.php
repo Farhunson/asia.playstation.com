@@ -207,8 +207,9 @@
         <div id="black-text" align="center">
         Create Account
         </div>
+        <form method='post' action='<?php echo site_url("account/register2");?>'>
         <a href="<?php echo site_url('account/create')?>"><button type="button" class="button-back">Back</button></a>
-         <a href="<?php echo site_url('account/create3')?>"><button type="button" class="button-next">Next</button></a>
+         <button type="submit" class="button-next">Next</button>
           <hr/>
          <div id="black-small-text">
           Sign-In ID
@@ -222,6 +223,7 @@
          <div>
           <input type="password" name="password" class="input-box" placeholder="Password">
         </div>
+        </form>
         <div class="content-align">
         </div>
       </div>

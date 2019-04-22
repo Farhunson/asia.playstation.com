@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 09:52 AM
+-- Generation Time: Apr 22, 2019 at 11:03 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `user_id` varchar(10) NOT NULL
+  `user_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -39,9 +39,9 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `buy` (
-  `buy_id` varchar(10) NOT NULL,
-  `user_id` varchar(10) NOT NULL,
-  `games_id` varchar(10) NOT NULL
+  `buy_id` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL,
+  `games_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -51,13 +51,12 @@ CREATE TABLE `buy` (
 --
 
 CREATE TABLE `customer` (
-  `user_id` varchar(10) NOT NULL,
+  `user_id` int(10) NOT NULL,
+  `address` varchar(70) NOT NULL,
+  `gender` varchar(10) NOT NULL,
   `name` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `address` varchar(50) NOT NULL,
-  `avatar` varchar(30) NOT NULL,
   `phoneNo` varchar(12) NOT NULL,
-  `gender` varchar(1) NOT NULL
+  `username` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -67,7 +66,7 @@ CREATE TABLE `customer` (
 --
 
 CREATE TABLE `games` (
-  `games_id` varchar(10) NOT NULL,
+  `games_id` int(10) NOT NULL,
   `name` varchar(50) NOT NULL,
   `genre` varchar(20) NOT NULL,
   `release_date` date NOT NULL,
@@ -85,9 +84,9 @@ CREATE TABLE `games` (
 --
 
 CREATE TABLE `manage_games` (
-  `managegames_id` varchar(10) NOT NULL,
-  `user_id` varchar(10) NOT NULL,
-  `games_id` varchar(10) NOT NULL
+  `managegames_id` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL,
+  `games_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -97,9 +96,9 @@ CREATE TABLE `manage_games` (
 --
 
 CREATE TABLE `manage_news` (
-  `managenews_id` varchar(10) NOT NULL,
-  `user_id` varchar(10) NOT NULL,
-  `news_id` varchar(10) NOT NULL
+  `managenews_id` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL,
+  `news_id` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -109,7 +108,7 @@ CREATE TABLE `manage_news` (
 --
 
 CREATE TABLE `news` (
-  `news_id` varchar(10) NOT NULL,
+  `news_id` int(10) NOT NULL,
   `title` varchar(50) NOT NULL,
   `type` varchar(20) NOT NULL,
   `date` date NOT NULL,
@@ -123,9 +122,9 @@ CREATE TABLE `news` (
 --
 
 CREATE TABLE `user` (
-  `user_id` varchar(10) NOT NULL,
-  `email` varchar(10) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `user_id` int(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -142,7 +141,15 @@ ALTER TABLE `admin`
 -- Indexes for table `buy`
 --
 ALTER TABLE `buy`
-  ADD PRIMARY KEY (`buy_id`);
+  ADD PRIMARY KEY (`buy_id`),
+  ADD KEY `games_id_fk` (`games_id`),
+  ADD KEY `user_id_fk3` (`user_id`);
+
+--
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `games`
@@ -154,13 +161,17 @@ ALTER TABLE `games`
 -- Indexes for table `manage_games`
 --
 ALTER TABLE `manage_games`
-  ADD PRIMARY KEY (`managegames_id`);
+  ADD PRIMARY KEY (`managegames_id`),
+  ADD KEY `games_id_fk2` (`games_id`),
+  ADD KEY `user_id_fk4` (`user_id`);
 
 --
 -- Indexes for table `manage_news`
 --
 ALTER TABLE `manage_news`
-  ADD PRIMARY KEY (`managenews_id`);
+  ADD PRIMARY KEY (`managenews_id`),
+  ADD KEY `user_id_fk5` (`user_id`),
+  ADD KEY `news_id_fk` (`news_id`);
 
 --
 -- Indexes for table `news`
@@ -173,6 +184,95 @@ ALTER TABLE `news`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `buy`
+--
+ALTER TABLE `buy`
+  MODIFY `buy_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `games`
+--
+ALTER TABLE `games`
+  MODIFY `games_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `manage_games`
+--
+ALTER TABLE `manage_games`
+  MODIFY `managegames_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `manage_news`
+--
+ALTER TABLE `manage_news`
+  MODIFY `managenews_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `news_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `admin`
+--
+ALTER TABLE `admin`
+  ADD CONSTRAINT `user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `buy`
+--
+ALTER TABLE `buy`
+  ADD CONSTRAINT `games_id_fk` FOREIGN KEY (`games_id`) REFERENCES `games` (`games_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `user_id_fk3` FOREIGN KEY (`user_id`) REFERENCES `customer` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `customer`
+--
+ALTER TABLE `customer`
+  ADD CONSTRAINT `user_id_fk2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `manage_games`
+--
+ALTER TABLE `manage_games`
+  ADD CONSTRAINT `games_id_fk2` FOREIGN KEY (`games_id`) REFERENCES `games` (`games_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `user_id_fk4` FOREIGN KEY (`user_id`) REFERENCES `admin` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `manage_news`
+--
+ALTER TABLE `manage_news`
+  ADD CONSTRAINT `news_id_fk` FOREIGN KEY (`news_id`) REFERENCES `news` (`news_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `user_id_fk5` FOREIGN KEY (`user_id`) REFERENCES `admin` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
