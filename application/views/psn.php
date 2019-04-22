@@ -57,29 +57,79 @@
       cursor: pointer;
     }
 
-    .navbarsa .dropdownsa:hover .dropbtnsa {
-      background-color: #003791;
-      opacity :1;
-      transform: translateY(0);
-    }
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
 
-    .dropdown-contentsa {
-      display: none;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
 
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
+}
+
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
+}
     .dropdown-contentsa .header {
       padding: 16px;
       color: white;
       margin-top: 10px;
     }
 
-    .dropdownsa:hover .dropdown-contentsa {
-      display: block;
-    }
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
+}
     .fontdropdown {
       font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
       font-weight: 400;
@@ -146,13 +196,20 @@
       color : #00a2ff;
     }
 
-    #grad1 {
-      background: linear-gradient(bottom, transparent 100%, black 50%);
-      /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
-      background: radial-gradient(at bottom,#008FEB,#003791,#003791);
-      z-index : 2;
-    }
+#grad1 {
+  background: linear-gradient(bottom, transparent 100%, black 50%);
+  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+  background: radial-gradient(at bottom,#008FEB,#003791,#003791);
+  z-index : 2;
+}
 
+#gradfooter {
+  background: linear-gradient(top, transparent 100%, black 50%);
+  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+  background: radial-gradient(at top,#008FEB,#003791,#003791);
+
+  background-size: 100% 100%;
+}
     @media screen and (max-width: 600px) {
       .column {
         width: 100%;
@@ -160,77 +217,101 @@
       }
     }
 
-    #containersearch {
-      width: 34px;
-      height: 34px;
-      vertical-align: middle;
-      white-space: nowrap;
-      padding-left: 1px; 
-      border-radius: 3px;
-      background-color: #333333;
-    }
+#containersearch {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-left: 1px; 
+  border-radius: 3px;
+  background-color: #333333;
+}
 
-    #containersearch input[type=search] {
-      position: absolute;
-      display: block;
-      top: 50px;
-      right: 20px;
-      width: 33px;
-      height: 33px;
-      margin: 0 0 0 auto;
-      box-sizing: border-box;
-      padding: 0 0 0 10px;
-      color: white;
-      background: url(menu_navi-search.svg) no-repeat 20px center; 
-      background-color: #333333;
-      border: 0;
-      border-radius: 3px;
-      font-size: 12px;
-      cursor: pointer;
-      font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-      -webkit-transition: width 0.2s ease-in-out;
-      transition: width 0.2s ease-in-out;
-    }
+#containersearch input[type=search] {
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: 20px;
+    width: 33px;
+    height: 33px;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    color: white;
+    background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 5px center; 
+    border: 0;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
 
-    #containersearch input[type=search]:focus {
-      width: 250px;
-      cursor: auto;
-    }
+#containersearch input[type=search]:focus {
+  width: 250px;
+  background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 220px center;
+  cursor: auto;
+}
 
-    .search_icon {
-      position: relative;   
-      padding-top: 2px;
-      padding-bottom: 2px;
-      padding-left: 10px; 
-      background-color: #333333;
-      border: 0;
-      border-radius: 3px;
-      z-index: 1;
-    }
-
-
+.search_icon {
+    position: relative;   
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px; 
+    background-color: #333333;
+    border: 0;
+    border-radius: 3px;
+    z-index: 1;
+}
 
 
-    #foter{
-      /* background-color : #0066cc; */
 
-      background: rgba(0, 55, 145, 1.0);
-    }
-    #footer{
-      text-align : left;
-      color : white;
-    }
 
-    #footer a{
-      color : white;
-    }
+#foter{
+  /* background-color : #0066cc; */
 
-    #gambarfooter{
-      min-height: 137px;
-      background-size: 100% 100%;
+  background: rgba(0, 55, 145, 1.0);
+}
+#footer{
+  text-align : left;
+  color : white;
+}
 
-      background: url('<?php echo base_url("img/footer2.png");?>') no-repeat; 
-    }
+#footer a{
+  color : white;
+}
+
+#fontfooter {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+#fontfooter:hover {
+  color : #00a2ff;
+  text-decoration: none;
+}
+
+#fontfooternothover {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+
+#fonttitlefooter{
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.1375em;
+  font-weight: 700;
+}
+
     <style>
     .container {
       position: relative;
@@ -283,264 +364,294 @@
      </div>
    </div>
  </nav>
- <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+<div class="navbarsa" style="margin:0; padding-top: 2px" >
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-contentsa" id="grad1">
       <div class="header" >
+      <table style="margin-left:16%; margin-right:19%;">
+          <tr>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo site_url();?>/front/product">
+              <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationvr.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®VR</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationvita.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®Vita</h5></a>
+            </td>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_psclassic.png'); ?>" style=" width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®Classic</h5></a>
+            </td>
+          </tr>
+        </table>
+      </div>  
+    </div>
+  </div>
+  <div class="dropdownsa">
+    <button class="dropbtnsa">GAMES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentsa" id="grad1">
+      <div class="header">
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo site_url();?>/front/games">
+              <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
               <a href="<?php echo base_url('www.facebook.com'); ?>">
-                <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
-                <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
+              <img src = "<?php echo base_url('img/menu_psvrgames.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PS VR GAMES</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_psvitagames.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PS Vita GAMES</h5></a>
+            </td>
+          </tr>
+        </table>
+      </div>  
+    </div>
+  </div>
+  <div class="dropdownsa">
+    <button class="dropbtnsa">PSN
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentsa" id="grad1">
+      <div class="header">
+      <table style="margin-left:16%; margin-right:19%;">
+          <tr>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo site_url();?>/front/psn">
+              <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationplus.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®Plus</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationmusic.png'); ?>" style=" width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation™Music</h5></a>
+            </td>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
+            </td>
+          </tr>
+        </table>
+      </div>  
+    </div>
+  </div>
+    <div class="dropdownsa">
+    <button class="dropbtnsa">NEWS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentsa" id="grad1">
+      <div class="header">
+        <table style="margin-left:16%; margin-right:19%;">
+            <tr>
+              <td class="buttonpshover" style="padding-right:50px">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <img src = "<?php echo base_url('img/menu_pressrelease.png'); ?>" style="width: 100px " /> <br>
+                <h5 class="fontdropdown"style="text-align:center">Press Release</h5></a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
                 <a href="<?php echo base_url('www.facebook.com'); ?>">
-                  <img src = "<?php echo base_url('img/menu_playstationvr.png'); ?>" style="width: 100px " /> <br>
-                  <h5 class="fontdropdown"style="text-align:center">PlayStation®VR</h5></a>
-                </td>
-                <td class="buttonpshover" style="padding-right:50px">
-                  <a href="<?php echo base_url('www.facebook.com'); ?>">
-                    <img src = "<?php echo base_url('img/menu_playstationvita.png'); ?>" style="width: 100px " /> <br>
-                    <h5 class="fontdropdown"style="text-align:center">PlayStation®Vita</h5></a>
-                  </td>
-                  <td class="buttonpshover">
-                    <a href="<?php echo base_url('www.facebook.com'); ?>">
-                      <img src = "<?php echo base_url('img/menu_psclassic.png'); ?>" style=" width: 100px " /> <br>
-                      <h5 class="fontdropdown"style="text-align:center">PlayStation®Classic</h5></a>
-                    </td>
-                  </tr>
-                </table>
-              </div>  
-            </div>
-          </div>
-          <div class="dropdownsa">
-            <button class="dropbtnsa">GAMES
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-contentsa" id="grad1">
-              <div class="header">
-                <table style="margin-left:16%; margin-right:19%;">
-                  <tr>
-                    <td class="buttonpshover" style="padding-right:50px">
-                      <a href="<?php echo base_url('www.facebook.com'); ?>">
-                        <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
-                        <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
+                <img src = "<?php echo base_url('img/menu_latestnews.png'); ?>" style="width: 100px " /> <br>
+                <h5 class="fontdropdown"style="text-align:center">Latest News</h5></a>
+              </td>
+            </tr>
+        </table>
+        <hr style="border: 30 solid white;" />
+       <table style="margin-left:16%; margin-right:19%;">
+            <tr>
+              <td class="buttonpshover" style="padding-right:50px">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                  <table >
+                    <tr>
+                      <td style="padding-right: 15px">
+                        <img src = "<?php echo base_url('img/menu_facebook.png'); ?>" style="width: 40px " />
                       </td>
-                      <td class="buttonpshover" style="padding-right:50px">
-                        <a href="<?php echo base_url('www.facebook.com'); ?>">
-                          <img src = "<?php echo base_url('img/menu_psvrgames.png'); ?>" style="width: 100px " /> <br>
-                          <h5 class="fontdropdown"style="text-align:center">PS VR GAMES</h5></a>
-                        </td>
-                        <td class="buttonpshover" style="padding-right:50px">
-                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                            <img src = "<?php echo base_url('img/menu_psvitagames.png'); ?>" style="width: 100px " /> <br>
-                            <h5 class="fontdropdown"style="text-align:center">PS Vita GAMES</h5></a>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>  
-                  </div>
-                </div>
-                <div class="dropdownsa">
-                  <button class="dropbtnsa">PSN
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-contentsa" id="grad1">
-                    <div class="header">
-                      <table style="margin-left:16%; margin-right:19%;">
-                        <tr>
-                          <td class="buttonpshover" style="padding-right:50px">
-                            <a href="<?php echo base_url('www.facebook.com'); ?>">
-                              <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
-                              <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
-                            </td>
-                            <td class="buttonpshover" style="padding-right:50px">
-                              <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
-                                <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
-                              </td>
-                              <td class="buttonpshover" style="padding-right:50px">
-                                <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                  <img src = "<?php echo base_url('img/menu_playstationplus.png'); ?>" style="width: 100px " /> <br>
-                                  <h5 class="fontdropdown"style="text-align:center">PlayStation®Plus</h5></a>
-                                </td>
-                                <td class="buttonpshover" style="padding-right:50px">
-                                  <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                    <img src = "<?php echo base_url('img/menu_playstationmusic.png'); ?>" style=" width: 100px " /> <br>
-                                    <h5 class="fontdropdown"style="text-align:center">PlayStation™Music</h5></a>
-                                  </td>
-                                  <td class="buttonpshover">
-                                    <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                      <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
-                                      <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>  
-                            </div>
-                          </div>
-                          <div class="dropdownsa">
-                            <button class="dropbtnsa">NEWS
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-contentsa" id="grad1">
-                              <div class="header">
-                                <table style="margin-left:16%; margin-right:19%;">
-                                  <tr>
-                                    <td class="buttonpshover" style="padding-right:50px">
-                                      <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                        <img src = "<?php echo base_url('img/menu_pressrelease.png'); ?>" style="width: 100px " /> <br>
-                                        <h5 class="fontdropdown"style="text-align:center">Press Release</h5></a>
-                                      </td>
-                                      <td class="buttonpshover" style="padding-right:50px">
-                                        <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                          <img src = "<?php echo base_url('img/menu_latestnews.png'); ?>" style="width: 100px " /> <br>
-                                          <h5 class="fontdropdown"style="text-align:center">Latest News</h5></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                    <hr style="border: 30 solid white;" />
-                                    <table style="margin-left:16%; margin-right:19%;">
-                                      <tr>
-                                        <td class="buttonpshover" style="padding-right:50px">
-                                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                            <table >
-                                              <tr>
-                                                <td style="padding-right: 15px">
-                                                  <img src = "<?php echo base_url('img/menu_facebook.png'); ?>" style="width: 40px " />
-                                                </td>
-                                                <td>
-                                                  <h6 class="fontdropdown">Facebook</h6>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </a>
-                                        </td>
-                                        <td class="buttonpshover" style="padding-right:50px">
-                                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                            <table >
-                                              <tr>
-                                                <td style="padding-right: 15px">
-                                                  <img src = "<?php echo base_url('img/menu_youtube.png'); ?>" style="width: 40px " />
-                                                </td>
-                                                <td>
-                                                  <h6 class="fontdropdown">Youtube</h6>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </a>
-                                        </td>
-                                        <td class="buttonpshover" style="padding-right:50px">
-                                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                            <table>
-                                              <tr>
-                                                <td style="padding-right: 15px">
-                                                  <img src = "<?php echo base_url('img/menu_instagram.png'); ?>" style="width: 40px " />
-                                                </td>
-                                                <td>
-                                                  <h6 class="fontdropdown">Instagram</h6>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </a>
-                                        </td>
-                                        <td class="buttonpshover" style="padding-right:50px">
-                                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                            <table>
-                                              <tr>
-                                                <td style="padding-right: 15px">
-                                                  <img src = "<?php echo base_url('img/menu_twitter.png'); ?>" style="width: 40px " />
-                                                </td>
-                                                <td>
-                                                  <h6 class="fontdropdown">Twitter</h6>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                    <br>
-                                  </div>  
-                                </div>
-                              </div>
-                              <div class="dropdownsa">
-                                <button class="dropbtnsa">SUPPORT
-                                  <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-contentsa" id="grad1">
-                                  <div class="header">
-                                    <table style="margin-left:16%; margin-right:19%;">
-                                      <tr>
-                                        <td class="buttonpshover" style="padding-right:50px">
-                                          <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                            <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
-                                            <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
-                                          </td>
-                                          <td class="buttonpshover" style="padding-right:50px">
-                                            <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                              <img src = "<?php echo base_url('img/menu_warranty.png'); ?>" style="width: 100px " /> <br>
-                                              <h5 class="fontdropdown"style="text-align:center">Warranty Services</h5></a>
-                                            </td>
-                                            <td class="buttonpshover" style="padding-right:50px">
-                                              <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                                <img src = "<?php echo base_url('img/menu_psnstatus_large.png'); ?>" style="width: 100px " /> <br>
-                                                <h5 class="fontdropdown"style="text-align:center">PSN Status</h5></a>
-                                              </td>
-                                              <td class="buttonpshover" style="padding-right:50px">
-                                                <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                                  <img src = "<?php echo base_url('img/menu_fixandconnect_large.svg'); ?>" style=" width: 100px " /> <br>
-                                                  <h5 class="fontdropdown"style="text-align:center">Fix & Connect</h5></a>
-                                                </td>
-                                                <td class="buttonpshover">
-                                                  <a href="<?php echo base_url('www.facebook.com'); ?>">
-                                                    <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
-                                                    <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
-                                                  </td>
-                                                </tr>
-                                              </table>
-                                            </div>  
-                                          </div>
-                                        </div>
-                                        <div class="dropdownsa">
-                                          <button class="dropbtnsa">BUY
-                                            <i class="fa fa-caret-down"></i>
-                                          </button>
-                                          <div class="dropdown-contentsa" id="grad1">
-                                            <div class="header">
-                                              <h2>PSN</h2>
-                                            </div>  
-                                          </div>
-                                        </div>
-                                        <div style="float:right; padding-right: 20px">
-                                          <table style="margin: auto;">
-                                            <tr>
-                                              <td>
-                                                <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
-                                              </td>
-                                              <td style="padding-right: 10px">
-                                                <button class="signin">Sign In</button>
-                                              </td>
-                                              <td >
-                                                <FORM id="containersearch" >
-                                                  <input type="search" placeholder="Search" />
-  <!--               <td>
+                      <td>
+                        <h6 class="fontdropdown">Facebook</h6>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td class="buttonpshover" style="padding-right:50px">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                  <table >
+                    <tr>
+                      <td style="padding-right: 15px">
+                        <img src = "<?php echo base_url('img/menu_youtube.png'); ?>" style="width: 40px " />
+                      </td>
+                      <td>
+                        <h6 class="fontdropdown">Youtube</h6>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td class="buttonpshover" style="padding-right:50px">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                  <table>
+                    <tr>
+                      <td style="padding-right: 15px">
+                        <img src = "<?php echo base_url('img/menu_instagram.png'); ?>" style="width: 40px " />
+                      </td>
+                      <td>
+                        <h6 class="fontdropdown">Instagram</h6>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td class="buttonpshover" style="padding-right:50px">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                  <table>
+                    <tr>
+                      <td style="padding-right: 15px">
+                        <img src = "<?php echo base_url('img/menu_twitter.png'); ?>" style="width: 40px " />
+                      </td>
+                      <td>
+                        <h6 class="fontdropdown">Twitter</h6>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <br>
+      </div>  
+    </div>
+  </div>
+    <div class="dropdownsa">
+    <button class="dropbtnsa">SUPPORT
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentsa" id="grad1">
+      <div class="header">
+        <table style="margin-left:16%; margin-right:19%;">
+          <tr>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo site_url();?>/front/support">
+              <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_warranty.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">Warranty Services</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_psnstatus_large.png'); ?>" style="width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PSN Status</h5></a>
+            </td>
+            <td class="buttonpshover" style="padding-right:50px">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_fixandconnect_large.svg'); ?>" style=" width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">Fix & Connect</h5></a>
+            </td>
+            <td class="buttonpshover">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
+              <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
+            </td>
+          </tr>
+        </table>
+      </div>  
+    </div>
+  </div>
+    <div class="dropdownsa">
+    <button class="dropbtnsa">BUY
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentsa" id="grad1">
+      <div class="header">
+        <div class="container">
+          <div class="buttonpshover" style="margin-left: 25%;margin-top: 1%">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_playstationstore.png');?>"/ style="width: 100px"> <br>
+              <h5 class="fontdropdown">PlayStation™Store</h5></a>
+          </div>
+          <div class="buttonpshover" style="margin-left: 60%;margin-top: 1%;">
+            <a id="fontfooter" href="#!">
+            <img src = "<?php echo base_url('img/menu_retailstore.png'); ?>" style="width: 100px " /><br>
+            <h5 class="fontdropdown">Retail Stores</h5></a>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 15%;border-top: 1px #609ccd solid;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Newest Releases
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 340px;height: 20px" ></h5>
+          </a>
+        </div>
+        <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" href="#!" style="padding: 0" class="buttonpshover">
+            <h5 class="fontdropdown">Best Multiplayer Games
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 300px;height: 20px" ></h5>
+          </a>
+        </div>
+         <div class="container" style="margin-left: 15%;border-bottom: 1px #609ccd solid;width: 500px">
+          <a id="fontfooter" class="buttonpshover" href="#!" style="padding: 0">
+            <h5 class="fontdropdown">PS Plus Subscription
+            <img src="<?php echo base_url('img/icon_store_link.png'); ?>" style="padding-left: 315px;height: 20px" ></h5>
+          </a>
+        </div>
+        <br><br>
+      </div> 
+    </div>
+  </div>
+  <div style="float:right; padding-right: 20px">
+    <table style="margin: auto;">
+      <tr>
+        <td>
+          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+        </td>
+        <td style="padding-right: 10px">
+          <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Sign In</button>
+        </td>
+        <td >
+          <FORM id="containersearch" >
+            <input type="search" />
+<!--               <td>
                 <button class="search_icon"><img style="width: 23px" src="<?php echo base_url('img/menu_navi-search.svg'); ?>" ></button>
               </td> -->
-              <!-- <span class="search_icon"><i></i></span> -->
-              <!-- <input id="search" type="text" placeholder="Search.." src="<?php echo base_url('img/menu_navi-search.svg'); ?>"><img id="search_id" src="<?php echo base_url('img/menu_navi-search.svg'); ?>" onclick='image(this)'> -->
-            </FORM>
-          </td>
-        </tr>
-      </table>
-    </div>
-
+            <!-- <span class="search_icon"><i></i></span> -->
+            <!-- <input id="search" type="text" placeholder="Search.." src="<?php echo base_url('img/menu_navi-search.svg'); ?>"><img id="search_id" src="<?php echo base_url('img/menu_navi-search.svg'); ?>" onclick='image(this)'> -->
+          </FORM>
+        </td>
+      </tr>
+    </table>
   </div>
+
+</div>
   <div class="carousel-inner">
     <div class="item active">
       <img src="<?php echo base_url('img/psn-top-hero-20170201.png');?>" alt="Los Angeles" style="width:100%;">
@@ -1320,94 +1431,100 @@
 
 
 </br></br></br>
-<footer class="page-footer font-small indigo " id='foter'>
+<footer class="page-footer font-small indigo " id='foter' style="clear: left;">
+    <div class="container text-center text-md-left" id='footer' >
+      <div class="row"style="padding-left : 100px">
+        <br>
+        <div class="col-md-3" >
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®4</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®VR</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Vita</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Classic</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®3</a>
+            </li>
+          </ul>
 
-  <div class="container text-center text-md-left" id='footer'>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
-    <div class="row">
+          <ul class="list-unstyled" >
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Network</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Store</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation™Music</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®Plus</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">PlayStation®App</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Press Release</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Latest News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
-
-      <div class="col-md-3">
-
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Product</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">PlayStation®4</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®VR</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®Vita</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®Classic</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®3</a>
-          </li>
-        </ul>
-
+          <ul class="list-unstyled">
+            <li>
+              <a id="fontfooter" href="#!">Support</a>
+            </li>
+            <li>
+              <a id="fontfooter" href="#!">Warranty Services</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="col-md-3 mx-auto">
-
-
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">PlayStation™Network</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation™Store</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation™Music</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®Plus</a>
-          </li>
-          <li>
-            <a href="#!">PlayStation®App</a>
-          </li>
-        </ul>
-
+      <br>
+      <div class='row' align="middle">
+        <div id='gradfooter'>
+          <br>
+          <a id="fontfooter" href="#!"> About this site </a>
+          |
+          <a id="fontfooter" href="#!"> Terms and Conditions </a>
+          |
+          <a id="fontfooter" href="#!"> Privacy Policy </a>
+          |
+          <a id="fontfooter" href="#!"> Intellectual Property Notices </a>
+          |
+          <a id="fontfooter" href="#!"> Publisher&Developer Relations </a>
+          <br><br>
+          <p id="fontfooter" style="color : #00a2ff">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+          <img src="<?php echo base_url('img/icon_global.png'); ?>" style="width: 16px "/> 
+          <a id="fontfooternothover" href="#!" style="padding-bottom: 0"> Indonesia (English) </a> 
+          <br><br>
+        </div>
+        <div>
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
+          </div>
       </div>
-      <div class="col-md-3 mx-auto">
-
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Press Release</a>
-          </li>
-          <li>
-            <a href="#!">Latest News</a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="col-md-3 mx-auto">
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Support</a>
-          </li>
-          <li>
-            <a href="#!">Warranty Services</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class='row'>
-      <div id='gambarfooter'  class='col'>
-
-      </div>
-    </div>
-  </div>
-</footer>
+    </div> 
+  </footer>
 </body>
 </html>

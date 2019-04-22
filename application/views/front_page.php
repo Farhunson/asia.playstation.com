@@ -146,6 +146,8 @@ body {
 
 .signin:hover {opacity: 1}
 
+
+
 #myplaystation {
   position: relative;
   color: white;
@@ -155,6 +157,20 @@ body {
 }
 #myplaystation:hover {
   color : #00a2ff;
+}
+
+.btnlearnmore {
+  width: 200px;
+  height: 50px;
+  background-color: #0267BF;
+  border: 0; 
+  color: white;
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+.btnlearnmore:hover {
+  background-color: #00a2ff;
 }
 
 #grad1 {
@@ -358,7 +374,7 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/psn">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
@@ -557,8 +573,7 @@ body {
           <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <a href="<?php echo site_url('account/sign_in')?>">
-          <button class="signin">Sign In</button></a>
+          <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Sign In</button>
         </td>
         <td >
           <FORM id="containersearch" >
@@ -623,7 +638,7 @@ body {
 			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lebih dari 50 Pusat Layanan di seluruh Indonesia – Pengguna dapat membawa Produk Resmi PlayStation mereka ke beragam pusat layanan di Indonesia.</p>
 			<p>&nbsp;</p>
 			</div>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 		</div>
 		<div class="col-sm-6">
 			<img src="<?php echo base_url('img/indo.jpg');?>" width=100% height=100%>
@@ -642,7 +657,7 @@ body {
 					<p>Simply hit the SHARE button on the controller to share your gameplay experience to the world, or communicate with your friends online.</p>
 					<p>PlayStation exclusives and most immersive games are waiting for you.</p>
 				</div></br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>
 		<div class="col-sm-6">
@@ -666,7 +681,7 @@ body {
 					<p>With a great new price, the immersive world of PS VR is now easier than ever to experience!</p>
 				</div>
 						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>
 	</div></br></br></br>
@@ -683,7 +698,7 @@ body {
 					<p>The design of the PlayStation Classic resembles PlayStation, including the button layout, as well as controllers and outer package, but in a miniature size, it is 45% smaller on the sides and 80% smaller in volume than the original console.</p>
 				</div>
 						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>
 		<div class="col-sm-6">
@@ -699,12 +714,12 @@ body {
 		<div class="col-sm-6" align='middle'>
 			<img src="<?php echo base_url('img/kindom2.png');?>" width=100% height=100%>
 			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 		</div>
 		<div class="col-sm-6" align='middle'>
 			<img src="<?php echo base_url('img/re2.png');?>" width=100% height=100%>
 			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+			<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 		</div> 		
 	</div>
   <div class="row">
@@ -722,7 +737,7 @@ body {
         <p>With PlayStation Network, you can buy your games, listen to music, or play online multi-player games anytime. PS app for smart phone will enhance your PlayStation experience even more.</p>
       </div>
 						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>		
 	</div>
@@ -737,7 +752,7 @@ body {
       <span class="">Find out why PlayStation Vita is a totally original take on portable gaming. This slim and sleek device also features high-precision dual analog controls for a more immersive gaming experience away from your console and TV.</span>
 
 						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>
 		<div class="col-sm-6">
@@ -760,7 +775,7 @@ body {
         <p>We develop and publish a range of exciting new titles each year, created either by our fantastic in-house studios, or in collaboration with independent studios from the wider industry.</p>
       </div>
 						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
+				<button class="btnlearnmore"><h5>LEARN MORE</h5></button>
 			</div>
 		</div>
 	</div>
