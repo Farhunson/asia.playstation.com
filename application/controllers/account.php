@@ -40,19 +40,28 @@ class account extends CI_Controller {
 		$this->load->view('login');
 	}
 
+
 	public function check_login(){
 		$email = $this->input->post('email');
     	$password = $this->input->post('password');
 
-    	$login = $this->UserModel->login_user($email, $password);
+    	$login_customer = $this->UserModel->login_customer($email, $password);
+    	$login_admin = $this->UserModel->login_admin($email, $password);
 
-    	if ($login) {
+    	if ($login_customer) {
       		$sess_data = array(
           	'logged_in' => 1,
           	'email' => $login->email
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_user');
+      	} else if ($login_admin) {
+      		$sess_data = array(
+          	'logged_in' => 1,
+          	'email' => $login->email
+      		);
+      		$this->session->set_userdata($sess_data);
+      		redirect('front/homepage_admin');
     	} else {
       		echo "<script>alert('Gagal login: Cek email, password!');</script>";
       		redirect('account/index');

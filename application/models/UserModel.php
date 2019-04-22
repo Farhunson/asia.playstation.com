@@ -2,11 +2,27 @@
 
 class UserModel extends CI_Model
 {
-  public function login_user($email, $password){
+  public function login_customer($email, $password){
+    $this->db->select('*');
+    $this->db->from('customer');
     $this->db->where('email',$email);
     $this->db->where('password',$password);
+    $this->db->join('user', 'user.user_id = customer.user_id');
+    $result = $this->db->get();
+    if($result->num_rows()==1){
+        return $result->row(0);
+    }else{
+        return false;
+    }
+  }
 
-    $result = $this->db->get('user');
+  public function login_admin($email, $password){
+    $this->db->select('*');
+    $this->db->from('admin');
+    $this->db->where('email',$email);
+    $this->db->where('password',$password);
+    $this->db->join('user', 'admin.user_id = user.user_id');
+    $result = $this->db->get();
     if($result->num_rows()==1){
         return $result->row(0);
     }else{
