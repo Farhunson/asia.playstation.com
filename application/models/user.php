@@ -1,9 +1,9 @@
 <<?php 
 
-class user extends CI_Model
+class User extends CI_Model
 {
-  public function login_user($username, $password){
-    $this->db->where('username',$username);
+  public function login_user($email, $password){
+    $this->db->where('email',$email);
     $this->db->where('password',$password);
 
     $result = $this->db->get('user');

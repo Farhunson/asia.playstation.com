@@ -8,22 +8,41 @@ class front extends CI_Controller {
 		$this->load->view('front_page');
 	}
 
-	public function lalala()
+	public function homepage()
 	{
-		$data['rebus']= 'mie';
-		$this->load->view('front_page', $data);
+		$this->load->view('front_page');
 	}
 
 	public function product() 
 	{
 		$this->load->view('product');
 	}
+
 	public function support()
 	{
 		$this->load->view('support');
 	}
+
 	public function games()
 	{
 		$this->load->view('games');
 	}
+
+	public function psn()
+	{
+		$this->load->view('psn');
+	}
+
+	public function news()
+	{
+		$this->load->view('news');
+	}
+
 }
+
+
+// href = <?php echo site_url('page_view/support'); //connecting page
+
+//$data['rebus']= 'mie';
+		//$this->load->view('front_page', $data);
+		//passing data
