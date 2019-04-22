@@ -38,6 +38,11 @@ class front extends CI_Controller {
 		$this->load->view('news');
 	}
 
+	public function homepage_user()
+	{
+		$this->load->view('in_front_page');
+	}
+
 }
 
 

@@ -188,7 +188,8 @@
           <div id="grey-text" align="center">
             Already have an account? 
             <div id="blue-text" align="center">
-            Sign In
+              <a href="<?php echo site_url('account/sign_in')?>">
+            Sign In</a>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 06:54 AM
+-- Generation Time: Apr 22, 2019 at 09:52 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -51,13 +51,13 @@ CREATE TABLE `buy` (
 --
 
 CREATE TABLE `customer` (
-  `user_id` int(11) NOT NULL,
-  `name` int(11) NOT NULL,
-  `username` int(11) NOT NULL,
-  `address` int(11) NOT NULL,
-  `avatar` int(11) NOT NULL,
-  `phoneNo` int(11) NOT NULL,
-  `gender` int(11) NOT NULL
+  `user_id` varchar(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `avatar` varchar(30) NOT NULL,
+  `phoneNo` varchar(12) NOT NULL,
+  `gender` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -124,7 +124,7 @@ CREATE TABLE `news` (
 
 CREATE TABLE `user` (
   `user_id` varchar(10) NOT NULL,
-  `email` int(11) NOT NULL,
+  `email` varchar(10) NOT NULL,
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

@@ -240,7 +240,7 @@
          <div>
           <input type="text" name="fullname" class="input-box" placeholder="Your Name">
         </div>
-        <a href="<?php echo site_url('front/homepage')?>"><button type="button" class="button-create">Create Account</button></a>
+        <a href="<?php echo site_url('account/sign_in')?>"><button type="button" class="button-create">Create Account</button></a>
       </div>
     </div>
     <a href="#!">

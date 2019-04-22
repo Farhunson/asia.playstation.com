@@ -46,15 +46,19 @@
   		margin: auto;
     	height: 600px;
     	width: 35%;
+      flex: all;
 
   	}
 
   	#ps-logo{
-  		width: 360px;
+  		width: 90%;
   		max-height: 110px;
   		display: block;
   		margin-left: auto;
   		margin-right: auto;
+      padding: 5%;
+      padding-top: 0%;
+      padding-bottom: 0%;
   	}
 
   	#black-text{
@@ -65,7 +69,7 @@
   		display: block;
   		padding-top: 30px;
   		padding-bottom: 6px;
-  		width: 320px;
+  		width: 100%;
   		min-height: 18px;
   	}
 
@@ -99,7 +103,7 @@
 		font-size: 16px;
 		height: 48px;
 		margin: 0;
-		width: 320px;
+		width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -120,7 +124,7 @@
     margin-right: auto;
     margin-top: 10%;
     height: 40px;
-    width: 320px;
+    width: 100%;
   }
 
   .button-create{
@@ -140,7 +144,7 @@
     margin-left: auto;
     margin-right: auto;
     height: 40px;
-    width: 320px;
+    width: 100%;
   }
   </style>
   <title>Sign In | Sony Entertainment Network</title>
@@ -164,7 +168,7 @@
  					<input type="text" name="email" class="input-box" placeholder="Sign-In ID (Email Address)">
           <input type="password" name="password" class="input-box" placeholder="Password">
  				</div>
-        <a href="<?php echo site_url('front/homepage')?>"><button type="button" class="button-signin">Sign In</button></a>
+        <a href="<?php echo site_url('front/homepage_user')?>"><button type="button" class="button-signin">Sign In</button></a>
         <div id="blue-text" align="center" style="margin-bottom: 5%">
         Trouble Signing In?
         </div>

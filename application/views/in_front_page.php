@@ -201,8 +201,8 @@ body {
 }
 
 #containersearch input[type=search]:focus {
-  width: 250px;
-  background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 220px center; 
+  width: 350px;
+  background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 320px center; 
   cursor: auto;
 }
 
@@ -543,11 +543,14 @@ body {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My Cart</h5></a>
+        </td>
+        <td>
+          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Manage Account</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <a href="<?php echo site_url('account/sign_in')?>">
-          <button class="signin">Sign In</button></a>
+          <a href="<?php echo site_url('front/homepage')?>">
+          <button class="signin">Log Out</button></a>
         </td>
         <td >
           <FORM id="containersearch" >
