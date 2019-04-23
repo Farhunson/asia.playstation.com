@@ -16,6 +16,7 @@
  
 body {
   margin: 0;
+  overflow-x: hidden;
 }
  
 .navbarsa {
@@ -108,7 +109,6 @@ body {
   color: white;
   /*margin-top: 10px;*/
 }
- 
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
   padding-bottom: 30px;
@@ -134,6 +134,7 @@ body {
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
+
 }
 .column {
   float: left;
@@ -174,7 +175,7 @@ body {
   background-color: #5f5b58;
   border: none;
   color: white;
-  font-family: "SB SST W20 Roman",sans-serif;
+  font-family: SB SST W20 Roman,sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 16px;
@@ -203,20 +204,30 @@ body {
   background: radial-gradient(at bottom,#008FEB,#003791,#003791);
   z-index : 2;
 }
-
-#gradfooter {
-  background: linear-gradient(top, transparent 100%, black 50%);
-  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
-  background: radial-gradient(at top,#008FEB,#003791,#003791);
-
-  background-size: 100% 100%;
-}
  
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     height: auto;
   }
+}
+
+.morebutton {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  background-position: right;
+  float: right;
+}
+
+.fontnews {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.fontnews:hover {
+  color : #00a2ff;
+  text-decoration: none;
 }
 
 #containersearch {
@@ -240,8 +251,7 @@ body {
     box-sizing: border-box;
     padding: 0 0 0 10px;
     color: white;
-    background: url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 5px center; 
-    background-color: #333333;
+    background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 5px center; 
     border: 0;
     border-radius: 3px;
     font-size: 12px;
@@ -252,8 +262,8 @@ body {
 }
 
 #containersearch input[type=search]:focus {
-  width: 350px;
-  background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 320px center; 
+  width: 250px;
+  background: #333333 url('<?php echo base_url("img/menu_navi-search.svg");?>') no-repeat 220px center;
   cursor: auto;
 }
 
@@ -266,6 +276,156 @@ body {
     border: 0;
     border-radius: 3px;
     z-index: 1;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1F1F1F;
+  height: 165px;
+  padding: 28px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 137px;
+  height: 110px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.buttonmenu {
+  background-color: white;
+  width: 100%;
+  height: 34px; 
+  color: black;
+  border-bottom-right-radius: 3pt;
+  border-bottom-left-radius:  3pt;
+  border: 0;
+  font-family: MS PGothic;
+  transition: 0.3s;
+}
+
+.buttonmenu:hover {
+  background-color: #00a2ff;
+  color: white;
+
+}
+
+#titletext{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 36.4px;
+  text-align: center;
+}
+
+.futurecontainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 140px;
+}
+
+.futurecontainer > div {
+  width: 533px;
+  margin: 20px;
+  height: 460px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.productcontainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.productcontainer > div {
+  width: 300px;
+  margin: 15px;
+  height: auto;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.ps4gamescontainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.ps4gamescontainer > div {
+  background-color: white;
+  width: 450px;
+  margin: 15px;
+  height: 410px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.titlecontainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.titlecontainer > div {
+  background-color: blue;
+  width: 533px;
+  height: 30px;
+  line-height: 75px;
+  font-size: 30px;
+}
+.btnlearnmore {
+  width: 200px;
+  height: 50px;
+  background-color: #0267BF;
+  border: 0; 
+  color: white;
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+}
+
+.btnlearnmore:hover {
+  background-color: #00a2ff;
+}
+
+.ps4procontainer {
+  color: white;
+}
+
+.textcontainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-bottom: 500px;
+
+}
+
+.textcontainer > div {
+  padding: 15px;
+  width: 400px;
+  margin: 20px;
+  height: 215px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#fontlinkproduct {
+ color: black;
+ transition: 0.6s;
+}
+
+#fontlinkproduct:hover {
+  color : #00a2ff;
+  text-decoration: none;
 }
 
 #foter{
@@ -303,6 +463,7 @@ body {
   font-weight: 400;
   font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 
@@ -312,6 +473,14 @@ body {
   font-weight: 700;
 }
 
+
+#gradfooter {
+  background: linear-gradient(top, transparent 100%, black 50%);
+  /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+  background: radial-gradient(at top,#008FEB,#003791,#003791);
+
+  background-size: 100% 100%;
+}
 
 </style>
 <title>PS4 | Games | PlayStation</title>
@@ -327,7 +496,7 @@ body {
         </div>
     </nav>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="https://asia.playstation.com/en-id/"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -398,7 +567,7 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/psn">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
@@ -594,18 +763,14 @@ body {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My Cart</h5></a>
-        </td>
-        <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Manage Account</h5></a>
+          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
         </td>
         <td style="padding-right: 10px">
-            <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
-
+          <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Sign In</button>
         </td>
         <td >
           <FORM id="containersearch" >
-            <input type="search" />
+            <input type="search" placeholder="" />
 <!--               <td>
                 <button class="search_icon"><img style="width: 23px" src="<?php echo base_url('img/menu_navi-search.svg'); ?>" ></button>
               </td> -->
@@ -616,202 +781,284 @@ body {
       </tr>
     </table>
   </div>
-
 </div>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="<?php echo base_url('img/spidey.png');?>" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="<?php echo base_url('img/kindom.png');?>" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="<?php echo base_url('img/dgone.png');?>" alt="New york" style="width:100%;">
-      </div>
+<img style="width: 100%"src="<?php echo base_url('img/product/ps4-top-hero-R-20170302.png'); ?>">
+<div class="flex-container">
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;  border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt;" src="<?php echo base_url('img/product/ps4-top-navigation01-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">PS4 Features</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation02-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">Line Up</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation03-20181226.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">Games</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation04-20161201.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">Entertainment</h5></button></a>
+  </div>
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/ps4-top-navigation05-20161104.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">Accessories</h5></button></a>
+  </div>  
+  <div style="  border-radius: 3px;"><a href="#"><img style="width: 100%;border-top-right-radius: 3pt;
+  border-top-left-radius:  3pt" src="<?php echo base_url('img/product/footer2.png'); ?>">
+    <button class="buttonmenu"><h5 style="font-size: 9pt">Retail Store</h5></button></a>
+  </div>  
+</div>
+</br></br>
+<br>
+<h2 id="titletext" style="color: #1F1F1F;" >Welcome to the Future of Play</h2>
+<br>
+<div class="futurecontainer">
+  <div><img style="width: 530px;height: 445px" src="<?php echo base_url('img/product/consoles-ps4-model-2000-640px-02.png'); ?>"></div>
+  <div style="padding-right: 140px">
+    <p><h5 style="font-family: MS PGothic; font-size: 11pt">A sleeker, smaller PS4, delivering awesome gaming power that’s always for the players.</h5></p>
+    <p><h5 style="font-family: MS PGothic; font-size: 11pt ">The freedom to play, share and socialise with your gaming world.</h5></p>
+    <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+  </div>
+</div>
+<div class="ps4procontainer">
+  <h2 id="titletext" style="z-index: 2;position: relative; padding-top: 90px; margin-bottom: -120px;color: white;" >Let the Super-Charged PS4 Pro Lead the Way. </h2>
+  <img style="z-index: -2; margin-left: -330px;margin-right: -10px;margin-bottom: -415px"src="<?php echo base_url('img/product/pc_PS4TOP_05_02_170904_PS4PRO.png'); ?>">
+  <div class="futurecontainer" style=" margin-top: -500px">
+    <div style="padding-right: 120px">
+      <p><h5 style="font-family: MS PGothic; font-size: 11pt">PS4 Pro delivers innovation in the form of cutting-edge visuals and graphics while in the midst of the PS4’s lifecycle. </h5></p>
+      <p><h5 style="font-family: MS PGothic; font-size: 11pt ">Enhance your PS4 gaming experience with the latest in imaging technology through 4K resolution and High Dynamic Range (HDR) as well as smoother frame rates.</h5></p>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
+    <div><img style="width: 530px;height: 445px; margin-left: -150px" src="<?php echo base_url('img/product/ps4-features-top-article03-20161104.png'); ?>"></div>
+  </div>
+</div>
+<div class="titlecontainer"><h2 id="titletext" style="color: 1F1F1F;" >PS4 Games</h2></div>
+<div class="ps4gamescontainer" style="z-index: 2">
+  <div style="text-align: center;">
+    <a id="fontlinkproduct" href="#">
+      <img style="width: 450px" src="<?php echo base_url('img/product/marvels-spider-man-keyart.png'); ?>"><br>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">Marvel's Spider-Man</h6>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+    <button style="align-content: center;" class="btnlearnmore"><h5>LEARN MORE</h5></button>
+  </div>
+  <div style="text-align: center;">
+    <a id="fontlinkproduct" href="#">
+      <img style="width: 450px" src="<?php echo base_url('img/product/shenmue-1-2-keyart.png'); ?>"><br>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">Shenmue Ⅰ＆Ⅱ</h6>
+    </a>
+    <button style="align-content: center;" class="btnlearnmore"><h5>LEARN MORE</h5></button>
+  </div>
+</div>
+<div style="text-align: center;z-index: 2; background-color: white; margin-bottom: 60px;">
+  <button style="z-index: 2" class="btnlearnmore"><h5>FIND MORE</h5></button>
+</div>
+<br>
+<br>
+<br>
+<div class="ps4procontainer" style=" margin-top: -100px;margin-bottom:-420px">
+  <h2 id="titletext" style="position: relative; padding-top: 90px; margin-bottom: -130px;color: white;" >Entertainment on PlayStation 4</h2>
+  <img src="<?php echo base_url('img/product/ps4-top-article12-bg-20170224.png'); ?>" style="width:100%;z-index: -4;">
+  <div class="textcontainer" style=" margin-top: -720px">
+    <div style="padding-right: 30px; z-index: 1;   background-color: #000000a3;">
+      <p><h5 style="font-family: MS PGothic; font-size: 11pt">A built-in Blu-ray Disc player, plus an incredible range of entertainment apps are available whenever you want them. </h5></p>
+      <p><h5 style="font-family: MS PGothic; font-size: 11pt ">All the greatest TV, movies, music, and more from your favourite entertainment apps.</h5></p>
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    <div></div>
+  </div>
+</div>
+<h2 id="titletext" style="color: #1F1F1F;z-index: 4;background-color: white; position: relative;padding-top: 80px;padding-bottom: 30px;margin-bottom: -10px" >Hardware Lineup</h2>
+<div class="productcontainer" style="z-index: 4;position: relative;">
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/consoles-ps4-model-2000-428px-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Jet Black 500GB</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: CUH-2006A B01</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR5,199,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/consoles-ps4-model-2000-428px-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Jet Black 1TB</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: CUH-2006B B01</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR5,699,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/consoles-ps4-model-pro-428px-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4 Pro</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Jet Black 1TB</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: CUH-7106B B01</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR6,999,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+</div>
+<h2 id="titletext" style="color: #1F1F1F;z-index: 4;background-color: white; position: relative;padding-top: 50px;padding-bottom: 30px;margin-bottom: -10px" >Limited Products</h2>
+
+<div class="productcontainer" style="z-index: 4;position: relative;">
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2019-starter-pack-640px-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Starter Pack</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: ASIA-00344</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR 5,699,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2019-kingdom-hearts-iii-limited-edition-640px-ps4-pro.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4 Pro</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.53em; font-weight: 400;">KINGDOM HEARTS III LIMITED EDITION</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: PCAS-05086HA</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR7,799,000</h6>
+
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2019-god-of-war-bundle-640px-ps4-pro-id-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4 Pro</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">God of War Bundle</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: PCAS-05061HC</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR6,999,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+</div>
+<div class="productcontainer" style="z-index: 4;position: relative;">
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2018-party-bundle-640px-sg-my-th-id-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Party Bundle</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: ASIA-00333</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR5,699,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2018-hits-5-640px-sg-my-th-id-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">HITS</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: ASIA00332/00329</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR5,199,000</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Release Date: 2018/11/15</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2018-red-dead-redemption-2-bundle-pack-640px-ps4-pro-sg-my-th-id-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4 Pro</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">Red Dead Redemption 2 Bundle Pack</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: PLAS-10282HB</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR7,899,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+  </div>
+</div>
+<div class="productcontainer" style="z-index: 4;position: relative;">
+  <div>
+    <a id="fontlinkproduct" href="#">
+      <img src="<?php echo base_url('img/product/ps4-bundle-2018-fifa-19-bundle-pack-640px-sg-my-th-id-01.png'); ?>" style="width: 300px;border: 1px solid grey;padding: 25px" >
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400; padding-top: 10px">PlayStation 4</h6>
+      <h6 class="js-style xs-font14 " style="font-size: 0.55em; font-weight: 400;">FIFA 19 Bundle Pack</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Model No: PLAS-10252HB/HC</h6>
+      <h6 style="font-family: 'ＭＳ Ｐゴシック';" >Suggested Price: IDR5,799,000</h6>
+    </a>
+    <div style="text-align: center;">
+      <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+    </div>
+    
+  </div>
+  <div>
+
+  </div>
+  <div>
+
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<div style="margin-left: 18.5%;margin-right: 18.5%;">
+  <h6 class="js-style xs-font14 " style="font-size: 1.2em; font-weight: 400;float: left;">System Update</h6>
+  <div class="morebutton">
+    <a href="#" style="text-decoration: none;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック'; display: inline-block;" >MORE</h5>
+      <img src="<?php echo base_url('img/product/icon_link.svg'); ?>">
     </a>
   </div>
-
-<div class="container">
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">Garansi PlayStation 4 di Indonesia</h1>
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" ><p>&nbsp;</p>
-			<p>Dengan Sistem Garansi baru, para pengguna di Indonesia akan dapat menikmati manfaat berikut:</p>
-			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Produk <i>Authentic Official</i> (Asli Resmi) – Produk Resmi PlayStation akan memiliki stiker hologram yang menyatakan “Produk Resmi Indonesia”</p>
-			<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lebih dari 50 Pusat Layanan di seluruh Indonesia – Pengguna dapat membawa Produk Resmi PlayStation mereka ke beragam pusat layanan di Indonesia.</p>
-			<p>&nbsp;</p>
-			</div>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/indo.jpg');?>" width=100% height=100%>
-		</div> 		
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation 4</h1>
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PS4 system is the home to games with rich, high-fidelity graphics and deeply immersive experiences that shatter expectations.</p>
-					<p>Simply hit the SHARE button on the controller to share your gameplay experience to the world, or communicate with your friends online.</p>
-					<p>PlayStation exclusives and most immersive games are waiting for you.</p>
-				</div></br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/luol.png');?>" width=100% height=100%>
-		</div> 		
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation VR</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/vr.png');?>" width=100% height=100%>
-		</div> 		
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PlayStation VR (PS VR) uses a combination of 3D space and independent 3D audio technology to surround the player in a 360° world, giving an incredible level of immersion and a &quot;Sense of Presence&quot; so you will really feel like you are in the game.</p>
-					<p>There is also a huge variety of amazing non-game content to enjoy!</p>
-					<p>With a great new price, the immersive world of PS VR is now easier than ever to experience!</p>
-				</div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-	</div></br></br></br>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Classic</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-				<div  >
-					<p>PlayStation Classic, a miniature games console that mirrors the look of the original PlayStation and comes preloaded with 20 original games, has launched.</p>
-					<p>The design of the PlayStation Classic resembles PlayStation, including the button layout, as well as controllers and outer package, but in a miniature size, it is 45% smaller on the sides and 80% smaller in volume than the original console.</p>
-				</div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/classic.png');?>" width=100% height=100%>
-		</div> 		
-	</div>
-	<div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">Find Your Perfect Game</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6" align='middle'>
-			<img src="<?php echo base_url('img/kindom2.png');?>" width=100% height=100%>
-			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div>
-		<div class="col-sm-6" align='middle'>
-			<img src="<?php echo base_url('img/re2.png');?>" width=100% height=100%>
-			</br></br>
-			<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-		</div> 		
-	</div>
-  <div class="row">
-		<div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Network</h1>	
-		</div>
-	</div>
-	<div class="row">
-    <div class="col-sm-6">
-			<img src="<?php echo base_url('img/network.png');?>" width=100% height=100%>
-		</div> 
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <div  >
-        <p>With PlayStation Network, you can buy your games, listen to music, or play online multi-player games anytime. PS app for smart phone will enhance your PlayStation experience even more.</p>
-      </div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>		
-	</div>
-  <div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">PlayStation Vita</h1>	
-		 </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <span class="">Find out why PlayStation Vita is a totally original take on portable gaming. This slim and sleek device also features high-precision dual analog controls for a more immersive gaming experience away from your console and TV.</span>
-
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="<?php echo base_url('img/psvita.png');?>" width=100% height=100%>
-		</div> 		
-	</div>
-  <div class="row">
-		 <div class="col" align="middle" style="padding-top:10px">
-			<h1 style="font-size:2.5vw">About SIE Worldwide Studios</h1>	
-		 </div>
-	</div>
-	<div class="row">
-    <div class="col-sm-6">
-			<img src="<?php echo base_url('img/sie.jpg');?>" width=100% height=100%>
-		</div> 		
-		<div class="col-sm-6">
-			<div style="font-size:1vw" >
-      <div  >
-        <p>SIE Worldwide Studios is a global development hub, a diverse network of highly successful and passionate game development studios and, above all else, a home for outstanding creative talent.</p>
-        <p>We develop and publish a range of exciting new titles each year, created either by our fantastic in-house studios, or in collaboration with independent studios from the wider industry.</p>
-      </div>
-						</br></br></br>
-				<a href="#" class="btn btn-primary" role="button" style="font-size:1vw">Learn More</a>
-			</div>
-		</div>
-	</div>
+  <br>
+  <hr style="border:1.5px solid black;">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2019/03/28</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">About PlayStation 4 system software version 6.51</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2019/03/07</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">About PlayStation 4 system software version 6.50</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">
+  <div style="margin-top: -10px;margin-bottom: -10px;">
+    <h6 style="font-family: 'ＭＳ Ｐゴシック';color: grey;display: inline-block;padding-right: 10px;">2018/12/12</h6>
+    <a class="fontnews" href="#" style="display: inline-block;">
+      <h5 style="font-family: 'ＭＳ Ｐゴシック';">System Software Update 6.20 for PlayStation 4 Systems</h5>
+    </a>
+  </div>
+  <hr style="border:0.5px dotted black">  
+  <br><br><br>
+  <div>
+    <h4 style="font-family: 'ＭＳ Ｐゴシック'">Beta Tester Registration</h4>
+    <br>
+    <p style="font-family: 'ＭＳ Ｐゴシック'">You may register to participate in beta programs for PlayStation. Upon registration, you will receive an invitation to join the beta programs of PlayStation system software, applications or network services.</p>
+  </div>
+  <br><br>
+  <div style="text-align: center;">
+    <button class="btnlearnmore"><h5>LEARN MORE</h5></button>
+  </div>
 </div>
-</br></br></br>
+
+<br><br><br><br>
+
 <footer class="page-footer font-small indigo " id='foter'>
 
-    <div class="container text-center text-md-left" id='footer' >
+    <div class="container text-center text-md-left" id='footer'>
 
       <div class="row"style="padding-left:  120px">
 
@@ -914,10 +1161,10 @@ body {
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
           </div>
       </div>
     </div> 
-  </footer> 
+  </footer>
 </body>
 </html>

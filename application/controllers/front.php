@@ -33,11 +33,6 @@ class front extends CI_Controller {
 		$this->load->view('psn');
 	}
 
-	public function news()
-	{
-		$this->load->view('news');
-	}
-
 	public function login()
 	{
 		$this->load->view('login');
@@ -48,6 +43,25 @@ class front extends CI_Controller {
 		$this->load->view('in_front_page');
 	}
 
+	public function product_user()
+	{
+		$this->load->view('in_product');
+	}
+
+	public function support_user()
+	{
+		$this->load->view('in_support');
+	}
+
+	public function games_user()
+	{
+		$this->load->view('in_games');
+	}
+
+	public function psn_user()
+	{
+		$this->load->view('in_psn');
+	}
 	public function homepage_admin()
 	{
 		$this->load->view('admin_front_page');
