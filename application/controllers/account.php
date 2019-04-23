@@ -220,5 +220,12 @@ class account extends CI_Controller {
 	
 	}
 
+	public function delete_user(){
+		$this->load->model('UserModel');
+
+		$delete = $this->UserModel->delete($this->session->userdata('user_id'));
+	
+	}
+
 }
 ?>

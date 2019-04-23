@@ -211,8 +211,8 @@ th, td {
                           </div>
                           <div class="modal-body">
                           <div class="modal-body" id='content' >
-                            <div id="black-small-text" margin=20px>
-                              Gender
+                              Gender                            <div id="black-small-text" margin=20px>
+
                             </div>
                             <div align='middle' >
                             <select name='gender' class="input-box">
@@ -371,7 +371,7 @@ th, td {
     </div>
   </div>
 </div>
-<button class="btnlearnmore" style="margin-left : 47%"><h5>Delete Account</h5></button>
+<button class="btnlearnmore" style="margin-left : 47%" onclick="window.location.href='<?php echo site_url();?>/account/delete_user';"><h5>Delete Account</h5></button>
 
 <script>
 function opensetting(evt, cityName) {

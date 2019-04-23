@@ -121,6 +121,13 @@ class UserModel extends CI_Model
     // $hasil = $this->db->get();
   
   }
+
+  public function delete($user_id){
+    $sql = "DELETE FROM user 
+    WHERE user_id = '".$user_id."'";
+    $this->db->query($sql);
+    redirect ('/front/index','refresh');
+  }
 }
 
 
