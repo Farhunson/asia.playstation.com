@@ -1,4 +1,4 @@
-<!doctype HTML>
+!doctype HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -59,16 +59,25 @@ body {
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
+  padding-bottom: 30px;
   opacity :1;
   transform: translateY(0);
 }
- 
 .dropdown-contentsa {
   display: none;
   position: absolute;
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
 }
  
 .dropdown-contentsa .header {
@@ -77,8 +86,27 @@ body {
   /*margin-top: 10px;*/
 }
  
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
 .dropdownsa:hover .dropdown-contentsa {
-  display: block;
+  display: inline-block;
+  top: 100px;
+
 }
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -545,7 +573,7 @@ hr {
         </div>
     </nav>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front/homepage_admin"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -555,7 +583,7 @@ hr {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/product">
+              <a href="<?php echo site_url();?>/front/product_admin">
               <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
             </td>
@@ -588,7 +616,7 @@ hr {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/games">
+              <a href="<?php echo site_url();?>/front/games_admin">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -616,7 +644,7 @@ hr {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo site_url();?>/front/psn_admin">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
@@ -739,7 +767,7 @@ hr {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/support">
+              <a href="<?php echo site_url();?>/front/support_admin">
               <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
@@ -812,10 +840,10 @@ hr {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Dashboard</h5></a>
+          <a id="myplaystation"href="<?php echo site_url();?>/account/dashboard" /><h5 style="font-weight: bold">Dashboard</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <button class="signin">Log Out</button>
+            <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
         </td>
         <td >
           <FORM id="containersearch" >
@@ -830,6 +858,7 @@ hr {
       </tr>
     </table>
   </div>
+
 </div>
 <!---topnav-->
 </br></br></br>
@@ -976,12 +1005,17 @@ window.onclick = function(event) {
 
 <br><br><br></br></br>
 <!---botfot-->
-<footer class="page-footer font-small indigo " id='foter' style="clear: left;">
+<footer class="page-footer font-small indigo " id='foter'>
+
     <div class="container text-center text-md-left" id='footer' >
-      <div class="row"style="padding-left : 100px">
+
+      <div class="row"style="padding-left:  120px">
+
         <br>
         <div class="col-md-3" >
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
+
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">PlayStation®4</a>
@@ -1001,7 +1035,10 @@ window.onclick = function(event) {
           </ul>
 
         </div>
+
         <div class="col-md-3 mx-auto">
+
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
           <ul class="list-unstyled" >
@@ -1021,9 +1058,12 @@ window.onclick = function(event) {
               <a id="fontfooter" href="#!">PlayStation®App</a>
             </li>
           </ul>
+
         </div>
         <div class="col-md-3 mx-auto">
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
+
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">Press Release</a>
@@ -1032,8 +1072,11 @@ window.onclick = function(event) {
               <a id="fontfooter" href="#!">Latest News</a>
             </li>
           </ul>
+
         </div>
         <div class="col-md-3 mx-auto">
+
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
           <ul class="list-unstyled">
@@ -1044,6 +1087,7 @@ window.onclick = function(event) {
               <a id="fontfooter" href="#!">Warranty Services</a>
             </li>
           </ul>
+
         </div>
       </div>
       <br>
@@ -1066,10 +1110,10 @@ window.onclick = function(event) {
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
           </div>
       </div>
     </div> 
-  </footer>
+  </footer> 
 </body>
 </html>

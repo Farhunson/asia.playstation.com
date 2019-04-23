@@ -60,8 +60,28 @@ class front extends CI_Controller {
 
 	public function psn_user()
 	{
-		$this->load->view('in_psn');
+		$this->load->view('admin_psn');
 	}
+
+	public function product_admin()
+	{
+		$this->load->view('admin_product');
+	}
+
+	public function support_admin()
+	{
+		$this->load->view('admin_support');
+	}
+
+	public function games_admin()
+	{
+		$this->load->view('admin_games');
+	}
+
+	public function psn_admin()
+	{
+		$this->load->view('admin_psn');
+	}	
 	public function homepage_admin()
 	{
 		$this->load->view('admin_front_page');

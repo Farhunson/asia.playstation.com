@@ -47,7 +47,7 @@
       border: none;
       outline: none;
       color: white;
-      padding: 14px 13px;
+      padding: 14.5px 13.5px;
       background-color: inherit;
       font: inherit;
       margin: 0;
@@ -102,9 +102,9 @@
 
 }
     .dropdown-contentsa .header {
-      padding: 16px;
+      /*padding: 16px;*/
       color: white;
-      margin-top: 10px;
+      /*margin-top: 10px;*/
     }
 
 .navbarsa .dropdownsa:hover .dropbtnsa {
@@ -458,7 +458,7 @@
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/product">
+              <a href="<?php echo site_url();?>/front/product_admin">
               <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
             </td>
@@ -491,7 +491,7 @@
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/games">
+              <a href="<?php echo site_url();?>/front/games_admin">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -519,7 +519,7 @@
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/psn">
+              <a href="<?php echo site_url();?>/front/psn_admin">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
@@ -642,7 +642,7 @@
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/support">
+              <a href="<?php echo site_url();?>/front/support_admin">
               <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
@@ -715,10 +715,10 @@
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo site_url();?>/account/dashboard" /><h5 style="font-weight: bold">Dashboard</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Sign In</button>
+            <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
         </td>
         <td >
           <FORM id="containersearch" >
