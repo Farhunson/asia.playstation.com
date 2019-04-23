@@ -65,6 +65,21 @@ class account extends CI_Controller {
 
     	$register2 = $this->UserModel->register_user2($table, $data_insert);
 
+    	$login_user = $this->UserModel->login_user($email, $password);
+
+    	if (session_status() == PHP_SESSION_NONE) {
+    		session_start();
+		}
+
+    	if ($login_user){
+    	$sess_data = array(
+          	'logged_in' => 1,
+          	'email' => $login->email,
+          	'user_id' => $login_user->user_id
+      	);
+      		$this->session->set_userdata($sess_data);
+      	}
+
     	if ($register2) {
      		redirect('account/create3');
     	}
@@ -83,7 +98,8 @@ class account extends CI_Controller {
       	'address' => $address,
       	'phoneNo' => $phoneNo,
       	'username' => $username,
-      	'name' => $name
+      	'name' => $name,
+      	'user_id' => $this->session->userdata('user_id')
     	);
 
     	$register3 = $this->UserModel->register_user3($table, $data_insert);
@@ -100,17 +116,23 @@ class account extends CI_Controller {
     	$login_customer = $this->UserModel->login_customer($email, $password);
     	$login_admin = $this->UserModel->login_admin($email, $password);
 
+    	if (session_status() == PHP_SESSION_NONE) {
+    		session_start();
+		}
+
     	if ($login_customer) {
       		$sess_data = array(
           	'logged_in' => 1,
-          	'email' => $login->email
+          	'email' => $login->email,
+          	'user_id' => $login->user_id
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_user');
       	} else if ($login_admin) {
       		$sess_data = array(
           	'logged_in' => 1,
-          	'email' => $login->email
+          	'email' => $login->email,
+          	'user_id' => $login->user_id
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_admin');
