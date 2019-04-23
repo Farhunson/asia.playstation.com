@@ -86,9 +86,9 @@ class UserModel extends CI_Model
     redirect ('/account/profile','refresh');
   }
 
-  public function update_user_id($user_id,$data){
+  public function update_email($user_id,$data){
     $sql = "UPDATE user
-        SET user_id = '".$data['user_id']."'
+        SET email = '".$data['email']."'
         WHERE user_id='".$user_id."'";
     $this->db->query($sql);
     redirect ('/account/profile','refresh');

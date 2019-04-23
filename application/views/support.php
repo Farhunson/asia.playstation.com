@@ -358,17 +358,17 @@ a {text-decoration: none;}
               <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationvr.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®VR</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationvita.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Vita</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_psclassic.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Classic</h5></a>
             </td>
@@ -391,12 +391,12 @@ a {text-decoration: none;}
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_psvrgames.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS VR GAMES</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_psvitagames.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS Vita GAMES</h5></a>
             </td>
@@ -419,22 +419,22 @@ a {text-decoration: none;}
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationplus.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Plus</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationmusic.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation™Music</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
             </td>
@@ -452,12 +452,12 @@ a {text-decoration: none;}
         <table style="margin-left:16%; margin-right:19%;">
             <tr>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                 <img src = "<?php echo base_url('img/menu_pressrelease.png'); ?>" style="width: 100px " /> <br>
                 <h5 class="fontdropdown"style="text-align:center">Press Release</h5></a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                 <img src = "<?php echo base_url('img/menu_latestnews.png'); ?>" style="width: 100px " /> <br>
                 <h5 class="fontdropdown"style="text-align:center">Latest News</h5></a>
               </td>
@@ -467,7 +467,7 @@ a {text-decoration: none;}
        <table style="margin-left:16%; margin-right:19%;">
             <tr>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                   <table >
                     <tr>
                       <td style="padding-right: 15px">
@@ -481,7 +481,7 @@ a {text-decoration: none;}
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                   <table >
                     <tr>
                       <td style="padding-right: 15px">
@@ -495,7 +495,7 @@ a {text-decoration: none;}
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                   <table>
                     <tr>
                       <td style="padding-right: 15px">
@@ -509,7 +509,7 @@ a {text-decoration: none;}
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('www.facebook.com'); ?>">
+                <a href="<?php echo base_url('#'); ?>">
                   <table>
                     <tr>
                       <td style="padding-right: 15px">
@@ -542,22 +542,22 @@ a {text-decoration: none;}
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_warranty.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Warranty Services</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_psnstatus_large.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN Status</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_fixandconnect_large.svg'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Fix & Connect</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('www.facebook.com'); ?>">
+              <a href="<?php echo base_url('#'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
             </td>
@@ -610,7 +610,7 @@ a {text-decoration: none;}
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo base_url('#'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
         </td>
         <td style="padding-right: 10px">
           <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Sign In</button>

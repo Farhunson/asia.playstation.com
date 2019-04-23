@@ -74,7 +74,7 @@ class account extends CI_Controller {
     	if ($login_user){
     	$sess_data = array(
           	'logged_in' => 1,
-          	'email' => $login->email,
+          	'email' => $login_user->email,
           	'user_id' => $login_user->user_id
       	);
       		$this->session->set_userdata($sess_data);
@@ -123,16 +123,16 @@ class account extends CI_Controller {
     	if ($login_customer) {
       		$sess_data = array(
           	'logged_in' => 1,
-          	'email' => $login->email,
-          	'user_id' => $login->user_id
+          	'email' => $login_customer->email,
+          	'user_id' => $login_customer->user_id
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_user');
       	} else if ($login_admin) {
       		$sess_data = array(
           	'logged_in' => 1,
-          	'email' => $login->email,
-          	'user_id' => $login->user_id
+          	'email' => $login_admin->email,
+          	'user_id' => $login_admin->user_id
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_admin');
@@ -145,78 +145,77 @@ class account extends CI_Controller {
 	public function profile()
 	{
 		$this->load->model('UserModel');
-		
-		$data=$this->UserModel->get_data('1301174515') ;
+		$data=$this->UserModel->get_data($this->session->userdata('user_id')) ;
 		$this->load->view('user_profile', $data);
 	}
 
-	public function edit_nama($user_id){
+	public function edit_nama(){
 		$this->load->model('UserModel');
 		$nama = $this->input->post('name');
 	
 		$data_update = array (
 		  'name' => $nama,
 		);
-		$update = $this->UserModel->update_nama($user_id,$data_update);
+		$update = $this->UserModel->update_nama($this->session->userdata('user_id'),$data_update);
 
 	
 	}
-	public function edit_gender($user_id){
+	public function edit_gender(){
 		$this->load->model('UserModel');
 		$gender = $this->input->post('gender');
 	
 		$data_update = array (
 		  'gender' => $gender,
 		);
-		$update = $this->UserModel->update_gender($user_id,$data_update);
+		$update = $this->UserModel->update_gender($this->session->userdata('user_id'),$data_update);
 
 	
 	}
 
-	public function edit_address($user_id){
+	public function edit_address(){
 		$this->load->model('UserModel');
 		$address = $this->input->post('address');
 	
 		$data_update = array (
 		  'address' => $address,
 		);
-		$update = $this->UserModel->update_address($user_id,$data_update);
+		$update = $this->UserModel->update_address($this->session->userdata('user_id'),$data_update);
 
 	
 	}
 
-	public function edit_user_id($user_id){
+	public function edit_email(){
 		$this->load->model('UserModel');
-		$address = $this->input->post('user_id');
+		$email = $this->input->post('email');
 	
 		$data_update = array (
-		  'user_id' => $user_id,
+		  'email' => $email,
 		);
-		$update = $this->UserModel->update_user_id($user_id,$data_update);
+		$update = $this->UserModel->update_email($this->session->userdata('user_id'),$data_update);
 
 	
 	}
 
-	public function edit_password($user_id){
+	public function edit_password(){
 		$this->load->model('UserModel');
-		$address = $this->input->post('password');
+		$password = $this->input->post('password');
 	
 		$data_update = array (
 		  'password' => $password,
 		);
-		$update = $this->UserModel->update_user_id($user_id,$data_update);
+		$update = $this->UserModel->update_password($this->session->userdata('user_id'),$data_update);
 
 	
 	}
 
-	public function edit_phone($user_id){
+	public function edit_phone(){
 		$this->load->model('UserModel');
-		$address = $this->input->post('phoneNo');
+		$phoneNo = $this->input->post('phoneNo');
 	
 		$data_update = array (
 		  'phoneNo' => $phoneNo,
 		);
-		$update = $this->UserModel->update_phone($user_id,$data_update);
+		$update = $this->UserModel->update_phone($this->session->userdata('user_id'),$data_update);
 
 	
 	}

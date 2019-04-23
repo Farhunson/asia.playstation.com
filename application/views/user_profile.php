@@ -1,5 +1,3 @@
-
-
 <!doctype HTML>
 <html lang="en">
 <head>
@@ -160,7 +158,7 @@ th, td {
                   <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog ">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("account/edit_nama/1301174515");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_nama");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Name</h4>
@@ -192,7 +190,7 @@ th, td {
                   <div class="modal fade" id="myModal2" role="dialog">
                     <div class="modal-dialog ">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("account/edit_gender/1301174515");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_gender");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-titleee" align=middle>Gender</h4>
@@ -229,8 +227,8 @@ th, td {
                   <div class="modal fade" id="myModal3" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("account/edit_address/1301174515");?>'>
-                          <!-- 1301174515 itu user_id -->
+                        <form method='post' action='<?php echo site_url("account/edit_address");?>'>
+                          <!-- itu user_id -->
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Address</h4>
@@ -267,7 +265,7 @@ th, td {
                   <div class="modal fade" id="myModal4" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                      <form method='post' action='<?php echo site_url("account/edit_email/1301174515");?>'>
+                      <form method='post' action='<?php echo site_url("account/edit_email");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Email</h4>
@@ -299,7 +297,7 @@ th, td {
                   <div class="modal fade" id="myModal5" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                      <form method='post' action='<?php echo site_url("account/edit_password/1301174515");?>'>
+                      <form method='post' action='<?php echo site_url("account/edit_password");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Password</h4>
@@ -326,12 +324,12 @@ th, td {
                 <th>Phone Number</th>
                 <td><?php echo $phoneNo?></td>
                 <td>
-                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal5">Edit</button>
+                <button type="button" class="btn btn-info button4" data-toggle="modal" data-target="#myModal6">Edit</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal5" role="dialog">
+                  <div class="modal fade" id="myModal6" role="dialog">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <form method='post' action='<?php echo site_url("account/edit_phone/1301174515");?>'>
+                        <form method='post' action='<?php echo site_url("account/edit_phone");?>'>
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title" align='middle'>Phone Number</h4>
@@ -341,7 +339,7 @@ th, td {
                               Phone Number
                             </div>
                             <div align='middle' >
-                              <input type="password" name="phoneNo" class="input-box" placeholder="Password">
+                              <input type="text" name="phoneNo" class="input-box" placeholder="Phone Number">
                             </div>
                           </div>
                           <div align=middle>
