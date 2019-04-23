@@ -600,7 +600,14 @@ body {
           <a id="myplaystation"href="<?php echo base_url('www.facebook.com'); ?>" /><h5 style="font-weight: bold">Manage Account</h5></a>
         </td>
         <td style="padding-right: 10px">
+
             <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
+
+          <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
+<!--           <button class="signin" onclick="window.location.href='<?php echo site_url();?>/front/login';">Log Out</button></a>
+          <form method='post' action='<?php echo site_url("account/logout");?>'>
+            <button class="signin" type="submit">Log Out</button></a>
+          </form> -->
 
         </td>
         <td >
