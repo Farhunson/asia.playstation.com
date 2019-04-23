@@ -1,4 +1,4 @@
-<!doctype HTML>
+!doctype HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -83,6 +83,20 @@ table {
   width: 100%;
 }
 
+.btnlearnmore {
+  width: 200px;
+  height: 50px;
+  background-color: #1F1F1F;
+  border: 0; 
+  color: white;
+  font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  transition: 0.3s;
+  border-radius: 5pt;
+}
+
+.btnlearnmore:hover {
+  background-color: black;
+}
 th, td {
   padding: 8px;
   text-align: left;
@@ -140,7 +154,7 @@ th, td {
   <div class="row">
     <div class="col-sm-4" >
         <div class="tab">
-            <p> Account</p>
+            <p style="text-align: center;font-family: MS PGothic; font-size: 30px ">My Account</p>
             <button class="tablinks" onclick="opensetting(event, 'basic')" id="defaultOpen">Basic Account Information</button>
             <button class="tablinks" onclick="opensetting(event, 'security')">Security</button>
         </div>
@@ -357,7 +371,7 @@ th, td {
     </div>
   </div>
 </div>
-
+<button class="btnlearnmore" style="margin-left : 47%"><h5>Delete Account</h5></button>
 
 <script>
 function opensetting(evt, cityName) {
