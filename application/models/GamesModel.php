@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 
 class GamesModel extends CI_Model
 {
@@ -12,8 +12,8 @@ class GamesModel extends CI_Model
     }
   }
 
-  public function updategames($table, $data_update){
-    $this->db->where('games_id', $data_update->games_id);
+  public function updategames($table, $data_update, $id){
+    $this->db->where('games_id', $id);
     $update = $this->db->update('games', $data_update);
     if ($update){
       return TRUE;
@@ -21,6 +21,8 @@ class GamesModel extends CI_Model
       return FALSE;
     }
   }
+
+
 
   public function get_data($games_id){
     $sql = "SELECT * FROM games

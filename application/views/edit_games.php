@@ -846,7 +846,7 @@ hr {
 </div>
 <!---topnav-->
 </br></br></br>  
-<form method="post" class="modal-content" action='<?php echo site_url("games/update_games/$games_id");?>'>
+<form method="post" class="modal-content" id="addform" action='<?php echo site_url("games/update_games/$games_id");?>'>
     <div class="container">
       <h1>Edit Game</h1>
       <hr>
@@ -878,7 +878,7 @@ hr {
       <br><br>
       <label for="desc"><b>Description</b></label>
       <br>
-      <textarea form="addform" name="description" name="description" required><?php echo $description?></textarea>
+      <textarea form="addform" name="description" name="description" value="<?php echo $description?>" required><?php echo $description?></textarea>
 
       <div class="clearfix">
         <a href="<?php echo site_url("account/dashboard") ?>"><button type="button" class="cancelbtn">Cancel</button></a>

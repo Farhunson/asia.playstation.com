@@ -86,6 +86,7 @@ class games extends CI_Controller {
     	$picture .= $this->input->post('picture');
     	$description = $this->input->post('description');
     	$table = 'games';
+    	$id = $games_id;
 
     	$data_update = array (
       	'name' => $name,
@@ -98,11 +99,12 @@ class games extends CI_Controller {
       	'description' => $description
     	);
 
-    	$updategames = $this->GamesModel->updategames($table, $data_update);
+    	$updategames = $this->GamesModel->updategames($table, $data_update, $id);
 
     	if ($updategames) {
      		redirect('account/dashboard');
     	}
-	
 	}
+
+	
 }

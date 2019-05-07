@@ -747,7 +747,7 @@ body {
   <?php foreach($games as $item) : ?>
   <div class="gamelistcontainer" style="float: left; margin:1%;">
     <div style="width: 170px;">
-      <a href="<?php echo site_url();?>/games/view_admin/<?= $item->games_id ?>">
+      <a style="text-decoration: none;" href="<?php echo site_url();?>/games/view_admin/<?= $item->games_id ?>">
       <div class="item-gamescontainer">
         <img class="img-responsive center-block fit" src="<?php echo base_url($item->picture);?>"/>
         <h3 class="fontgametitle" ><?= $item->name ?></h3>

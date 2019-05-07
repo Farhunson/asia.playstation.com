@@ -376,7 +376,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 5%;
   width: 100%;
 }
 
@@ -417,7 +417,7 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/product">
+              <a href="<?php echo site_url();?>/front/product_admin">
               <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
             </td>
@@ -450,7 +450,7 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/games">
+              <a href="<?php echo site_url();?>/front/games_admin">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
@@ -478,7 +478,7 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo site_url();?>/front/psn_admin">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
@@ -601,7 +601,7 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/support">
+              <a href="<?php echo site_url();?>/front/support_admin">
               <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
@@ -705,9 +705,9 @@ body {
     <h3 id="titlegame-sub">|</h3> 
     <h3 id="titlegame-sub">Released <?php echo $release_date;?></h3>
     <div>
-      <img src="<?php echo base_url($picture);?>" style="width: 407px; float: left;"/>
+      <img src="<?php echo base_url($picture);?>" style="width: 31%; float: left;"/>
     </div>
-    <table class="table-game" id="desc-game">
+    <table class="table-game" id="desc-game" style="height: 400px;width: auto;">
       <tr class="table-game">
         <td style="background-color: #ed5f2b; padding: 3px">Platform: </td>
         <td style="background-color: white; padding: 3px"><?php echo $platform;?></td>
