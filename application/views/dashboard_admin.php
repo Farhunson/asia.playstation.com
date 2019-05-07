@@ -358,7 +358,7 @@ body {
 }
 
 .fontgametitle{
-  font-size:14px;
+  font-size:12px;
   color: #1F1F1F;
   font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -538,22 +538,6 @@ hr {
   .cancelbtn, .submitbtn {
      width: 100%;
   }
-}
-
-.img-delete{
-  width: 20%;
-  margin-bottom: 1%;
-  margin-top: 20%;
-  margin-left: 25%;
-  margin-right: auto;
-}
-
-.img-edit{
-  width: 20%;
-  margin-bottom: 1%;
-  margin-top: 20%;
-  margin-left: 15%;
-  margin-right: auto;
 }
 
 .img-delete:hover, .img-edit:hover{opacity: 0.5}
@@ -870,13 +854,13 @@ hr {
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form method="post" class="modal-content" action='<?php echo site_url("games/addgames");?>' id="addform">
     <div class="container">
       <h1>Add New Games</h1>
       <p>Please fill in this form to add a game.</p>
       <hr>
       <label for="game_title"><b>Game Title</b></label>
-      <input type="text" placeholder="Enter Game Title" name="game_title" required>
+      <input type="text" placeholder="Enter Game Title" name="name" required>
 
       <label for="genre"><b>Genre</b></label>
       <input type="text" placeholder="Enter Genre" name="genre" required>
@@ -889,8 +873,8 @@ hr {
       <label for="provider"><b>Provider</b></label>
       <input type="text" placeholder="Enter Provider" name="provider" required>
 
-      <label for="size"><b>Size</b></label>
-      <input type="text" placeholder="Enter Size (GB)" name="size" required>
+      <label for="size"><b>Platform</b></label>
+      <input type="text" placeholder="Enter Platform" name="platform" required>
 
       <label for="price"><b>Price</b></label>
       <input type="text" placeholder="Enter Price (Rp)" name="price" required>
@@ -901,7 +885,7 @@ hr {
       <br><br>
       <label for="desc"><b>Description</b></label>
       <br>
-      <textarea name="desc" placeholder="Enter Description" name="desc" required></textarea>
+      <textarea form="addform" name="description" placeholder="Enter Description" name="description" required></textarea>
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -947,42 +931,31 @@ hr {
 
 <div id="id03" class="modal">
   <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content">
     <div class="container">
       <h1 align="center">Game List</h1>
       <hr>
-
-      <div class="gamelistcontainer" style="float: left;margin:1%">
+      <?php foreach($games as $item) : ?>
+        <div class="gamelistcontainer" style="float: left; margin:1%;">
         <div style="width: 170px;">
-          <div class="item-gamescontainer">
-            <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-            <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-            <div class="fontsubgame">PS4™</div>
-            <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-            <div class="fontsubgame">Sports</div>
-            <div class="fontpricegame">Price</div>
-            <div class="fontpricegame">Rp 745,000</div>
-            <a href="#!"><img class="img-delete" src="<?php echo base_url('img/Dashboard/delete-737-475058.png');?>"/></a>
-            <a href="#!"><img class="img-edit" src="<?php echo base_url('img/Dashboard/box_edit-512.png');?>"/></a>
-          </div>
+        <div class="item-gamescontainer">
+        <img class="img-responsive center-block fit" src="<?php echo base_url($item->picture);?>"/>
+        <div style="height: 50%">
+        <h3 class="fontgametitle" ><?= $item->name ?></h3>
+        <div class="fontsubgame"><?= $item->platform ?></div>
+        <div class="fontsubgame" ><?= $item->provider ?></div>
+        <div class="fontsubgame"><?= $item->genre ?></div>
+        <div class="fontpricegame">Price</div>
+        <div class="fontpricegame">Rp <?= $item->price ?></div>
         </div>
-      </div>
-
-      <div class="gamelistcontainer" style="float: left;margin:1%">
-        <div style="width: 170px;">
-          <div class="item-gamescontainer">
-            <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-            <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-            <div class="fontsubgame">PS4™</div>
-            <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-            <div class="fontsubgame">Sports</div>
-            <div class="fontpricegame">Price</div>
-            <div class="fontpricegame">Rp 745,000</div>
-            <a href="#!"><img class="img-delete" src="<?php echo base_url('img/Dashboard/delete-737-475058.png');?>"/></a>
-            <a href="#!"><img class="img-edit" src="<?php echo base_url('img/Dashboard/box_edit-512.png');?>"/></a>
-          </div>
+        <a class="btn" style="background-color:#76FF56; width: 30%; margin-left: 15%" href="<?php echo site_url("games/edit_game/$item->games_id"); ?>"><i class="fa fa-edit"></i></a>
+        <a class="btn" style="background-color:#FFA556; width: 30%; margin-left: 15%" href="<?= site_url() ?>/games/delete_game/<?= $item->games_id; ?>"><i class="fa fa-trash"></i></a>
+        <!-- <a href="#!"><img class="img-delete" src="<?php echo base_url('img/Dashboard/delete-737-475058.png');?>" action='<?php echo site_url("game/delete_game");?>'/></a>
+        <a href="#!"><img class="img-edit" src="<?php echo base_url('img/Dashboard/box_edit-512.png');?>" action='<?php echo site_url("game/edit_game");?>'/></a> -->
         </div>
-      </div>
+        </div>
+        </div>
+      <?php endforeach ?>
   </div>
   </form>
 </div>

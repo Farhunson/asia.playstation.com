@@ -25,7 +25,9 @@ class front extends CI_Controller {
 
 	public function games()
 	{
-		$this->load->view('games');
+		$this->load->model('GamesModel');
+		$data['games']=$this->GamesModel->get_all_games();
+		$this->load->view('games', $data);
 	}
 
 	public function psn()
@@ -75,7 +77,9 @@ class front extends CI_Controller {
 
 	public function games_admin()
 	{
-		$this->load->view('admin_games');
+		$this->load->model('GamesModel');
+		$data['games']=$this->GamesModel->get_all_games();
+		$this->load->view('admin_games', $data);
 	}
 
 	public function psn_admin()

@@ -1,4 +1,4 @@
-<!doctype HTML>
+!doctype HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -59,16 +59,25 @@ body {
  
 .navbarsa .dropdownsa:hover .dropbtnsa {
   background-color: #003791;
+  padding-bottom: 30px;
   opacity :1;
   transform: translateY(0);
 }
- 
 .dropdown-contentsa {
   display: none;
   position: absolute;
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
+.dropdownsa:hover .dropdown-contentsa {
+  display: inline-block;
+  top: 100px;
+
 }
  
 .dropdown-contentsa .header {
@@ -77,8 +86,27 @@ body {
   /*margin-top: 10px;*/
 }
  
+.navbarsa .dropdownsa:hover .dropbtnsa {
+  background-color: #003791;
+  padding-bottom: 30px;
+  opacity :1;
+  transform: translateY(0);
+}
+.dropdown-contentsa {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -1000px;
+  transition: 0.6s;
+
+
+}
 .dropdownsa:hover .dropdown-contentsa {
-  display: block;
+  display: inline-block;
+  top: 100px;
+
 }
 .fontdropdown {
   font-family :"SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -309,37 +337,24 @@ body {
 
 #titlegame{
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 30px;
+  font-size: 36.4px;
   text-align: center;
   color: #1F1F1F;
 }
-
-#titlegame-sub{
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: #1F1F1F;
-  margin-bottom: 5%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .gamelistcontainer{
   background-color: #EEEEEE;
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 1em;
   position: relative;
-  height: auto;
-  width: 91%;
+  height: 400px;
 }
 
 .item-gamescontainer{
   box-sizing: border-box;
   cursor: pointer;
   display: block;
-  height: auto;
+  height: 327px;
 }
 
 .fontgametitle{
@@ -349,18 +364,36 @@ body {
 }
 
 .fontsubgame{
-  font-size:10px;
+  font-size:12px;
   color: #9C9C9C;
   font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .fontpricegame{
-  font-size:10px;
+  font-size:12px;
   color: #1F1F1F;
   font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
-.button-buy{
+.button-delete{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  display: block;
+  margin-left: auto;
+  width: 50%;
+}
+
+.button-edit{
   text-align: center;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -380,21 +413,138 @@ body {
   width: 100%;
 }
 
-#desc-game{
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  color: #1F1F1F;
-  margin-left: 40%;
+
+
+.btn-menu {
+  position: relative;
+  background-color: rgba(0, 55, 145, 1.0);
+  border: none;
+  color: white;
+  font-family: "SB SST W20 Roman",sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 14px;
+  margin-left: 35%;
+  margin-top: 2%;
+  margin-bottom:1%;
+  opacity: 0.8;
+  transition: 0.3s;
+  width: 30%;
 }
 
-.table-game{
-  border: 1px solid black;
-  padding: 5px;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .submitbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .submitbtn {
+     width: 100%;
+  }
+}
+
+.img-delete:hover, .img-edit:hover{opacity: 0.5}
+
+.btn-menu:hover {opacity: 1}
 </style>
-<title>PS4 | Games | PlayStation</title>
+<title>PS4 | Dashboard | PlayStation</title>
 </head>
 <body>
    <nav class="navbarsa navbar-expand-md" style="background-color: black; height: 35px;" >
@@ -407,7 +557,7 @@ body {
         </div>
     </nav>
 <div class="navbarsa" style="margin:0; padding-top: 2px" >
-  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
+  <a style="padding-left: 17px; padding-top: 13px;padding-right: 24px; " href="<?php echo site_url();?>/front/homepage_admin"><img src = "<?php echo base_url('img/icon_ps_pc.svg'); ?>"></a>
   <div class="dropdownsa">
     <button class="dropbtnsa">PRODUCTS
       <i class="fa fa-caret-down"></i>
@@ -417,22 +567,22 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/product">
+              <a href="<?php echo site_url();?>/front/product_admin">
               <img src = "<?php echo base_url('img/menu_playstation4.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®4</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationvr.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®VR</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationvita.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Vita</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_psclassic.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Classic</h5></a>
             </td>
@@ -450,17 +600,17 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/games">
+              <a href="<?php echo site_url();?>/front/games_admin">
               <img src = "<?php echo base_url('img/menu_ps4games.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS4™ GAMES</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_psvrgames.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS VR GAMES</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_psvitagames.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PS Vita GAMES</h5></a>
             </td>
@@ -478,27 +628,27 @@ body {
       <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo site_url();?>/front/psn_admin">
               <img src = "<?php echo base_url('img/menu_psn.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationstore.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation™Store</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationplus.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®Plus</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationmusic.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation™Music</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
             </td>
@@ -516,12 +666,12 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
             <tr>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                 <img src = "<?php echo base_url('img/menu_pressrelease.png'); ?>" style="width: 100px " /> <br>
                 <h5 class="fontdropdown"style="text-align:center">Press Release</h5></a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                 <img src = "<?php echo base_url('img/menu_latestnews.png'); ?>" style="width: 100px " /> <br>
                 <h5 class="fontdropdown"style="text-align:center">Latest News</h5></a>
               </td>
@@ -531,7 +681,7 @@ body {
        <table style="margin-left:16%; margin-right:19%;">
             <tr>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                   <table >
                     <tr>
                       <td style="padding-right: 15px">
@@ -545,7 +695,7 @@ body {
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                   <table >
                     <tr>
                       <td style="padding-right: 15px">
@@ -559,7 +709,7 @@ body {
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                   <table>
                     <tr>
                       <td style="padding-right: 15px">
@@ -573,7 +723,7 @@ body {
                 </a>
               </td>
               <td class="buttonpshover" style="padding-right:50px">
-                <a href="<?php echo base_url('#'); ?>">
+                <a href="<?php echo base_url('www.facebook.com'); ?>">
                   <table>
                     <tr>
                       <td style="padding-right: 15px">
@@ -601,27 +751,27 @@ body {
         <table style="margin-left:16%; margin-right:19%;">
           <tr>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo site_url();?>/front/support">
+              <a href="<?php echo site_url();?>/front/support_admin">
               <img src = "<?php echo base_url('img/menu_support.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Support</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_warranty.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Warranty Services</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_psnstatus_large.png'); ?>" style="width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PSN Status</h5></a>
             </td>
             <td class="buttonpshover" style="padding-right:50px">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_fixandconnect_large.svg'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">Fix & Connect</h5></a>
             </td>
             <td class="buttonpshover">
-              <a href="<?php echo base_url('#'); ?>">
+              <a href="<?php echo base_url('www.facebook.com'); ?>">
               <img src = "<?php echo base_url('img/menu_playstationapp.png'); ?>" style=" width: 100px " /> <br>
               <h5 class="fontdropdown"style="text-align:center">PlayStation®App</h5></a>
             </td>
@@ -674,10 +824,10 @@ body {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('#'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo site_url();?>/account/dashboard" /><h5 style="font-weight: bold">Dashboard</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <button class="signin">Sign In</button>
+            <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
         </td>
         <td >
           <FORM id="containersearch" >
@@ -692,48 +842,64 @@ body {
       </tr>
     </table>
   </div>
+
 </div>
-<div class="gamescontainer">
-    <img style="width: 100%"src="<?php echo base_url('img/games/ps4-games-mainvisual-pc-20181226.png');?>">
-    <div class="gamesfont">PS4 Games</div>
-</div>
-</br></br></br>
-<div class="box" style="padding-left: 70px">
-  <div class="gamelistcontainer" style="float: left; margin:1%; text-align: center;">
-    <h2 id="titlegame"><?php echo $name;?></h2>
-    <h3 id="titlegame-sub"><?php echo $provider;?></h3> 
-    <h3 id="titlegame-sub">|</h3> 
-    <h3 id="titlegame-sub">Released <?php echo $release_date;?></h3>
-    <div>
-      <img src="<?php echo base_url($picture);?>" style="width: 407px; float: left;"/>
+<!---topnav-->
+</br></br></br>  
+<form method="post" class="modal-content" action='<?php echo site_url("games/update_games/$games_id");?>'>
+    <div class="container">
+      <h1>Edit Game</h1>
+      <hr>
+      <label for="game_title"><b>Game Title</b></label>
+      <input type="text" value="<?php echo $name?>" name="name" required>
+
+      <label for="genre"><b>Genre</b></label>
+      <input type="text" value="<?php echo $genre?>" name="genre" required>
+
+      <label for="release_date"><b>Release Date</b></label>
+      <br>
+      <input type="date" name="release_date" value="<?php echo $release_date?>" required>
+      <br><br>
+
+      <label for="provider"><b>Provider</b></label>
+      <input type="text" value="<?php echo $provider?>" name="provider" required>
+
+      <label for="size"><b>Platform</b></label>
+      <input type="text"value="<?php echo $platform?>" name="platform" required>
+
+      <label for="price"><b>Price</b></label>
+      <input type="text" value="<?php echo $price?>" name="price" required>
+
+      <label for="picture"><b>Picture</b></label>
+      <p>Last picture:</p>
+      <img src="<?php echo base_url($picture);?>">
+      </br></br>
+      <input type="file" name="picture" id="picture">
+      <br><br>
+      <label for="desc"><b>Description</b></label>
+      <br>
+      <textarea form="addform" name="description" name="description" required><?php echo $description?></textarea>
+
+      <div class="clearfix">
+        <a href="<?php echo site_url("account/dashboard") ?>"><button type="button" class="cancelbtn">Cancel</button></a>
+        <button type="submit" class="submitbtn">Submit</button>
+      </div>
     </div>
-    <table class="table-game" id="desc-game">
-      <tr class="table-game">
-        <td style="background-color: #ed5f2b; padding: 3px">Platform: </td>
-        <td style="background-color: white; padding: 3px"><?php echo $platform;?></td>
-      </tr>
-      <tr class="table-game">
-        <td style="background-color: #ed5f2b; padding: 3px">Genre: </td>
-        <td style="background-color: white; padding: 3px"><?php echo $genre;?></td>
-      </tr>
-      <tr class="table-game">
-        <td style="background-color: #ed5f2b; padding: 3px">Price: </td>
-        <td style="background-color: white; padding: 3px">Rp <?php echo $price;?></td>
-      </tr>
-      <tr class="table-game">
-        <td style="background-color: #ed5f2b; padding: 3px">Description: </td>
-        <td style="background-color: white;padding: 3px"><?php echo $description;?></td>
-      </tr>
-    </table>
-    <button type="button" class="button-buy">Add to Cart</button>
-  </div>
-</div>
-<footer class="page-footer font-small indigo " id='foter' style="clear: left;">
+  </form>
+
+<br><br><br></br></br>
+<!---botfot-->
+<footer class="page-footer font-small indigo " id='foter'>
+
     <div class="container text-center text-md-left" id='footer' >
-      <div class="row"style="padding-left : 100px">
+
+      <div class="row"style="padding-left:  120px">
+
         <br>
         <div class="col-md-3" >
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Products</h5>
+
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">PlayStation®4</a>
@@ -753,7 +919,10 @@ body {
           </ul>
 
         </div>
+
         <div class="col-md-3 mx-auto">
+
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Services</h5>
 
           <ul class="list-unstyled" >
@@ -773,9 +942,12 @@ body {
               <a id="fontfooter" href="#!">PlayStation®App</a>
             </li>
           </ul>
+
         </div>
         <div class="col-md-3 mx-auto">
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">News</h5>
+
           <ul class="list-unstyled">
             <li>
               <a id="fontfooter" href="#!">Press Release</a>
@@ -784,8 +956,11 @@ body {
               <a id="fontfooter" href="#!">Latest News</a>
             </li>
           </ul>
+
         </div>
         <div class="col-md-3 mx-auto">
+
+
           <h5 class="font-weight-bold mt-3 mb-4" id="fonttitlefooter">Support</h5>
 
           <ul class="list-unstyled">
@@ -796,6 +971,7 @@ body {
               <a id="fontfooter" href="#!">Warranty Services</a>
             </li>
           </ul>
+
         </div>
       </div>
       <br>
@@ -818,10 +994,10 @@ body {
           <br><br>
         </div>
         <div>
-            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;"/> 
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
           </div>
       </div>
     </div> 
-  </footer>
+  </footer> 
 </body>
 </html>

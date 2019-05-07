@@ -1,4 +1,4 @@
-<!doctype HTML>
+!doctype HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -674,10 +674,10 @@ body {
     <table style="margin: auto;">
       <tr>
         <td>
-          <a id="myplaystation"href="<?php echo base_url('#'); ?>" /><h5 style="font-weight: bold">My PlayStation</h5></a>
+          <a id="myplaystation"href="<?php echo site_url();?>/account/dashboard" /><h5 style="font-weight: bold">Dashboard</h5></a>
         </td>
         <td style="padding-right: 10px">
-          <button class="signin">Sign In</button>
+            <button class="signin" type="submit" onclick="window.location.href='<?php echo site_url();?>/account/logout';">Log Out</button>
         </td>
         <td >
           <FORM id="containersearch" >
@@ -700,41 +700,29 @@ body {
 </br></br></br>
 <div class="box" style="padding-left: 70px">
   <div class="gamelistcontainer" style="float: left; margin:1%; text-align: center;">
-    <h2 id="titlegame">Tom Clancy's The Division® 2 - Digital Standard Edition (English/Chinese/Korean/Japanese Ver.)</h2>
-    <h3 id="titlegame-sub">Ubisoft Entertainment</h3> 
+    <h2 id="titlegame"><?php echo $name;?></h2>
+    <h3 id="titlegame-sub"><?php echo $provider;?></h3> 
     <h3 id="titlegame-sub">|</h3> 
-    <h3 id="titlegame-sub">Released 15.03.2019</h3>
+    <h3 id="titlegame-sub">Released <?php echo $release_date;?></h3>
     <div>
-      <img src="<?php echo base_url('img/view_games/image.jfif');?>" style="width: 407px; float: left;"/>
+      <img src="<?php echo base_url($picture);?>" style="width: 407px; float: left;"/>
     </div>
     <table class="table-game" id="desc-game">
       <tr class="table-game">
         <td style="background-color: #ed5f2b; padding: 3px">Platform: </td>
-        <td style="background-color: white; padding: 3px">PS4™</td>
+        <td style="background-color: white; padding: 3px"><?php echo $platform;?></td>
       </tr>
       <tr class="table-game">
         <td style="background-color: #ed5f2b; padding: 3px">Genre: </td>
-        <td style="background-color: white; padding: 3px">Sports</td>
+        <td style="background-color: white; padding: 3px"><?php echo $genre;?></td>
       </tr>
       <tr class="table-game">
         <td style="background-color: #ed5f2b; padding: 3px">Price: </td>
-        <td style="background-color: white; padding: 3px">Rp 745,000</td>
+        <td style="background-color: white; padding: 3px">Rp <?php echo $price;?></td>
       </tr>
       <tr class="table-game">
         <td style="background-color: #ed5f2b; padding: 3px">Description: </td>
-        <td style="background-color: white;padding: 3px">HISTORY WILL REMEMBER
-
-In Tom Clancy’s The Division® 2, the fate of the free world is on the line. 
-
-Lead a team of elite agents into a post-pandemic Washington DC to restore order and prevent the collapse of the city. 
-
-The Division 2 is an online, action shooter RPG experience, where exploration and player-progression are essential.
-
-• Liberate Washington DC – Save a country on the brink of collapse as you explore an open, dynamic and hostile world.
-
-• Stronger with your team – Specialize and fight together with your friends in online co-op or against others in competitive adversial PVP mode.
-
-• Genre-defining endgame – Choose a unique class specialization to take on the toughest challenges with friends.</td>
+        <td style="background-color: white;padding: 3px"><?php echo $description;?></td>
       </tr>
     </table>
     <button type="button" class="button-buy">Add to Cart</button>

@@ -9,7 +9,7 @@ class account extends CI_Controller {
 
   	public function index()
   	{
-    	if ($this->session->userdata('login')==1) {
+    	if ($this->session->userdata('logged_in')==1) {
       		redirect('account/index');
     	}
     	$this->load->view('login');
@@ -41,8 +41,10 @@ class account extends CI_Controller {
 	}
 
 	public function dashboard()
-	{
-		$this->load->view('dashboard_admin');
+	{	$this->load->model('GamesModel');
+		$data['games']=$this->GamesModel->get_all_games();
+		$data['agame']=null;
+		$this->load->view('dashboard_admin', $data);
 	}
 
 	public function logout()
@@ -115,6 +117,7 @@ class account extends CI_Controller {
 
     	$login_customer = $this->UserModel->login_customer($email, $password);
     	$login_admin = $this->UserModel->login_admin($email, $password);
+    	$login_user = $this->UserModel->login_user($email, $password);
 
     	if (session_status() == PHP_SESSION_NONE) {
     		session_start();
@@ -136,6 +139,14 @@ class account extends CI_Controller {
       		);
       		$this->session->set_userdata($sess_data);
       		redirect('front/homepage_admin');
+      	} else if ($login_user) {
+      		$sess_data = array(
+          	'logged_in' => 1,
+          	'email' => $login_user->email,
+          	'user_id' => $login_user->user_id
+      		);
+      		$this->session->set_userdata($sess_data);
+      		redirect('front/homepage_user');
     	} else {
       		echo "<script>alert('Gagal login: Cek email, password!');</script>";
       		redirect('account/index');

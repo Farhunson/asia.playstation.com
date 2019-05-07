@@ -1,4 +1,4 @@
-<!doctype HTML>
+!doctype HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -370,7 +370,8 @@ body {
   box-sizing: content-box;
   padding: 1em;
   position: relative;
-  height: 350px;
+  height: auto;
+  padding-bottom: auto;
 }
 
 .item-gamescontainer{
@@ -743,118 +744,24 @@ body {
 </br></br></br>
 <h2 id="titlegame" >Game List</h2>
 <div class="box" style="padding-left: 70px">
+  <?php foreach($games as $item) : ?>
   <div class="gamelistcontainer" style="float: left; margin:1%;">
     <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
+      <a href="<?php echo site_url();?>/games/view_admin/<?= $item->games_id ?>">
+      <div class="item-gamescontainer">
+        <img class="img-responsive center-block fit" src="<?php echo base_url($item->picture);?>"/>
+        <h3 class="fontgametitle" ><?= $item->name ?></h3>
+        <div class="fontsubgame"><?= $item->platform ?></div>
+        <div class="fontsubgame" title="Electronic Arts Inc."><?= $item->provider ?></div>
+        <div class="fontsubgame"><?= $item->genre ?></div>
+        <div class="fontpricegame">Price</div>
+        <div class="fontpricegame">Rp <?= $item->price ?></div>
+      </div>
+      <button type="button" class="button-buy">BUY NOW</button>
+      </a>
+      </div>
     </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
-  <div class="gamelistcontainer" style="float: left;margin:1%">
-    <div style="width: 170px;">
-    <a href="#!">
-    <div class="item-gamescontainer">
-    <img class="img-responsive center-block fit" src="<?php echo base_url('img/games/image.jfif');?>"/>
-    <h3 class="fontgametitle" >Tom Clancy's The Division® 2 - Digital Standard ...</h3>
-    <div class="fontsubgame">PS4™</div>
-    <div class="fontsubgame" title="Electronic Arts Inc.">Electronic Arts Inc.</div>
-    <div class="fontsubgame">Sports</div>
-    <div class="fontpricegame">Price</div>
-    <div class="fontpricegame">Rp 745,000</div>
-    <button type="button" class="button-buy">BUY NOW</button>
-    </div>
-    </a>
-    </div>
-  </div>
+  <?php endforeach ?>
 </div>
 <footer class="page-footer font-small indigo " id='foter' style="clear: left;">
     <div class="container text-center text-md-left" id='footer' >
