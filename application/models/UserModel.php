@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 
 class UserModel extends CI_Model
 {
@@ -43,12 +43,31 @@ class UserModel extends CI_Model
     }
   }
 
-  public function register_user2($user,$data){
-    $insert = $this->db->insert($user, $data);
-    if ($insert){
-      return TRUE;
+  public function register_user2($user, $data, $email){
+    $sql = $this->UserModel->get_same($email);
+    if($sql == FALSE){
+        return false;
     }else{
-      return FALSE;
+        $insert = $this->db->insert($user, $data);
+        if ($insert){
+          return TRUE;
+        }else{
+          return FALSE;
+        }
+    }
+  }
+
+  public function get_same($email){
+    $this->db->from('user');
+    $this->db->where('email',$email);
+
+    $query = $this->db->get();
+
+    if($query->num_rows()==1)
+    {
+      return false;
+    } else {
+      return true;
     }
   }
 

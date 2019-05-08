@@ -65,7 +65,7 @@ class account extends CI_Controller {
       	'email' => $email
     	);
 
-    	$register2 = $this->UserModel->register_user2($table, $data_insert);
+    	$register2 = $this->UserModel->register_user2($table, $data_insert, $email);
 
     	$login_user = $this->UserModel->login_user($email, $password);
 
@@ -84,6 +84,9 @@ class account extends CI_Controller {
 
     	if ($register2) {
      		redirect('account/create3');
+    	} else {
+    		echo "Registration failed: email already exist!";
+			echo "<script>setTimeout(\"location.href = 'http://localhost/asiaplaystation/index.php/account/create2';\",1500);</script>";
     	}
   	}
 

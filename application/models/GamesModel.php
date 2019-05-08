@@ -37,7 +37,6 @@ class GamesModel extends CI_Model
     $sql = "DELETE FROM games 
     WHERE games_id = '".$games_id."'";
     $this->db->query($sql);
-    redirect ('/front/games_admin','refresh');
   }
 
   public function get_all_games(){
