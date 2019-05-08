@@ -370,7 +370,8 @@ body {
   box-sizing: content-box;
   padding: 1em;
   position: relative;
-  height: 350px;
+  height: auto;
+  padding-bottom: auto;
 }
 
 .item-gamescontainer{
