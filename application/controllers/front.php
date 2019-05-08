@@ -61,7 +61,10 @@ class front extends CI_Controller {
 
 	public function games_user()
 	{
-		$this->load->view('in_games');
+		$this->load->model('GamesModel');
+		$data['games']=$this->GamesModel->get_all_games();		
+		$this->load->view('in_games',$data);
+
 	}
 
 	public function psn_user()
